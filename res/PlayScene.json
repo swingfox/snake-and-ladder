@@ -1,0 +1,416 @@
+{
+  "ID": "724ac0d8-ca00-437c-824d-e0c664a2307a",
+  "Version": "3.10.0.0",
+  "Name": "PlayScene",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 56,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "Images/Wood.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 806.3676,
+              "Y": 315.3375
+            },
+            "Scale": {
+              "ScaleX": 0.911,
+              "ScaleY": 0.8822
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.84,
+              "Y": 0.4927
+            },
+            "PreSize": {
+              "X": 0.4219,
+              "Y": 1.1953
+            },
+            "LeftMargin": 603.8676,
+            "RightMargin": -48.8676,
+            "TopMargin": -57.8375,
+            "BottomMargin": -67.1625,
+            "Tag": 58,
+            "Children": [
+              {
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Fonts/neuropol x rg.ttf",
+                  "Plist": ""
+                },
+                "FontSize": 20,
+                "IsCustomSize": true,
+                "LabelText": "",
+                "PlaceHolderText": "00:00",
+                "MaxLengthText": 10,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 195.1911,
+                  "Y": 517.0385
+                },
+                "Scale": {
+                  "ScaleX": 2.0691,
+                  "ScaleY": 2.5804
+                },
+                "CColor": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.482,
+                  "Y": 0.6759
+                },
+                "PreSize": {
+                  "X": 0.2074,
+                  "Y": 0.0301
+                },
+                "LeftMargin": 153.1911,
+                "RightMargin": 167.8089,
+                "TopMargin": 236.4615,
+                "BottomMargin": 505.5385,
+                "Tag": 60,
+                "ActionTag": -1571625752,
+                "Size": {
+                  "X": 84.0,
+                  "Y": 23.0
+                },
+                "Name": "timeText",
+                "ctype": "TextFieldObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "Images/button.png",
+                  "Plist": ""
+                },
+                "BlendFunc": {
+                  "Src": 1,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 205.1423,
+                  "Y": 622.3037
+                },
+                "Scale": {
+                  "ScaleX": 0.7665,
+                  "ScaleY": 0.9224
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5065,
+                  "Y": 0.8135
+                },
+                "PreSize": {
+                  "X": 0.8914,
+                  "Y": 0.2105
+                },
+                "LeftMargin": 24.6423,
+                "RightMargin": 19.3577,
+                "TopMargin": 62.1963,
+                "BottomMargin": 541.8037,
+                "Tag": 61,
+                "ActionTag": -663671563,
+                "Size": {
+                  "X": 361.0,
+                  "Y": 161.0
+                },
+                "Name": "turnSprite",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Fonts/neuropol x rg.ttf",
+                  "Plist": ""
+                },
+                "FontSize": 13,
+                "IsCustomSize": true,
+                "LabelText": "",
+                "PlaceHolderText": "  Player 1",
+                "MaxLengthText": 10,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 198.8106,
+                  "Y": 615.7712
+                },
+                "Scale": {
+                  "ScaleX": 2.2735,
+                  "ScaleY": 2.6009
+                },
+                "CColor": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4909,
+                  "Y": 0.8049
+                },
+                "PreSize": {
+                  "X": 0.2074,
+                  "Y": 0.0301
+                },
+                "LeftMargin": 156.8106,
+                "RightMargin": 164.1894,
+                "TopMargin": 137.7288,
+                "BottomMargin": 604.2712,
+                "Tag": 62,
+                "ActionTag": 626186248,
+                "Size": {
+                  "X": 84.0,
+                  "Y": 23.0
+                },
+                "Name": "turnText",
+                "ctype": "TextFieldObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "Images/button.png",
+                  "Plist": ""
+                },
+                "BlendFunc": {
+                  "Src": 1,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 206.8619,
+                  "Y": 129.8324
+                },
+                "Scale": {
+                  "ScaleX": 0.7665,
+                  "ScaleY": 0.9224
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5108,
+                  "Y": 0.1697
+                },
+                "PreSize": {
+                  "X": 0.8914,
+                  "Y": 0.2105
+                },
+                "LeftMargin": 26.3619,
+                "RightMargin": 17.6381,
+                "TopMargin": 554.6676,
+                "BottomMargin": 49.3324,
+                "Tag": 63,
+                "ActionTag": -293843020,
+                "Size": {
+                  "X": 361.0,
+                  "Y": 161.0
+                },
+                "Name": "rollSprite",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Fonts/neuropol x rg.ttf",
+                  "Plist": ""
+                },
+                "FontSize": 13,
+                "IsCustomSize": true,
+                "LabelText": "",
+                "PlaceHolderText": "     Roll",
+                "MaxLengthText": 10,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 200.5295,
+                  "Y": 123.2995
+                },
+                "Scale": {
+                  "ScaleX": 2.2735,
+                  "ScaleY": 2.6009
+                },
+                "CColor": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4951,
+                  "Y": 0.1612
+                },
+                "PreSize": {
+                  "X": 0.2074,
+                  "Y": 0.0301
+                },
+                "LeftMargin": 158.5295,
+                "RightMargin": 162.4705,
+                "TopMargin": 630.2004,
+                "BottomMargin": 111.7995,
+                "Tag": 64,
+                "ActionTag": -1475293763,
+                "Size": {
+                  "X": 84.0,
+                  "Y": 23.0
+                },
+                "Name": "rollText",
+                "ctype": "TextFieldObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "Images/Dice1.png",
+                  "Plist": ""
+                },
+                "BlendFunc": {
+                  "Src": 1,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 201.6705,
+                  "Y": 271.5864
+                },
+                "Scale": {
+                  "ScaleX": 0.5741,
+                  "ScaleY": 0.5539
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.498,
+                  "Y": 0.355
+                },
+                "PreSize": {
+                  "X": 0.4938,
+                  "Y": 0.2614
+                },
+                "LeftMargin": 101.6705,
+                "RightMargin": 103.3295,
+                "TopMargin": 393.4136,
+                "BottomMargin": 171.5864,
+                "Tag": 65,
+                "ActionTag": 529339337,
+                "Size": {
+                  "X": 200.0,
+                  "Y": 200.0
+                },
+                "Name": "dice1Sprite",
+                "ctype": "SpriteObjectData"
+              }
+            ],
+            "ActionTag": -836975658,
+            "Size": {
+              "X": 405.0,
+              "Y": 765.0
+            },
+            "Name": "woodSprite",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "Images/game_background.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 316.2599,
+              "Y": 321.24
+            },
+            "Scale": {
+              "ScaleX": 0.7149,
+              "ScaleY": 0.9164
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.3294,
+              "Y": 0.5019
+            },
+            "PreSize": {
+              "X": 0.9302,
+              "Y": 1.0812
+            },
+            "LeftMargin": -130.2401,
+            "RightMargin": 197.2401,
+            "TopMargin": -27.24,
+            "BottomMargin": -24.76,
+            "Tag": 67,
+            "ActionTag": -1504689974,
+            "Size": {
+              "X": 893.0,
+              "Y": 692.0
+            },
+            "Name": "boardSprite",
+            "ctype": "SpriteObjectData"
+          }
+        ],
+        "Size": {
+          "X": 960.0,
+          "Y": 640.0
+        },
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "Fonts/neuropol x rg.ttf",
+        "Images/button.png",
+        "Images/Dice1.png",
+        "Images/game_background.png",
+        "Images/Wood.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Scene"
+}

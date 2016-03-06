@@ -1,0 +1,181 @@
+{
+  "ID": "4b313a3f-678b-4db2-8c66-96aa0ee0ef29",
+  "Version": "3.10.0.0",
+  "Name": "PlayerNameScene",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 68,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "HomeBackgroundLayer.json",
+              "Plist": ""
+            },
+            "StretchWidthEnable": false,
+            "StretchHeightEnable": false,
+            "InnerActionSpeed": 1.0,
+            "AnchorPoint": {},
+            "Position": {
+              "X": -2.8893,
+              "Y": -2.8927
+            },
+            "Scale": {
+              "ScaleX": 1.003,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": true,
+            "PrePosition": {
+              "X": -0.003,
+              "Y": -0.0045
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "LeftMargin": -2.8893,
+            "RightMargin": 2.8893,
+            "TopMargin": 2.8927,
+            "BottomMargin": -2.8927,
+            "Tag": 72,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "Images/button.png",
+                  "Plist": ""
+                },
+                "BlendFunc": {
+                  "Src": 1,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 593.011,
+                  "Y": 352.9095
+                },
+                "Scale": {
+                  "ScaleX": 1.4007,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.6177,
+                  "Y": 0.5514
+                },
+                "PreSize": {
+                  "X": 0.376,
+                  "Y": 0.2516
+                },
+                "LeftMargin": 412.511,
+                "RightMargin": 186.489,
+                "TopMargin": 206.5905,
+                "BottomMargin": 272.4095,
+                "Tag": 75,
+                "ActionTag": -1832573098,
+                "Size": {
+                  "X": 361.0,
+                  "Y": 161.0
+                },
+                "Name": "inputText",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FontSize": 20,
+                "LabelText": "Player 1's Name:",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Fonts/neuropol x rg.ttf",
+                  "Plist": ""
+                },
+                "TouchScaleChangeAble": true,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 199.6002,
+                  "Y": 355.8046
+                },
+                "Scale": {
+                  "ScaleX": 1.5241,
+                  "ScaleY": 3.0123
+                },
+                "CColor": {
+                  "R": 4,
+                  "G": 240,
+                  "B": 4
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2079,
+                  "Y": 0.5559
+                },
+                "PreSize": {
+                  "X": 0.2104,
+                  "Y": 0.0375
+                },
+                "LeftMargin": 98.6002,
+                "RightMargin": 659.3998,
+                "TopMargin": 272.1954,
+                "BottomMargin": 343.8046,
+                "Tag": 76,
+                "ActionTag": -1283269304,
+                "Size": {
+                  "X": 202.0,
+                  "Y": 24.0
+                },
+                "Name": "playerName",
+                "ctype": "TextObjectData"
+              }
+            ],
+            "ActionTag": -1426236899,
+            "Size": {
+              "X": 960.0,
+              "Y": 640.0
+            },
+            "Name": "backgroundSprite",
+            "ctype": "ProjectNodeObjectData"
+          }
+        ],
+        "Size": {
+          "X": 960.0,
+          "Y": 640.0
+        },
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "Fonts/neuropol x rg.ttf",
+        "HomeBackgroundLayer.json",
+        "Images/button.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Scene"
+}

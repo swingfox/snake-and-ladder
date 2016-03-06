@@ -1,0 +1,77 @@
+{
+  "ID": "7c33c399-0c74-4f06-b1f6-540a803d4ea8",
+  "Version": "3.10.0.0",
+  "Name": "HallOfFame",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 99,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "Images/hall of fame.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 479.1357,
+              "Y": 318.2916
+            },
+            "Scale": {
+              "ScaleX": 0.7471,
+              "ScaleY": 0.8876
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4991,
+              "Y": 0.4973
+            },
+            "PreSize": {
+              "X": 1.3333,
+              "Y": 1.125
+            },
+            "LeftMargin": -160.8643,
+            "RightMargin": -159.1357,
+            "TopMargin": -38.2916,
+            "BottomMargin": -41.7084,
+            "Tag": 100,
+            "ActionTag": 1138818670,
+            "Size": {
+              "X": 1280.0,
+              "Y": 720.0
+            },
+            "Name": "hallOfFameSprite",
+            "ctype": "SpriteObjectData"
+          }
+        ],
+        "Size": {
+          "X": 960.0,
+          "Y": 640.0
+        },
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "Images/hall of fame.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Scene"
+}

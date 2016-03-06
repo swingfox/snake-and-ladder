@@ -1,0 +1,482 @@
+{
+  "ID": "a2ee0952-26b5-49ae-8bf9-4f1d6279b798",
+  "Version": "3.10.0.0",
+  "Name": "MainScene",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "Images/menuBackground.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 480.8201,
+              "Y": 323.8343
+            },
+            "Scale": {
+              "ScaleX": 0.752,
+              "ScaleY": 0.892
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5009,
+              "Y": 0.506
+            },
+            "PreSize": {
+              "X": 1.3333,
+              "Y": 1.125
+            },
+            "LeftMargin": -159.1799,
+            "RightMargin": -160.8201,
+            "TopMargin": -43.8343,
+            "BottomMargin": -36.1657,
+            "Tag": 55,
+            "Children": [
+              {
+                "FontSize": 24,
+                "ButtonText": "Single Player   ",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Fonts/neuropol x rg.ttf",
+                  "Plist": ""
+                },
+                "TextColor": {
+                  "R": 230,
+                  "G": 230,
+                  "B": 250
+                },
+                "DisabledFileData": {
+                  "Type": "Default",
+                  "Path": "Default/Button_Disable.png",
+                  "Plist": ""
+                },
+                "PressedFileData": {
+                  "Type": "Default",
+                  "Path": "Default/Button_Press.png",
+                  "Plist": ""
+                },
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "Images/button.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 331,
+                "Scale9Height": 139,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 240.6786,
+                  "Y": 473.651
+                },
+                "Scale": {
+                  "ScaleX": 0.9845,
+                  "ScaleY": 0.8298
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.188,
+                  "Y": 0.6578
+                },
+                "PreSize": {
+                  "X": 0.282,
+                  "Y": 0.2236
+                },
+                "LeftMargin": 60.1786,
+                "RightMargin": 858.8214,
+                "TopMargin": 165.849,
+                "BottomMargin": 393.151,
+                "Tag": 50,
+                "ActionTag": -1685287327,
+                "Size": {
+                  "X": 361.0,
+                  "Y": 161.0
+                },
+                "Name": "btnSingle",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 24,
+                "ButtonText": "MultiPlayer   ",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Fonts/neuropol x rg.ttf",
+                  "Plist": ""
+                },
+                "TextColor": {
+                  "R": 230,
+                  "G": 230,
+                  "B": 250
+                },
+                "DisabledFileData": {
+                  "Type": "Default",
+                  "Path": "Default/Button_Disable.png",
+                  "Plist": ""
+                },
+                "PressedFileData": {
+                  "Type": "Default",
+                  "Path": "Default/Button_Press.png",
+                  "Plist": ""
+                },
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "Images/button.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 331,
+                "Scale9Height": 139,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 240.4671,
+                  "Y": 393.2129
+                },
+                "Scale": {
+                  "ScaleX": 0.9845,
+                  "ScaleY": 0.8298
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1879,
+                  "Y": 0.5461
+                },
+                "PreSize": {
+                  "X": 0.282,
+                  "Y": 0.2236
+                },
+                "LeftMargin": 59.9671,
+                "RightMargin": 859.0329,
+                "TopMargin": 246.2871,
+                "BottomMargin": 312.7129,
+                "Tag": 51,
+                "ActionTag": -1939968122,
+                "Size": {
+                  "X": 361.0,
+                  "Y": 161.0
+                },
+                "Name": "btnMultiPlayer",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 24,
+                "ButtonText": "Options     ",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Fonts/neuropol x rg.ttf",
+                  "Plist": ""
+                },
+                "TextColor": {
+                  "R": 230,
+                  "G": 230,
+                  "B": 250
+                },
+                "DisabledFileData": {
+                  "Type": "Default",
+                  "Path": "Default/Button_Disable.png",
+                  "Plist": ""
+                },
+                "PressedFileData": {
+                  "Type": "Default",
+                  "Path": "Default/Button_Press.png",
+                  "Plist": ""
+                },
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "Images/button.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 331,
+                "Scale9Height": 139,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 238.8997,
+                  "Y": 311.8681
+                },
+                "Scale": {
+                  "ScaleX": 0.9845,
+                  "ScaleY": 0.8298
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1866,
+                  "Y": 0.4332
+                },
+                "PreSize": {
+                  "X": 0.282,
+                  "Y": 0.2236
+                },
+                "LeftMargin": 58.3997,
+                "RightMargin": 860.6003,
+                "TopMargin": 327.6319,
+                "BottomMargin": 231.3681,
+                "Tag": 52,
+                "ActionTag": 676555090,
+                "Size": {
+                  "X": 361.0,
+                  "Y": 161.0
+                },
+                "Name": "btnOptions",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 24,
+                "ButtonText": "Instructions    ",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Fonts/neuropol x rg.ttf",
+                  "Plist": ""
+                },
+                "TextColor": {
+                  "R": 230,
+                  "G": 230,
+                  "B": 250
+                },
+                "DisabledFileData": {
+                  "Type": "Default",
+                  "Path": "Default/Button_Disable.png",
+                  "Plist": ""
+                },
+                "PressedFileData": {
+                  "Type": "Default",
+                  "Path": "Default/Button_Press.png",
+                  "Plist": ""
+                },
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "Images/button.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 331,
+                "Scale9Height": 139,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 238.5705,
+                  "Y": 229.1108
+                },
+                "Scale": {
+                  "ScaleX": 0.9845,
+                  "ScaleY": 0.8298
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1864,
+                  "Y": 0.3182
+                },
+                "PreSize": {
+                  "X": 0.282,
+                  "Y": 0.2236
+                },
+                "LeftMargin": 58.0705,
+                "RightMargin": 860.9295,
+                "TopMargin": 410.3892,
+                "BottomMargin": 148.6108,
+                "Tag": 53,
+                "ActionTag": -1707638926,
+                "Size": {
+                  "X": 361.0,
+                  "Y": 161.0
+                },
+                "Name": "btnInstructions",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 24,
+                "ButtonText": "Credits   ",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Fonts/neuropol x rg.ttf",
+                  "Plist": ""
+                },
+                "TextColor": {
+                  "R": 230,
+                  "G": 230,
+                  "B": 250
+                },
+                "DisabledFileData": {
+                  "Type": "Default",
+                  "Path": "Default/Button_Disable.png",
+                  "Plist": ""
+                },
+                "PressedFileData": {
+                  "Type": "Default",
+                  "Path": "Default/Button_Press.png",
+                  "Plist": ""
+                },
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "Images/button.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 331,
+                "Scale9Height": 139,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 236.8239,
+                  "Y": 149.4975
+                },
+                "Scale": {
+                  "ScaleX": 0.9845,
+                  "ScaleY": 0.8298
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.185,
+                  "Y": 0.2076
+                },
+                "PreSize": {
+                  "X": 0.282,
+                  "Y": 0.2236
+                },
+                "LeftMargin": 56.3239,
+                "RightMargin": 862.6761,
+                "TopMargin": 490.0025,
+                "BottomMargin": 68.9975,
+                "Tag": 54,
+                "ActionTag": -309342468,
+                "Size": {
+                  "X": 361.0,
+                  "Y": 161.0
+                },
+                "Name": "btnCredits",
+                "ctype": "ButtonObjectData"
+              }
+            ],
+            "ActionTag": 688654521,
+            "Size": {
+              "X": 1280.0,
+              "Y": 720.0
+            },
+            "Name": "homeBackground",
+            "ctype": "SpriteObjectData"
+          }
+        ],
+        "Size": {
+          "X": 960.0,
+          "Y": 640.0
+        },
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "Default/Button_Disable.png",
+        "Default/Button_Press.png",
+        "Fonts/neuropol x rg.ttf",
+        "Images/button.png",
+        "Images/menuBackground.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Scene"
+}

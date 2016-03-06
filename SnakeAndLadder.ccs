@@ -1,0 +1,50 @@
+<Solution>
+  <PropertyGroup Name="SnakeAndLadder" Version="3.10.0.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Folder Name="Fonts">
+          <TTF Name="neuropol x rg.ttf" />
+        </Folder>
+        <Folder Name="Images">
+          <Image Name="1-Recovered.png" />
+          <Image Name="2.png" />
+          <Image Name="board.png" />
+          <Image Name="button.png" />
+          <Image Name="chutes.png" />
+          <Image Name="chutes_blue.png" />
+          <Image Name="chutes_green.png" />
+          <Image Name="congrats.png" />
+          <Image Name="credits.png" />
+          <Image Name="Dice1.png" />
+          <Image Name="dice2.png" />
+          <Image Name="dice3.png" />
+          <Image Name="dice4.png" />
+          <Image Name="dice5.png" />
+          <Image Name="game option.png" />
+          <Image Name="game over.png" />
+          <Image Name="game_background.png" />
+          <Image Name="hall of fame.png" />
+          <Image Name="home_background.png" />
+          <Image Name="instruction.png" />
+          <Image Name="menuBackground.png" />
+          <Image Name="pause.png" />
+          <Image Name="question board.png" />
+          <Image Name="result.png" />
+          <Image Name="two.png" />
+          <Image Name="Wood.png" />
+        </Folder>
+        <Project Name="CongratulationsScene.csd" Type="Scene" />
+        <Project Name="GameDevelopersScene.csd" Type="Scene" />
+        <Project Name="GameOverScene.csd" Type="Scene" />
+        <Project Name="HallOfFame.csd" Type="Scene" />
+        <Project Name="HomeBackgroundLayer.csd" Type="Layer" />
+        <Project Name="InstructionScene.csd" Type="Scene" />
+        <Project Name="MainScene.csd" Type="Scene" />
+        <Project Name="OnePlayer.csd" Type="Scene" />
+        <Project Name="PlayScene.csd" Type="Scene" />
+        <Project Name="TwoPlayer.csd" Type="Scene" />
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>

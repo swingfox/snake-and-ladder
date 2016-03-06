@@ -1,0 +1,77 @@
+{
+  "ID": "e32d2981-27d8-44df-9fb1-786f8de5e5ac",
+  "Version": "3.10.0.0",
+  "Name": "GameOverScene",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 97,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "Images/game over.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 479.7683,
+              "Y": 319.838
+            },
+            "Scale": {
+              "ScaleX": 0.7501,
+              "ScaleY": 0.8811
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4998,
+              "Y": 0.4997
+            },
+            "PreSize": {
+              "X": 1.3333,
+              "Y": 1.125
+            },
+            "LeftMargin": -160.2317,
+            "RightMargin": -159.7683,
+            "TopMargin": -39.838,
+            "BottomMargin": -40.162,
+            "Tag": 98,
+            "ActionTag": 1732727391,
+            "Size": {
+              "X": 1280.0,
+              "Y": 720.0
+            },
+            "Name": "gameOverSprite",
+            "ctype": "SpriteObjectData"
+          }
+        ],
+        "Size": {
+          "X": 960.0,
+          "Y": 640.0
+        },
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "Images/game over.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Scene"
+}

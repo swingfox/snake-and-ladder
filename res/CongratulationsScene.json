@@ -1,0 +1,77 @@
+{
+  "ID": "3e35d7ff-348a-4b02-a30d-ca6e1b2f023c",
+  "Version": "3.10.0.0",
+  "Name": "CongratulationsScene",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 93,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "Images/congrats.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 478.6947,
+              "Y": 321.6578
+            },
+            "Scale": {
+              "ScaleX": 0.7467,
+              "ScaleY": 0.8804
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4986,
+              "Y": 0.5026
+            },
+            "PreSize": {
+              "X": 1.3333,
+              "Y": 1.125
+            },
+            "LeftMargin": -161.3053,
+            "RightMargin": -158.6947,
+            "TopMargin": -41.6578,
+            "BottomMargin": -38.3422,
+            "Tag": 94,
+            "ActionTag": -1620838811,
+            "Size": {
+              "X": 1280.0,
+              "Y": 720.0
+            },
+            "Name": "congratsSprite",
+            "ctype": "SpriteObjectData"
+          }
+        ],
+        "Size": {
+          "X": 960.0,
+          "Y": 640.0
+        },
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "Images/congrats.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Scene"
+}
