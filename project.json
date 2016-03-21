@@ -2,11 +2,11 @@
     "project_type": "javascript",
 
     "debugMode" : 1,
-    "showFPS" : true,
+    "showFPS" : false,
     "frameRate" : 60,
     "noCache" : false,
     "id" : "gameCanvas",
-    "renderMode" : 0,
+    "renderMode" : 1,
     "engineDir":"frameworks/cocos2d-html5",
 
     "modules" : ["cocos2d", "cocostudio","editbox"],
@@ -18,6 +18,9 @@
         "src/twoPlayerScene.js",
         "src/instructionScene.js",
         "src/creditsScene.js",
-        "src/playScene.js"
+        "src/playScene.js",
+        "src/gameOverScene.js",
+        "src/gameOptionScene.js",
+        "src/hallOfFame.js"
     ]
 }

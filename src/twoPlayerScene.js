@@ -34,7 +34,7 @@ var TwoPlayerLayer = cc.Layer.extend({
 		cc.director.popScene();
 	},
 	goNext:function(){
-
+		cc.director.pushScene(new PlayScene());
 	}
 });
 

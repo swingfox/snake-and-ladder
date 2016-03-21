@@ -1,0 +1,5 @@
+Which of the following is NOT a valid C syntax?
+a. c+;
+b. --c;
+c. c++;
+d. c-=5;

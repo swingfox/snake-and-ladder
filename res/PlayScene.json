@@ -236,6 +236,59 @@
                 "TopMargin": 554.6676,
                 "BottomMargin": 49.3324,
                 "Tag": 63,
+                "Children": [
+                  {
+                    "FontResource": {
+                      "Type": "Normal",
+                      "Path": "Fonts/neuropol x rg.ttf",
+                      "Plist": ""
+                    },
+                    "FontSize": 13,
+                    "IsCustomSize": true,
+                    "LabelText": "",
+                    "PlaceHolderText": "     Roll",
+                    "MaxLengthText": 10,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 168.1255,
+                      "Y": 73.2491
+                    },
+                    "Scale": {
+                      "ScaleX": 2.2735,
+                      "ScaleY": 2.6009
+                    },
+                    "CColor": {
+                      "R": 0,
+                      "G": 0,
+                      "B": 0
+                    },
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4657,
+                      "Y": 0.455
+                    },
+                    "PreSize": {
+                      "X": 0.2327,
+                      "Y": 0.1429
+                    },
+                    "LeftMargin": 126.1255,
+                    "RightMargin": 150.8745,
+                    "TopMargin": 76.2509,
+                    "BottomMargin": 61.7491,
+                    "Tag": 64,
+                    "ActionTag": -1475293763,
+                    "Size": {
+                      "X": 84.0,
+                      "Y": 23.0
+                    },
+                    "Name": "rollText",
+                    "ctype": "TextFieldObjectData"
+                  }
+                ],
                 "ActionTag": -293843020,
                 "Size": {
                   "X": 361.0,
@@ -243,57 +296,6 @@
                 },
                 "Name": "rollSprite",
                 "ctype": "SpriteObjectData"
-              },
-              {
-                "FontResource": {
-                  "Type": "Normal",
-                  "Path": "Fonts/neuropol x rg.ttf",
-                  "Plist": ""
-                },
-                "FontSize": 13,
-                "IsCustomSize": true,
-                "LabelText": "",
-                "PlaceHolderText": "     Roll",
-                "MaxLengthText": 10,
-                "TouchEnable": true,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 200.5295,
-                  "Y": 123.2995
-                },
-                "Scale": {
-                  "ScaleX": 2.2735,
-                  "ScaleY": 2.6009
-                },
-                "CColor": {
-                  "R": 0,
-                  "G": 0,
-                  "B": 0
-                },
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.4951,
-                  "Y": 0.1612
-                },
-                "PreSize": {
-                  "X": 0.2074,
-                  "Y": 0.0301
-                },
-                "LeftMargin": 158.5295,
-                "RightMargin": 162.4705,
-                "TopMargin": 630.2004,
-                "BottomMargin": 111.7995,
-                "Tag": 64,
-                "ActionTag": -1475293763,
-                "Size": {
-                  "X": 84.0,
-                  "Y": 23.0
-                },
-                "Name": "rollText",
-                "ctype": "TextFieldObjectData"
               },
               {
                 "FileData": {
@@ -310,12 +312,12 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 201.6705,
-                  "Y": 271.5864
+                  "X": 201.67,
+                  "Y": 271.59
                 },
                 "Scale": {
                   "ScaleX": 0.5741,
-                  "ScaleY": 0.5539
+                  "ScaleY": 0.5441
                 },
                 "CColor": {},
                 "IconVisible": false,
@@ -327,10 +329,10 @@
                   "X": 0.4938,
                   "Y": 0.2614
                 },
-                "LeftMargin": 101.6705,
-                "RightMargin": 103.3295,
-                "TopMargin": 393.4136,
-                "BottomMargin": 171.5864,
+                "LeftMargin": 101.67,
+                "RightMargin": 103.33,
+                "TopMargin": 393.41,
+                "BottomMargin": 171.59,
                 "Tag": 65,
                 "ActionTag": 529339337,
                 "Size": {
@@ -393,6 +395,82 @@
             },
             "Name": "boardSprite",
             "ctype": "SpriteObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Disable.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Press.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Normal.png",
+              "Plist": ""
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 16,
+            "Scale9Height": 14,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 801.4596,
+              "Y": 93.1742
+            },
+            "Scale": {
+              "ScaleX": 3.8133,
+              "ScaleY": 1.5135
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.8349,
+              "Y": 0.1456
+            },
+            "PreSize": {
+              "X": 0.0479,
+              "Y": 0.0562
+            },
+            "LeftMargin": 778.4596,
+            "RightMargin": 135.5404,
+            "TopMargin": 528.8258,
+            "BottomMargin": 75.1742,
+            "Tag": 17,
+            "ActionTag": -1984390442,
+            "Size": {
+              "X": 46.0,
+              "Y": 36.0
+            },
+            "Alpha": 0,
+            "Name": "btnRoll",
+            "ctype": "ButtonObjectData"
           }
         ],
         "Size": {
@@ -403,6 +481,9 @@
         "ctype": "SingleNodeObjectData"
       },
       "UsedResources": [
+        "Default/Button_Disable.png",
+        "Default/Button_Normal.png",
+        "Default/Button_Press.png",
         "Fonts/neuropol x rg.ttf",
         "Images/button.png",
         "Images/Dice1.png",

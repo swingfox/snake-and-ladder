@@ -1,22 +1,5 @@
 <UserData Version="3.10.0.0">
   <Properties>
-    <Item Key="TabsParamsKey">
-      <Value ctype="TabsInfo">
-        <OpenedDocuments>
-          <FilePathData Path="MainScene.csd" />
-          <FilePathData Path="PlayScene.csd" />
-          <FilePathData Path="HomeBackgroundLayer.csd" />
-          <FilePathData Path="InstructionScene.csd" />
-          <FilePathData Path="TwoPlayer.csd" />
-          <FilePathData Path="OnePlayer.csd" />
-          <FilePathData Path="CongratulationsScene.csd" />
-          <FilePathData Path="GameDevelopersScene.csd" />
-          <FilePathData Path="GameOverScene.csd" />
-          <FilePathData Path="HallOfFame.csd" />
-        </OpenedDocuments>
-        <ActiveDocument Path="MainScene.csd" />
-      </Value>
-    </Item>
     <Item Key="CocosRecentOperation">
       <Value ctype="CocosRecentOperation">
         <LastPublishType Value="Resource" />
@@ -40,6 +23,17 @@
         <IsDebugKeystore Value="True" />
         <EnableSourceMap Value="False" />
         <EnableHTML5Advanced Value="False" />
+      </Value>
+    </Item>
+    <Item Key="TabsParamsKey">
+      <Value ctype="TabsInfo">
+        <OpenedDocuments>
+          <FilePathData Path="MainScene.csd" />
+          <FilePathData Path="PlayScene.csd" />
+          <FilePathData Path="OptionsScene.csd" />
+          <FilePathData Path="HallOfFame.csd" />
+        </OpenedDocuments>
+        <ActiveDocument Path="HallOfFame.csd" />
       </Value>
     </Item>
   </Properties>

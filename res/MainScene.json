@@ -373,7 +373,7 @@
               },
               {
                 "FontSize": 24,
-                "ButtonText": "Credits   ",
+                "ButtonText": "Hall of Fame   ",
                 "FontResource": {
                   "Type": "Normal",
                   "Path": "Fonts/neuropol x rg.ttf",
@@ -448,7 +448,7 @@
                   "X": 361.0,
                   "Y": 161.0
                 },
-                "Name": "btnCredits",
+                "Name": "btnHallofFame",
                 "ctype": "ButtonObjectData"
               }
             ],

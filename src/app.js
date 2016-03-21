@@ -5,7 +5,7 @@ var SnakeAndLadderLayer = cc.Layer.extend({
     btnMultiplayer:null,
     btnOptions:null,
     btnInstructions:null,
-    btnCredits:null,
+    btnHallofFame:null,
     homeSprite:null,
     menu:null,
     ctor:function () {
@@ -51,7 +51,7 @@ var SnakeAndLadderLayer = cc.Layer.extend({
         btnMultiplayer = menu.getChildByName("btnMultiPlayer");
         btnOptions = menu.getChildByName("btnOptions");
         btnInstructions = menu.getChildByName("btnInstructions");
-        btnCredits = menu.getChildByName("btnCredits");
+        btnHallofFame = menu.getChildByName("btnHallofFame");
         cc.log("INITIALIZED BUTTONS " +btnSingle);
         this.initializeListeners();
     },
@@ -60,7 +60,7 @@ var SnakeAndLadderLayer = cc.Layer.extend({
         btnMultiplayer.addTouchEventListener(this.multiPlayerScene,this);
         btnOptions.addTouchEventListener(this.optionsScene,this);
         btnInstructions.addTouchEventListener(this.instructionsScene,this);
-        btnCredits.addTouchEventListener(this.creditsScene,this);
+        btnHallofFame.addTouchEventListener(this.creditsScene,this);
     },
     singlePlayerScene:function(){
         cc.director.pushScene(new SinglePlayerScene());
@@ -71,6 +71,7 @@ var SnakeAndLadderLayer = cc.Layer.extend({
         cc.log("MULTI PLAYER");
     },
     optionsScene:function(){
+         cc.director.pushScene(new GameOptionScene());
         cc.log("OPTIONS");
     },
     instructionsScene:function(){
@@ -78,7 +79,7 @@ var SnakeAndLadderLayer = cc.Layer.extend({
         cc.log("INSTRUCTION");
     },
     creditsScene:function(){
-        cc.director.pushScene(new CreditsScene());
+        cc.director.pushScene(new HallOfFameScene());
         cc.log("CREDITS");
     }
 });

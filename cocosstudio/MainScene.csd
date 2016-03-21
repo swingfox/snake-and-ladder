@@ -73,7 +73,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="btnCredits" CanEdit="False" ActionTag="-309342468" Tag="54" IconVisible="False" LeftMargin="56.3239" RightMargin="862.6761" TopMargin="490.0025" BottomMargin="68.9975" TouchEnable="True" FontSize="24" ButtonText="Credits   " Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="331" Scale9Height="139" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+              <AbstractNodeData Name="btnHallofFame" CanEdit="False" ActionTag="-309342468" Tag="54" IconVisible="False" LeftMargin="56.3239" RightMargin="862.6761" TopMargin="490.0025" BottomMargin="68.9975" TouchEnable="True" FontSize="24" ButtonText="Hall of Fame   " Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="331" Scale9Height="139" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="361.0000" Y="161.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="236.8239" Y="149.4975" />

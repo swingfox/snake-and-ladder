@@ -1,7 +1,7 @@
 {
-  "ID": "7c33c399-0c74-4f06-b1f6-540a803d4ea8",
+  "ID": "c5a9fb6f-8a63-4921-9ae7-26a272181d33",
   "Version": "3.10.0.0",
-  "Name": "HallOfFame",
+  "Name": "OptionsScene",
   "Content": {
     "Content": {
       "Animation": {
@@ -12,12 +12,12 @@
       },
       "AnimationList": [],
       "ObjectData": {
-        "Tag": 99,
+        "Tag": 18,
         "Children": [
           {
             "FileData": {
               "Type": "Normal",
-              "Path": "Images/hall of fame.png",
+              "Path": "Images/game option.png",
               "Plist": ""
             },
             "BlendFunc": {
@@ -29,34 +29,34 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 479.1357,
-              "Y": 318.2916
+              "X": 479.5717,
+              "Y": 320.9515
             },
             "Scale": {
-              "ScaleX": 0.7471,
-              "ScaleY": 0.8876
+              "ScaleX": 0.7447,
+              "ScaleY": 0.8934
             },
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.4991,
-              "Y": 0.4973
+              "X": 0.4996,
+              "Y": 0.5015
             },
             "PreSize": {
               "X": 1.3333,
               "Y": 1.125
             },
-            "LeftMargin": -160.8643,
-            "RightMargin": -159.1357,
-            "TopMargin": -38.2916,
-            "BottomMargin": -41.7084,
-            "Tag": 100,
-            "ActionTag": 1138818670,
+            "LeftMargin": -160.4283,
+            "RightMargin": -159.5717,
+            "TopMargin": -40.9515,
+            "BottomMargin": -39.0485,
+            "Tag": 19,
+            "ActionTag": 1528598072,
             "Size": {
               "X": 1280.0,
               "Y": 720.0
             },
-            "Name": "hallOfFameSprite",
+            "Name": "optionSprite",
             "ctype": "SpriteObjectData"
           },
           {
@@ -104,29 +104,105 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 822.4766,
-              "Y": 187.3171
+              "X": 608.8587,
+              "Y": 66.6835
             },
             "Scale": {
-              "ScaleX": 2.7315,
-              "ScaleY": 1.5794
+              "ScaleX": 2.4989,
+              "ScaleY": 1.1888
             },
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.8567,
-              "Y": 0.2927
+              "X": 0.6342,
+              "Y": 0.1042
             },
             "PreSize": {
               "X": 0.0479,
               "Y": 0.0562
             },
-            "LeftMargin": 799.4766,
-            "RightMargin": 114.5234,
-            "TopMargin": 434.6829,
-            "BottomMargin": 169.3171,
-            "Tag": 24,
-            "ActionTag": -1503565041,
+            "LeftMargin": 585.8587,
+            "RightMargin": 328.1413,
+            "TopMargin": 555.3165,
+            "BottomMargin": 48.6835,
+            "Tag": 20,
+            "ActionTag": 1299201215,
+            "Size": {
+              "X": 46.0,
+              "Y": 36.0
+            },
+            "Alpha": 0,
+            "Name": "btnCredits",
+            "ctype": "ButtonObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Disable.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Press.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Normal.png",
+              "Plist": ""
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 16,
+            "Scale9Height": 14,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 820.5593,
+              "Y": 243.5558
+            },
+            "Scale": {
+              "ScaleX": 3.9735,
+              "ScaleY": 1.6252
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.8547,
+              "Y": 0.3806
+            },
+            "PreSize": {
+              "X": 0.0479,
+              "Y": 0.0562
+            },
+            "LeftMargin": 797.5593,
+            "RightMargin": 116.4407,
+            "TopMargin": 378.4442,
+            "BottomMargin": 225.5558,
+            "Tag": 21,
+            "ActionTag": 955037760,
             "Size": {
               "X": 46.0,
               "Y": 36.0
@@ -147,7 +223,7 @@
         "Default/Button_Disable.png",
         "Default/Button_Normal.png",
         "Default/Button_Press.png",
-        "Images/hall of fame.png"
+        "Images/game option.png"
       ],
       "ctype": "GameFileData"
     }

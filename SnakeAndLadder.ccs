@@ -44,6 +44,7 @@
         <Project Name="OnePlayer.csd" Type="Scene" />
         <Project Name="PlayScene.csd" Type="Scene" />
         <Project Name="TwoPlayer.csd" Type="Scene" />
+        <Project Name="OptionsScene.csd" Type="Scene" />
       </RootFolder>
     </Group>
   </SolutionFolder>
