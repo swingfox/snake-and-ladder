@@ -21,6 +21,7 @@
         "src/playScene.js",
         "src/gameOverScene.js",
         "src/gameOptionScene.js",
-        "src/hallOfFame.js"
+        "src/hallOfFame.js",
+        "src/IntervalTest.js"
     ]
 }

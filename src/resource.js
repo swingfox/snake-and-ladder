@@ -18,7 +18,16 @@ var res = {
     dice2 : "res/Images/dice2.png",
     dice3 : "res/Images/dice3.png",
     dice4 : "res/Images/dice4.png",
-    dice5 : "res/Images/dice5.png"
+    dice5 : "res/Images/dice5.png",
+    ClickPlay : "res/Music/Click.mp3",
+    MovePlay : "res/Music/Move.mp3",
+    ClickRadioPlay : "res/Music/ClickRadio.mp3",
+    BackgroundPlay : "res/Music/BackgroundMusic.wav",
+    ChutesLongPlay : "res/Music/ChutesLong.mp3",
+    ChutesShortPlay : "res/Music/ChutesShort.mp3",
+    StairPlay : "res/Music/Stair.mp3",
+    StairShort : "res/Music/StairShort.mp3",
+    font : "res/Fonts/neuropol x rg.ttf"
 };
 
 var g_resources = [];

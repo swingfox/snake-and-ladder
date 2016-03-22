@@ -25,16 +25,5 @@
         <EnableHTML5Advanced Value="False" />
       </Value>
     </Item>
-    <Item Key="TabsParamsKey">
-      <Value ctype="TabsInfo">
-        <OpenedDocuments>
-          <FilePathData Path="MainScene.csd" />
-          <FilePathData Path="PlayScene.csd" />
-          <FilePathData Path="OptionsScene.csd" />
-          <FilePathData Path="HallOfFame.csd" />
-        </OpenedDocuments>
-        <ActiveDocument Path="HallOfFame.csd" />
-      </Value>
-    </Item>
   </Properties>
 </UserData>

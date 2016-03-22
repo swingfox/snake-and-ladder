@@ -3,8 +3,10 @@ var TwoPlayerLayer = cc.Layer.extend({
 	btnBack:null,
 	btnNext:null,
 	twoPlayer:null,
-	playerOne:null,
-	playerTwo:null,
+	playerOneName:null,
+	playerTwoName:null,
+	textField1:null,
+	textField2:null,
 	ctor:function () {
 		this._super();
 		this.init();
@@ -14,15 +16,110 @@ var TwoPlayerLayer = cc.Layer.extend({
 		twoPlayer = scene.getChildByName("playersSprite");
 		this.initializeButtons();
 		this.addChild(scene);
+		btnNext.setVisible(false); 
+		var size = cc.winSize;
+		this.playerOneName="";
+		this.playerTwoName="";
+
+		this.textField1 = new ccui.TextField();
+		this.textField1.setTouchEnabled(true);
+		this.textField1.fontName = res.font;
+		this.textField1.placeHolder = "Name";
+		this.textField1.fontSize = 30;
+		this.textField1.x = 450;
+		this.textField1.y = 430;
+		this.textField1.setLocalZOrder(100);
+		this.textField1.setMaxLengthEnabled(true);
+		this.textField1.setMaxLength(12);
+		this.textField1.addEventListener(this.textFieldEvent1,this);
+		this.addChild(this.textField1);
+
+		this.textField2 = new ccui.TextField();
+		this.textField2.setTouchEnabled(true);
+		this.textField2.fontName = res.font;
+		this.textField2.placeHolder = "Name";
+		this.textField2.fontSize = 30;
+		this.textField2.x = 450;
+		this.textField2.y = 310;
+		this.textField2.setLocalZOrder(100);
+		this.textField2.setMaxLengthEnabled(true);
+		this.textField2.setMaxLength(12);
+		this.textField2.addEventListener(this.textFieldEvent2,this);
+		this.addChild(this.textField2);
+
+
+	},
+	textFieldEvent1:function(sender,type){
+		switch(type){
+			case ccui.TextField.EVENT_ATTACH_WITH_IME:
+			cc.log("Activate");
+			break;
+			case ccui.TextField.EVENT_DETACH_WITH_IME:
+			cc.log("Deactivate");
+			break;
+			case ccui.TextField.EVENT_INSERT_TEXT:
+			this.playerOneName = this.textField1.string;
+			cc.log(this.playerOneName);
+			if(this.playerOneName!=""){
+				if(this.playerTwoName!="")
+					btnNext.setVisible(true); 
+			}
+			else
+				btnNext.setVisible(false); 
+			break;
+			case ccui.TextField.EVENT_DELETE_BACKWARD:
+			this.playerOneName = this.textField1.string;
+			cc.log(this.playerOneName);
+			if(this.playerOneName!=""){
+				if(this.playerTwoName!="")
+					btnNext.setVisible(true); 
+			}
+			else
+				btnNext.setVisible(false); 
+		
+			if(this.playerOneName.length==0) btnNext.setVisible(false);
+			if(this.playerTwoName.length==0) btnNext.setVisible(false);
+			break;
+		}
+	},
+	textFieldEvent2:function(sender,type){
+		switch(type){
+			case ccui.TextField.EVENT_ATTACH_WITH_IME:
+			cc.log("Activate");
+			break;
+			case ccui.TextField.EVENT_DETACH_WITH_IME:
+			cc.log("Deactivate");
+			break;
+			case ccui.TextField.EVENT_INSERT_TEXT:
+			this.playerTwoName = this.textField2.string;
+			cc.log(this.playerTwoName);
+			if(this.playerOneName!=""){
+				if(this.playerTwoName!="")
+					btnNext.setVisible(true); 
+			}
+			else
+				btnNext.setVisible(false); 
+			case ccui.TextField.EVENT_DELETE_BACKWARD:
+			this.playerTwoName = this.textField2.string;
+			cc.log(this.playerTwoName);
+			if(this.playerOneName!=""){
+				if(this.playerTwoName!="")
+					btnNext.setVisible(true); 
+			}
+			else
+				btnNext.setVisible(false); 
+
+			if(this.playerOneName.length==0) btnNext.setVisible(false);
+			if(this.playerTwoName.length==0) btnNext.setVisible(false);
+			break;
+		}
 	},
 	initializeButtons:function(){
 		btnBack = twoPlayer.getChildByName("btnBack");
 		btnNext = twoPlayer.getChildByName("btnNext");
 		playerOne = twoPlayer.getChildByName("playerOneSprite");
 		playerTwo = twoPlayer.getChildByName("playerTwoSprite");
-	//	var editBoxOne = cc.EditBox(cc.Size(12,12),playerOne);
-	//	editBoxOne.setName("box1");
-	//	this.addChild(editBoxOne,100);
+
 		this.initializeListener();
 		cc.log("INITIALIZED BUTTONS");
 	},
@@ -34,7 +131,7 @@ var TwoPlayerLayer = cc.Layer.extend({
 		cc.director.popScene();
 	},
 	goNext:function(){
-		cc.director.pushScene(new PlayScene());
+		cc.director.pushScene(new PlayScene("TWO_PLAYER",this.playerOneName,this.playerTwoName));
 	}
 });
 

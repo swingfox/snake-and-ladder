@@ -44,7 +44,15 @@ var SnakeAndLadderLayer = cc.Layer.extend({
          this.initializeButtons();
          
          this.addChild(homeSprite);
+         if(!cc.audioEngine.isMusicPlaying())
+         this.playSong();
 
+    },
+    playSong:function(){
+        cc.audioEngine.playMusic(res.BackgroundPlay, true);
+    },
+    stopSong:function(){
+        cc.audioEngine.stopMusic();
     },
     initializeButtons:function(){
         btnSingle = menu.getChildByName("btnSingle");
@@ -64,23 +72,18 @@ var SnakeAndLadderLayer = cc.Layer.extend({
     },
     singlePlayerScene:function(){
         cc.director.pushScene(new SinglePlayerScene());
-        cc.log("SINGLE PLAYER");
     },
     multiPlayerScene:function(){
         cc.director.pushScene(new TwoPlayerScene());
-        cc.log("MULTI PLAYER");
     },
     optionsScene:function(){
          cc.director.pushScene(new GameOptionScene());
-        cc.log("OPTIONS");
     },
     instructionsScene:function(){
         cc.director.pushScene(new InstructionScene());
-        cc.log("INSTRUCTION");
     },
     creditsScene:function(){
         cc.director.pushScene(new HallOfFameScene());
-        cc.log("CREDITS");
     }
 });
 

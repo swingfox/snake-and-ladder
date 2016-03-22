@@ -7,7 +7,6 @@
           <TTF Name="neuropol x rg.ttf" />
         </Folder>
         <Folder Name="Images">
-          <Image Name="1-Recovered.png" />
           <Image Name="2.png" />
           <Image Name="board.png" />
           <Image Name="button.png" />
@@ -15,6 +14,7 @@
           <Image Name="chutes_blue.png" />
           <Image Name="chutes_green.png" />
           <Image Name="congrats.png" />
+          <Image Name="congratulations.png" />
           <Image Name="credits.png" />
           <Image Name="Dice1.png" />
           <Image Name="dice2.png" />
@@ -30,6 +30,8 @@
           <Image Name="menuBackground.png" />
           <Image Name="pause.png" />
           <Image Name="question board.png" />
+          <Image Name="radioButtonChecked.png" />
+          <Image Name="radioButtonEmpty.png" />
           <Image Name="result.png" />
           <Image Name="two.png" />
           <Image Name="Wood.png" />
@@ -42,9 +44,19 @@
         <Project Name="InstructionScene.csd" Type="Scene" />
         <Project Name="MainScene.csd" Type="Scene" />
         <Project Name="OnePlayer.csd" Type="Scene" />
+        <Project Name="OptionsScene.csd" Type="Scene" />
         <Project Name="PlayScene.csd" Type="Scene" />
         <Project Name="TwoPlayer.csd" Type="Scene" />
-        <Project Name="OptionsScene.csd" Type="Scene" />
+        <Folder Name="Music">
+          <Audio Name="BackgroundMusic.wav" />
+          <Audio Name="Chutes long.mp3" />
+          <Audio Name="Chutes short.mp3" />
+          <Audio Name="Click radio.mp3" />
+          <Audio Name="Click.mp3" />
+          <Audio Name="move.mp3" />
+          <Audio Name="Stair.mp3" />
+          <Audio Name="Stairshort.mp3" />
+        </Folder>
       </RootFolder>
     </Group>
   </SolutionFolder>

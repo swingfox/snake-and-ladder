@@ -18,9 +18,17 @@ var PlayLayer = cc.Layer.extend({
 	diceSprite:null,
 	btnRoll:null,
 	deltaX:100,
-	ctor:function(){
+	rollOnce:false,
+	_playerOneName:null,
+	_playerTwoName:null,
+	ctor:function(typeOfGame,playerOneName,playerTwoName){
 		this._super();
+		this._playerOneName = playerOneName;
+		this._playerTwoName = playerTwoName;
 		this.init();
+		cc.log("TYPE OF GAME: " + typeOfGame);
+		cc.log("PLAYER TWO: " + this._playerTwoName);
+
 	},
 	readTextFile:function(file)
 	{
@@ -42,14 +50,18 @@ var PlayLayer = cc.Layer.extend({
     		cc.log(data); //data is the json object
 		});
 		// You should do a check before using it
-if (cc.sys.isNative) {
-    jsb.fileUtils;
+	if (cc.sys.isNative) {
+	    jsb.fileUtils;
 		jsb.fileUtils.writeStringToFile("TRY!","text2.txt");
 	}
 	else
 		cc.log("NOT SUPPORTED!");
 	},
+	computer:function(){
+		this.rollTheDice();
+	},
 	init:function(){
+		
 		scene = ccs.load(res.PlayScene).node;
 		woodSprite = scene.getChildByName("woodSprite");
 		timeText = woodSprite.getChildByName("timeText");
@@ -75,9 +87,11 @@ if (cc.sys.isNative) {
 		this.firstPlayer.setOpacity(255);
 		this.addChild(this.firstPlayer, 2);
 
-    var rotate1 = cc.rotateBy(2, 360);
+    	var rotate1 = cc.rotateBy(1, 360);
     	var rotate2 = cc.rotateBy(2, 360);
-   	
+
+    	turnText.setString(this._playerOneName);
+   		
 
     	this.secondPlayer = cc.Sprite.create();
 		this.secondPlayer.setColor(cc.color(255,255,255));
@@ -100,9 +114,9 @@ if (cc.sys.isNative) {
     this.addChild(ebox,1);*/
 
         var secondAction = cc.moveTo(2,cc.p(100,100));
-      	var firstAction = cc.moveTo(2,cc.p(50,0));
-		 var sequenceOne = cc.Sequence.create(rotate1);
-        this.firstPlayer.runAction(rotate1);
+      	var firstAction = cc.moveBy(0.5,cc.p(70,0));
+		 var sequenceOne = cc.Sequence.create(firstAction,rotate1);
+        this.firstPlayer.runAction(sequenceOne.repeatForever());
 
        
     	cc.director.getScheduler().scheduleCallbackForTarget(this,function(){
@@ -120,37 +134,46 @@ if (cc.sys.isNative) {
 	          },1);
 	         
 	},
+	singlePlayer:function(){
+
+	},
+	doublePlayer:function(){
+
+	},
 	rollTheDice:function(){
 			//var rotate1 = cc.rotateBy(2, 360);
-			
-		var random =this.getRandomBySix();
-	          cc.log("RANDOM: " + random);
-	          var clone = new cc.Sprite(diceSprite);
-	          cc.log("scale X: " + diceSprite.getScaleX() + " " + "scale Y: " + diceSprite.getScaleY());
-	         diceSprite.removeFromParent(true);
-	         switch(random){
-	         	case 1:
-	         	diceSprite = diceSprite1;
-	         	break;
-	         	case 2:
-	         	diceSprite = diceSprite2;
-	         	break;
-	         	case 3:
-	         	diceSprite = diceSprite3;
-	         	break;
-	         	case 4:
-	         	diceSprite = diceSprite4;
-	         	break;
-	         	case 5:
-	         	diceSprite = diceSprite5;
-	         	break;
-	         }
-	         diceSprite.setScaleX(0.53);
-	         diceSprite.setScaleY(0.49);
-	         diceSprite.setPosition(805,216);
-		  	 this.addChild(diceSprite);
-	        
-       
+		if(this.rollOnce==false){
+			var random =this.getRandomBySix();
+		          cc.log("RANDOM: " + random);
+		          var clone = new cc.Sprite(diceSprite);
+		          cc.log("scale X: " + diceSprite.getScaleX() + " " + "scale Y: " + diceSprite.getScaleY());
+		         diceSprite.removeFromParent(true);
+		         switch(random){
+		         	case 1:
+		         	diceSprite = diceSprite1;
+		         	break;
+		         	case 2:
+		         	diceSprite = diceSprite2;
+		         	break;
+		         	case 3:
+		         	diceSprite = diceSprite3;
+		         	break;
+		         	case 4:
+		         	diceSprite = diceSprite4;
+		         	break;
+		         	case 5:
+		         	diceSprite = diceSprite5;
+		         	break;
+		         }
+		         diceSprite.setScaleX(0.53);
+		         diceSprite.setScaleY(0.49);
+		         diceSprite.setPosition(805,216);
+			  	 this.addChild(diceSprite);
+			  	 this.rollOnce = true;
+       	}
+
+       	else 
+       		this.rollOnce = false;
 	},
 	getRandomBySix:function(){
         return Math.floor(((Math.random() * 10)%6)+1);
@@ -213,9 +236,12 @@ if (cc.sys.isNative) {
 
 
 var PlayScene = cc.Scene.extend({
+	ctor:function (typeOfGame,playerOneName,playerTwoName) {
+    		this._super();
+    		var layer = new PlayLayer(typeOfGame,playerOneName,playerTwoName);
+        	this.addChild(layer);
+    },
 	onEnter:function () {
         this._super();
-        var layer = new PlayLayer();
-        this.addChild(layer);
     }
 });

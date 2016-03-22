@@ -210,6 +210,510 @@
             "Alpha": 0,
             "Name": "btnBack",
             "ctype": "ButtonObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Disable.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Press.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Normal.png",
+              "Plist": ""
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 16,
+            "Scale9Height": 14,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 152.3472,
+              "Y": 312.8703
+            },
+            "Scale": {
+              "ScaleX": 3.8337,
+              "ScaleY": 1.869
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.1587,
+              "Y": 0.4889
+            },
+            "PreSize": {
+              "X": 0.0479,
+              "Y": 0.0562
+            },
+            "LeftMargin": 129.3472,
+            "RightMargin": 784.6528,
+            "TopMargin": 309.1297,
+            "BottomMargin": 294.8703,
+            "Tag": 12,
+            "ActionTag": 1745050711,
+            "Size": {
+              "X": 46.0,
+              "Y": 36.0
+            },
+            "Alpha": 0,
+            "Name": "btnDifficulties",
+            "ctype": "ButtonObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Disable.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Press.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Normal.png",
+              "Plist": ""
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 16,
+            "Scale9Height": 14,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 153.6571,
+              "Y": 210.7556
+            },
+            "Scale": {
+              "ScaleX": 3.8337,
+              "ScaleY": 1.869
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.1601,
+              "Y": 0.3293
+            },
+            "PreSize": {
+              "X": 0.0479,
+              "Y": 0.0562
+            },
+            "LeftMargin": 130.6571,
+            "RightMargin": 783.3429,
+            "TopMargin": 411.2444,
+            "BottomMargin": 192.7556,
+            "Tag": 13,
+            "ActionTag": -2004084317,
+            "Size": {
+              "X": 46.0,
+              "Y": 36.0
+            },
+            "Alpha": 0,
+            "Name": "btnSounds",
+            "ctype": "ButtonObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Disable.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Press.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Normal.png",
+              "Plist": ""
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 16,
+            "Scale9Height": 14,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 152.3601,
+              "Y": 112.1167
+            },
+            "Scale": {
+              "ScaleX": 3.8337,
+              "ScaleY": 1.869
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.1587,
+              "Y": 0.1752
+            },
+            "PreSize": {
+              "X": 0.0479,
+              "Y": 0.0562
+            },
+            "LeftMargin": 129.3601,
+            "RightMargin": 784.6399,
+            "TopMargin": 509.8833,
+            "BottomMargin": 94.1167,
+            "Tag": 14,
+            "ActionTag": -753327984,
+            "Size": {
+              "X": 46.0,
+              "Y": 36.0
+            },
+            "Alpha": 0,
+            "Name": "btnMusic",
+            "ctype": "ButtonObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "Images/radioButtonEmpty.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 344.3567,
+              "Y": 200.9591
+            },
+            "Scale": {
+              "ScaleX": 0.0374,
+              "ScaleY": 0.0451
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.3587,
+              "Y": 0.314
+            },
+            "PreSize": {
+              "X": 0.625,
+              "Y": 0.9375
+            },
+            "LeftMargin": 44.3567,
+            "RightMargin": 315.6433,
+            "TopMargin": 139.0409,
+            "BottomMargin": -99.0409,
+            "Tag": 52,
+            "ActionTag": 1374186929,
+            "Size": {
+              "X": 600.0,
+              "Y": 600.0
+            },
+            "Alpha": 0,
+            "Name": "onSounds",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "Images/radioButtonChecked.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 344.4265,
+              "Y": 303.1334
+            },
+            "Scale": {
+              "ScaleX": 0.0725,
+              "ScaleY": 0.0878
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.3588,
+              "Y": 0.4736
+            },
+            "PreSize": {
+              "X": 0.3125,
+              "Y": 0.4688
+            },
+            "LeftMargin": 194.4265,
+            "RightMargin": 465.5735,
+            "TopMargin": 186.8666,
+            "BottomMargin": 153.1334,
+            "Tag": 55,
+            "ActionTag": -841130182,
+            "Size": {
+              "X": 300.0,
+              "Y": 300.0
+            },
+            "Alpha": 0,
+            "Name": "onEasy",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "Images/radioButtonEmpty.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 520.7771,
+              "Y": 303.2246
+            },
+            "Scale": {
+              "ScaleX": 0.0374,
+              "ScaleY": 0.0451
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5425,
+              "Y": 0.4738
+            },
+            "PreSize": {
+              "X": 0.625,
+              "Y": 0.9375
+            },
+            "LeftMargin": 220.7771,
+            "RightMargin": 139.2229,
+            "TopMargin": 36.7754,
+            "BottomMargin": 3.2246,
+            "Tag": 56,
+            "ActionTag": 1393665182,
+            "Size": {
+              "X": 600.0,
+              "Y": 600.0
+            },
+            "Alpha": 0,
+            "Name": "onHard",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "Images/radioButtonChecked.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 520.7054,
+              "Y": 202.1906
+            },
+            "Scale": {
+              "ScaleX": 0.0725,
+              "ScaleY": 0.0878
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5424,
+              "Y": 0.3159
+            },
+            "PreSize": {
+              "X": 0.3125,
+              "Y": 0.4688
+            },
+            "LeftMargin": 370.7054,
+            "RightMargin": 289.2946,
+            "TopMargin": 287.8094,
+            "BottomMargin": 52.1906,
+            "Tag": 57,
+            "ActionTag": -460443419,
+            "Size": {
+              "X": 300.0,
+              "Y": 300.0
+            },
+            "Alpha": 0,
+            "Name": "offSounds",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "Images/radioButtonEmpty.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 344.1066,
+              "Y": 116.4112
+            },
+            "Scale": {
+              "ScaleX": 0.0374,
+              "ScaleY": 0.0451
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.3584,
+              "Y": 0.1819
+            },
+            "PreSize": {
+              "X": 0.625,
+              "Y": 0.9375
+            },
+            "LeftMargin": 44.1066,
+            "RightMargin": 315.8934,
+            "TopMargin": 223.5888,
+            "BottomMargin": -183.5888,
+            "Tag": 58,
+            "ActionTag": 917427399,
+            "Size": {
+              "X": 600.0,
+              "Y": 600.0
+            },
+            "Alpha": 0,
+            "Name": "onMusic",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "Images/radioButtonChecked.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 770,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 522.2222,
+              "Y": 116.3089
+            },
+            "Scale": {
+              "ScaleX": 0.0725,
+              "ScaleY": 0.0878
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.544,
+              "Y": 0.1817
+            },
+            "PreSize": {
+              "X": 0.3125,
+              "Y": 0.4688
+            },
+            "LeftMargin": 372.2222,
+            "RightMargin": 287.7778,
+            "TopMargin": 373.6911,
+            "BottomMargin": -33.6911,
+            "Tag": 59,
+            "ActionTag": -1150315707,
+            "Size": {
+              "X": 300.0,
+              "Y": 300.0
+            },
+            "Alpha": 0,
+            "Name": "offMusic",
+            "ctype": "SpriteObjectData"
           }
         ],
         "Size": {
@@ -223,7 +727,9 @@
         "Default/Button_Disable.png",
         "Default/Button_Normal.png",
         "Default/Button_Press.png",
-        "Images/game option.png"
+        "Images/game option.png",
+        "Images/radioButtonChecked.png",
+        "Images/radioButtonEmpty.png"
       ],
       "ctype": "GameFileData"
     }
