@@ -36,17 +36,6 @@
           <Image Name="two.png" />
           <Image Name="Wood.png" />
         </Folder>
-        <Project Name="CongratulationsScene.csd" Type="Scene" />
-        <Project Name="GameDevelopersScene.csd" Type="Scene" />
-        <Project Name="GameOverScene.csd" Type="Scene" />
-        <Project Name="HallOfFame.csd" Type="Scene" />
-        <Project Name="HomeBackgroundLayer.csd" Type="Layer" />
-        <Project Name="InstructionScene.csd" Type="Scene" />
-        <Project Name="MainScene.csd" Type="Scene" />
-        <Project Name="OnePlayer.csd" Type="Scene" />
-        <Project Name="OptionsScene.csd" Type="Scene" />
-        <Project Name="PlayScene.csd" Type="Scene" />
-        <Project Name="TwoPlayer.csd" Type="Scene" />
         <Folder Name="Music">
           <Audio Name="BackgroundMusic.wav" />
           <Audio Name="Chutes long.mp3" />
@@ -57,6 +46,18 @@
           <Audio Name="Stair.mp3" />
           <Audio Name="Stairshort.mp3" />
         </Folder>
+        <Project Name="CongratulationsScene.csd" Type="Scene" />
+        <Project Name="GameDevelopersScene.csd" Type="Scene" />
+        <Project Name="GameOverScene.csd" Type="Scene" />
+        <Project Name="HallOfFame.csd" Type="Scene" />
+        <Project Name="HomeBackgroundLayer.csd" Type="Layer" />
+        <Project Name="InstructionScene.csd" Type="Scene" />
+        <Project Name="MainScene.csd" Type="Scene" />
+        <Project Name="OnePlayer.csd" Type="Scene" />
+        <Project Name="OptionsScene.csd" Type="Scene" />
+        <Project Name="PlayScene.csd" Type="Scene" />
+        <Project Name="QuestionScene.csd" Type="Scene" />
+        <Project Name="TwoPlayer.csd" Type="Scene" />
       </RootFolder>
     </Group>
   </SolutionFolder>

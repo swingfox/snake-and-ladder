@@ -14,6 +14,7 @@ var res = {
     GameOptionScene : "res/OptionsScene.json",
     GameOverScene : "res/GameOverScene.json",
     HallOfFameScene : "res/HallOfFame.json",
+    QuestionScene : "res/QuestionScene.json",
     dice1 : "res/Images/Dice1.png",
     dice2 : "res/Images/dice2.png",
     dice3 : "res/Images/dice3.png",

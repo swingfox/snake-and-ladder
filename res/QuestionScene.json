@@ -1,0 +1,77 @@
+{
+  "ID": "47e613da-6811-4894-b282-80b17c048881",
+  "Version": "3.10.0.0",
+  "Name": "QuestionScene",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 23,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "Images/question board.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 481.1321,
+              "Y": 319.3234
+            },
+            "Scale": {
+              "ScaleX": 0.747,
+              "ScaleY": 0.8824
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5012,
+              "Y": 0.4989
+            },
+            "PreSize": {
+              "X": 1.3333,
+              "Y": 1.125
+            },
+            "LeftMargin": -158.8679,
+            "RightMargin": -161.1321,
+            "TopMargin": -39.3234,
+            "BottomMargin": -40.6766,
+            "Tag": 24,
+            "ActionTag": 534871878,
+            "Size": {
+              "X": 1280.0,
+              "Y": 720.0
+            },
+            "Name": "questionSprite",
+            "ctype": "SpriteObjectData"
+          }
+        ],
+        "Size": {
+          "X": 960.0,
+          "Y": 640.0
+        },
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "Images/question board.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Scene"
+}

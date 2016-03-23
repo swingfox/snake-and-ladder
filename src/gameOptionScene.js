@@ -17,6 +17,7 @@ var GameOptionLayer = cc.Layer.extend({
 	onHoldMusic:false,
 	onHoldSounds:false,
 	onHoldDifficulty:false,
+	_isMusicStopped:null,
 	ctor:function () {
 		this._super();
 		this.init();
@@ -55,7 +56,7 @@ var GameOptionLayer = cc.Layer.extend({
 		offMusic = scene.getChildByName("offMusic");
 	},
 	goBack:function(){
-		cc.director.popScene();
+		cc.director.runScene(new SnakeAndLadderScene(this._isMusicStopped));
 	},
 	credits:function(){
 		cc.director.pushScene(new CreditsScene());
@@ -66,8 +67,11 @@ var GameOptionLayer = cc.Layer.extend({
 				onMusic.setOpacity(255);
 				offMusic.setOpacity(255);
 				this.music=true;
-				if(cc.audioEngine.isMusicPlaying())
+				if(cc.audioEngine.isMusicPlaying()){
 				cc.audioEngine.pauseMusic();
+				this._isMusicStopped = true;
+				cc.log("MUSIC STOPPED: " +this._isMusicStopped);
+				}
 			}
 			else{
 				onMusic.setOpacity(0);
@@ -125,9 +129,13 @@ var GameOptionLayer = cc.Layer.extend({
 });
 
 var GameOptionScene = cc.Scene.extend({
+	ctor:function(){
+		this._super();
+		var layer = new GameOptionLayer();
+        this.addChild(layer);
+	},
   	onEnter:function () {
         this._super();
-        var layer = new GameOptionLayer();
-        this.addChild(layer);
+        
     }
 });
