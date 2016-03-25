@@ -19,51 +19,18 @@
                 <PreSize X="0.2074" Y="0.0301" />
                 <FontResource Type="Normal" Path="Fonts/neuropol x rg.ttf" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="turnSprite" CanEdit="False" ActionTag="-663671563" Tag="61" IconVisible="False" LeftMargin="24.6423" RightMargin="19.3577" TopMargin="62.1963" BottomMargin="541.8037" ctype="SpriteObjectData">
+              <AbstractNodeData Name="turnSprite" ActionTag="-663671563" Tag="61" IconVisible="False" LeftMargin="29.0142" RightMargin="14.9858" TopMargin="0.4905" BottomMargin="603.5095" ctype="SpriteObjectData">
                 <Size X="361.0000" Y="161.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="205.1423" Y="622.3037" />
+                <Position X="209.5142" Y="684.0095" />
                 <Scale ScaleX="0.7665" ScaleY="0.9224" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5065" Y="0.8135" />
+                <PrePosition X="0.5173" Y="0.8941" />
                 <PreSize X="0.8914" Y="0.2105" />
                 <FileData Type="Normal" Path="Images/button.png" Plist="" />
                 <BlendFunc Src="1" Dst="771" />
               </AbstractNodeData>
-              <AbstractNodeData Name="turnText" CanEdit="False" ActionTag="626186248" Tag="62" IconVisible="False" LeftMargin="156.8106" RightMargin="164.1894" TopMargin="137.7288" BottomMargin="604.2712" TouchEnable="True" FontSize="13" IsCustomSize="True" LabelText="" PlaceHolderText="  Player 1" MaxLengthText="10" ctype="TextFieldObjectData">
-                <Size X="84.0000" Y="23.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="198.8106" Y="615.7712" />
-                <Scale ScaleX="2.2735" ScaleY="2.6009" />
-                <CColor A="255" R="0" G="0" B="0" />
-                <PrePosition X="0.4909" Y="0.8049" />
-                <PreSize X="0.2074" Y="0.0301" />
-                <FontResource Type="Normal" Path="Fonts/neuropol x rg.ttf" Plist="" />
-              </AbstractNodeData>
-              <AbstractNodeData Name="rollSprite" CanEdit="False" ActionTag="-293843020" Tag="63" IconVisible="False" LeftMargin="26.3619" RightMargin="17.6381" TopMargin="554.6676" BottomMargin="49.3324" ctype="SpriteObjectData">
-                <Size X="361.0000" Y="161.0000" />
-                <Children>
-                  <AbstractNodeData Name="rollText" ActionTag="-1475293763" Tag="64" IconVisible="False" LeftMargin="126.1255" RightMargin="150.8745" TopMargin="76.2509" BottomMargin="61.7491" TouchEnable="True" FontSize="13" IsCustomSize="True" LabelText="" PlaceHolderText="     Roll" MaxLengthText="10" ctype="TextFieldObjectData">
-                    <Size X="84.0000" Y="23.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="168.1255" Y="73.2491" />
-                    <Scale ScaleX="2.2735" ScaleY="2.6009" />
-                    <CColor A="255" R="0" G="0" B="0" />
-                    <PrePosition X="0.4657" Y="0.4550" />
-                    <PreSize X="0.2327" Y="0.1429" />
-                    <FontResource Type="Normal" Path="Fonts/neuropol x rg.ttf" Plist="" />
-                  </AbstractNodeData>
-                </Children>
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="206.8619" Y="129.8324" />
-                <Scale ScaleX="0.7665" ScaleY="0.9224" />
-                <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.5108" Y="0.1697" />
-                <PreSize X="0.8914" Y="0.2105" />
-                <FileData Type="Normal" Path="Images/button.png" Plist="" />
-                <BlendFunc Src="1" Dst="771" />
-              </AbstractNodeData>
-              <AbstractNodeData Name="dice1Sprite" ActionTag="529339337" Tag="65" IconVisible="False" LeftMargin="101.6700" RightMargin="103.3300" TopMargin="393.4100" BottomMargin="171.5900" ctype="SpriteObjectData">
+              <AbstractNodeData Name="dice1Sprite" CanEdit="False" ActionTag="529339337" Tag="65" IconVisible="False" LeftMargin="101.6700" RightMargin="103.3300" TopMargin="393.4100" BottomMargin="171.5900" ctype="SpriteObjectData">
                 <Size X="200.0000" Y="200.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="201.6700" Y="271.5900" />
@@ -73,6 +40,26 @@
                 <PreSize X="0.4938" Y="0.2614" />
                 <FileData Type="Normal" Path="Images/Dice1.png" Plist="" />
                 <BlendFunc Src="1" Dst="771" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="lifeLabel" ActionTag="-1660340692" Tag="39" IconVisible="False" LeftMargin="133.5607" RightMargin="187.4393" TopMargin="156.3008" BottomMargin="585.6992" TouchEnable="True" FontSize="16" IsCustomSize="True" LabelText="" PlaceHolderText="Life:" MaxLengthText="10" ctype="TextFieldObjectData">
+                <Size X="84.0000" Y="23.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="175.5607" Y="597.1992" />
+                <Scale ScaleX="1.6836" ScaleY="2.0774" />
+                <CColor A="255" R="0" G="0" B="0" />
+                <PrePosition X="0.4335" Y="0.7807" />
+                <PreSize X="0.2074" Y="0.0301" />
+                <FontResource Type="Normal" Path="Fonts/neuropol x rg.ttf" Plist="" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="lifeText" ActionTag="-256578614" Tag="40" IconVisible="False" LeftMargin="227.6082" RightMargin="93.3918" TopMargin="155.5985" BottomMargin="586.4015" TouchEnable="True" FontSize="16" IsCustomSize="True" LabelText="" PlaceHolderText="100" MaxLengthText="10" ctype="TextFieldObjectData">
+                <Size X="84.0000" Y="23.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="269.6082" Y="597.9015" />
+                <Scale ScaleX="1.6836" ScaleY="2.0774" />
+                <CColor A="255" R="0" G="0" B="0" />
+                <PrePosition X="0.6657" Y="0.7816" />
+                <PreSize X="0.2074" Y="0.0301" />
+                <FontResource Type="Normal" Path="Fonts/neuropol x rg.ttf" Plist="" />
               </AbstractNodeData>
             </Children>
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
@@ -95,18 +82,19 @@
             <FileData Type="Normal" Path="Images/game_background.png" Plist="" />
             <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="btnRoll" ActionTag="-1984390442" Alpha="0" Tag="17" IconVisible="False" LeftMargin="778.4596" RightMargin="135.5404" TopMargin="528.8258" BottomMargin="75.1742" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-            <Size X="46.0000" Y="36.0000" />
+          <AbstractNodeData Name="btnRoll" ActionTag="-1984390442" Tag="17" IconVisible="False" LeftMargin="630.0184" RightMargin="-31.0184" TopMargin="466.3254" BottomMargin="12.6746" TouchEnable="True" FontSize="48" ButtonText="Roll   " Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="331" Scale9Height="139" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+            <Size X="361.0000" Y="161.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="801.4596" Y="93.1742" />
-            <Scale ScaleX="3.8133" ScaleY="1.5135" />
+            <Position X="810.5184" Y="93.1746" />
+            <Scale ScaleX="0.6931" ScaleY="0.7711" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.8349" Y="0.1456" />
-            <PreSize X="0.0479" Y="0.0562" />
+            <PrePosition X="0.8443" Y="0.1456" />
+            <PreSize X="0.3760" Y="0.2516" />
+            <FontResource Type="Normal" Path="Fonts/neuropol x rg.ttf" Plist="" />
             <TextColor A="255" R="65" G="65" B="70" />
             <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-            <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
-            <NormalFileData Type="Default" Path="Default/Button_Normal.png" Plist="" />
+            <PressedFileData Type="Normal" Path="Images/button.png" Plist="" />
+            <NormalFileData Type="Normal" Path="Images/button.png" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>

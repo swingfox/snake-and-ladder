@@ -24,6 +24,7 @@
           <Image Name="game option.png" />
           <Image Name="game over.png" />
           <Image Name="game_background.png" />
+          <Image Name="game_over.png" />
           <Image Name="hall of fame.png" />
           <Image Name="home_background.png" />
           <Image Name="instruction.png" />

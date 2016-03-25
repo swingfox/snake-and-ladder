@@ -14,7 +14,6 @@ var CreditsLayer = cc.Layer.extend({
 	},
     initializeButtons:function(){
         btnOK = credits.getChildByName("btnOK");
-        cc.log("INITIALIZED BUTTONS ");
         this.initializeListener();
     },
 	initializeListener:function(){

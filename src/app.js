@@ -40,7 +40,6 @@ var SnakeAndLadderLayer = cc.Layer.extend({
         btnOptions = menu.getChildByName("btnOptions");
         btnInstructions = menu.getChildByName("btnInstructions");
         btnHallofFame = menu.getChildByName("btnHallofFame");
-        cc.log("INITIALIZED BUTTONS " +btnSingle);
         this.initializeListeners();
     },
     initializeListeners:function(){
@@ -54,7 +53,7 @@ var SnakeAndLadderLayer = cc.Layer.extend({
         cc.director.pushScene(new SinglePlayerScene());
     },
     multiPlayerScene:function(){
-        cc.director.pushScene(new TwoPlayerScene());
+        cc.director.pushScene(new QuestionScene());
     },
     optionsScene:function(){
         cc.director.pushScene(new GameOptionScene());

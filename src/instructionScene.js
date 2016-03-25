@@ -15,7 +15,6 @@ var InstructionLayer = cc.Layer.extend({
 	initializeButtons:function(){
 		btnOK = instruction.getChildByName("btnOK");
 		this.initializeListener();
-		cc.log("INITIALIZED BUTTONS");
 	},
 	initializeListener:function(){
 		btnOK.addTouchEventListener(this.goBack,this);

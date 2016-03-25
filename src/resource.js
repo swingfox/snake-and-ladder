@@ -1,5 +1,4 @@
 var res = {
-    HelloWorld_png : "res/HelloWorld.png",
     MainScene : "res/MainScene.json",
     GameDevelopersScene : "res/GameDevelopersScene.json",
     GameOverScene : "res/GameOverScene.json",

@@ -9,7 +9,7 @@
     "renderMode" : 1,
     "engineDir":"frameworks/cocos2d-html5",
 
-    "modules" : ["cocos2d", "cocostudio","editbox"],
+    "modules" : ["cocos2d", "cocostudio"],
 
     "jsList" : [
         "src/resource.js",

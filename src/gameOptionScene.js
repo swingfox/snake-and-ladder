@@ -38,7 +38,6 @@ var GameOptionLayer = cc.Layer.extend({
 		btnSounds = scene.getChildByName("btnSounds");
 
 		this.initializeListener();
-		cc.log("INITIALIZED BUTTONS");
 	},
 	initializeListener:function(){
 		btnBack.addTouchEventListener(this.goBack,this);

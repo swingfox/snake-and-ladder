@@ -5,17 +5,9 @@ var PlayLayer = cc.Layer.extend({
 	dice:null,
 	firstPlayer:null,
 	secondPlayer:null,
-	sec:null,
-	min:null,
 	timeText:null,
 	turnText:null,
 	rollSprite:null,
-	diceSprite1:null,
-	diceSprite2:null,
-	diceSprite3:null,
-	diceSprite4:null,
-	diceSprite5:null,
-	diceSprite:null,
 	btnRoll:null,
 	deltaX:100,
 	rollOnce:false,
@@ -25,16 +17,6 @@ var PlayLayer = cc.Layer.extend({
 	_gap:5,
 	_FIXED_POINT:70,
 	_ladderOne:null,
-	rect0:null,
-	rect1:null,
-	rect2:null,
-	rect3:null,
-	rect4:null,
-	rect5:null,
-	rect6:null,
-	rect7:null,
-	rect8:null,
-	rect9:null,
 	movesCount:null,
 	ctor:function(typeOfGame,playerOneName,playerTwoName){
 		this._super();
@@ -45,42 +27,30 @@ var PlayLayer = cc.Layer.extend({
 		cc.log("PLAYER TWO: " + this._playerTwoName);
 
 	},
-	readTextFile:function(file)
-	{
-	   /* var rawFile = new XMLHttpRequest();
-	    rawFile.open("GET", file, true);
-	    rawFile.onreadystatechange = function ()
-	    {
-	        if(rawFile.readyState === 4)
-	        {
-	            if(rawFile.status === 200 || rawFile.status == 0)
-	            {
-	                var allText = rawFile.responseText;
-	                alert(allText);
-	            }
-	        }
-	    }
-	    rawFile.send(null);*/
-	    cc.loader.loadTxt("res/text.txt", function(error, data){
-    		cc.log(data); //data is the json object
-		});
-		// You should do a check before using it
-	if (cc.sys.isNative) {
-	    jsb.fileUtils;
-		jsb.fileUtils.writeStringToFile("TRY!","text2.txt");
-	}
-	else
-		cc.log("NOT SUPPORTED!");
-	},
 	computer:function(){
 		this.rollTheDice();
 	},
+	diceSprite1:null,
+	diceSprite2:null,
+	diceSprite3:null,
+	diceSprite4:null,
+	diceSprite5:null,
+	diceSprite:null,
 	init:function(){
 		scene = ccs.load(res.PlayScene).node;
 		woodSprite = scene.getChildByName("woodSprite");
 		timeText = woodSprite.getChildByName("timeText");
-		turnText= woodSprite.getChildByName("turnText");
-		rollSprite = woodSprite.getChildByName("rollSprite");
+		turnText=  new cc.LabelTTF(this._playerOneName, "Arial", 28, cc.size(510, 100), cc.TEXT_ALIGNMENT_CENTER);
+	    turnText.setName("txtAnswer1");
+	    turnText.attr({
+	        x: 800,
+	        y: 550
+	    });
+	    turnText.setColor(cc.color(0,0,0,50));
+
+		turnText.setAnchorPoint(cc.p(0.5,0.5));
+   		turnText.setLocalZOrder(100);
+	    this.addChild(turnText);
 		diceSprite = woodSprite.getChildByName("dice1Sprite");
 		diceSprite1 = woodSprite.getChildByName("dice1Sprite");
 		btnRoll = scene.getChildByName("btnRoll");
@@ -90,14 +60,8 @@ var PlayLayer = cc.Layer.extend({
 		diceSprite4 = new cc.Sprite(res.dice4);
 		diceSprite5 = new cc.Sprite(res.dice5);
 
-		this.initializeObjects();
-		
-		this.readTextFile("file:///C:/Users/Totz/Desktop/text.txt");
-		this.initializeListeners();
-		
 
-    	turnText.setString(this._playerOneName);
-   		
+		
     	
     	btnRoll.addTouchEventListener(this.rollTheDice,this);
       
@@ -105,17 +69,43 @@ var PlayLayer = cc.Layer.extend({
     	
         this.initializeRectangles();
         this.timer();
+        this.scheduleUpdate();
 
-         if(cc.rectContainsPoint(this.firstPlayer, this._ladderOne)){
-							cc.log("INSIDE RECTANGLE");
-						}
-						else cc.log("OUTSIDE RECTANGLE");
+      
         this.addChild(scene);	         
 	},
+	ladderOneExited:false,
+    update:function(dt){
+		var playerOneBounding = this.firstPlayer.getBoundingBox();
+		var ladderOneBounding = this._ladderOne.getBoundingBox();
+		var ladderOneSequence = cc.Sequence.create(cc.delayTime(1), cc.callFunc(this.newScene,this));
+		if(cc.rectIntersectsRect(playerOneBounding,ladderOneBounding)){
+			cc.log("INSIDE LADDER");
+			
+				this.firstPlayer.runAction(ladderOneSequence);
+		}
+		else cc.log("OUTSIDE RECTANGLE");
+    },
+    newScene:function(node){
+    	if(this.ladderOneExited==false){
+    		cc.director.pushScene(new QuestionScene());
+    		this.ladderOneExited = true;
+   		}
+    },
+    rect0:null,
+	rect1:null,
+	rect2:null,
+	rect3:null,
+	rect4:null,
+	rect5:null,
+	rect6:null,
+	rect7:null,
+	rect8:null,
+	rect9:null,
 	initializeRectangles:function(){
 		this.firstPlayer = cc.Sprite.create();
 		this.firstPlayer.setColor(cc.color(0,0,0));
-		this.firstPlayer.setPosition(35, 35);
+		this.firstPlayer.setPosition(20, 45);
 		this.firstPlayer.setTextureRect(cc.rect(0, 0, 15, 15));
 		this.firstPlayer.setOpacity(255);
 		this.addChild(this.firstPlayer, 2);
@@ -212,6 +202,8 @@ var PlayLayer = cc.Layer.extend({
 		this.rect9.setOpacity(255);
 		this.addChild(this.rect9, 2);
 	},
+	sec:null,
+	min:null,
 	timer:function(){
 		this.min = 0;
     	this.sec = 0;
@@ -287,44 +279,6 @@ var PlayLayer = cc.Layer.extend({
 	getRandomBySix:function(){
         return Math.floor(((Math.random() * 10)%6)+1);
     },
-    initializeListeners:function(){
-            //Create a "one by one" touch event listener (processes one touch at a time)
-            this.touchListener = cc.EventListener.create({
-            event: cc.EventListener.TOUCH_ONE_BY_ONE,
-            // When "swallow touches" is true, then returning 'true' from the onTouchBegan method will "swallow" the touch event, preventing other listeners from using it.
-            swallowTouches: true,
-            //onTouchBegan event callback function                      
-            onTouchBegan: function (touch, event) { 
-                // event.getCurrentTarget() returns the *listener's* sceneGraphPriority node.   
-                var target = event.getCurrentTarget();  
-
-                //Get the position of the current point relative to the button
-                var locationInNode = target.convertToNodeSpace(touch.getLocation());    
-                var s = target.getContentSize();
-                var rect = cc.rect(0, 0, s.width, s.height);
-                var name = target.getName();
-                
-                if (cc.rectContainsPoint(rect, locationInNode)) {            
-                    cc.log("Sprite Name: " + name);  cc.log("Target Name: " + target.getParent().getName());
-                   
-                    if(name=="homeSprite"){
-                        target.opacity = 180;
-                        if(optionsNode.isVisible()){
-                            optionsNode.setVisible(false);
-                        }
-                        else{
-                            optionsNode.setVisible(true);
-                        }
-                    }
-                }
-            }
-        });
-            this.manageListeners();
-            cc.log("INITIALIZED LISTENERS");
-    },
-     manageListeners:function(){
-        cc.eventManager.addListener(this.touchListener, rollSprite);
-    },
 	getDigits:function(digit){
 		var i = 0;
 		while(digit>0){
@@ -333,12 +287,15 @@ var PlayLayer = cc.Layer.extend({
 		}
 		return i;
 	},
-	initializeObjects:function(){
-		cc.log("INITIALIZED OBJECTS");
+	_moves:0,
+	countMoves:function(){
+		cc.delayTime(0.5);
+		this._moves++;
+		cc.log("INCREMENTED: " + this._moves);
 	},
 	runFirstPlayer:function(x,y){
 		var rotate1 = cc.rotateBy(1, 360);
-		var first = cc.moveBy(1,cc.p(65,0));
+		var first = cc.moveBy(0.5,cc.p(65,0));
 		var second = cc.moveBy(1,cc.p(60,0));
 		var third = cc.moveBy(1,cc.p(60,0));
 		var fifth = cc.moveBy(1,cc.p(65,0));
@@ -347,26 +304,26 @@ var PlayLayer = cc.Layer.extend({
 
 		 var check = cc.CallFunc.create(function(node) {
                         if(cc.rectContainsPoint(this.firstPlayer, this._ladderOne)){
-							cc.log("INSIDE RECTANGLE");
+			//				cc.log("INSIDE RECTANGLE");
 						}
-						else cc.log("OUTSIDE RECTANGLE");
+					//	else cc.log("OUTSIDE RECTANGLE");
         }, this);  
 
 		switch(this._number){
 			case 1:
-			sequenceOne = cc.Sequence.create(first,check);
+			sequenceOne = cc.Sequence.create(cc.callFunc(this.countMoves,this),first);
 			break;
 			case 2:
-			sequenceOne = cc.Sequence.create(first,check);
+			sequenceOne = cc.Sequence.create(cc.callFunc(this.countMoves,this),first,cc.callFunc(this.countMoves,this),first);
 			break;
 			case 3:
-			sequenceOne = cc.Sequence.create(first,check);
+			sequenceOne = cc.Sequence.create(cc.callFunc(this.countMoves,this),first,cc.callFunc(this.countMoves,this),first,cc.callFunc(this.countMoves,this),first);
 			break;
 			case 4:
-			sequenceOne = cc.Sequence.create(first,check);
+			sequenceOne = cc.Sequence.create(cc.callFunc(this.countMoves,this),first,cc.callFunc(this.countMoves,this),first,cc.callFunc(this.countMoves,this),first,cc.callFunc(this.countMoves,this),first);
 			break;
 			case 5:
-			sequenceOne = cc.Sequence.create(first,check);
+			sequenceOne = cc.Sequence.create(cc.callFunc(this.countMoves,this),first,cc.callFunc(this.countMoves,this),first,cc.callFunc(this.countMoves,this),first,cc.callFunc(this.countMoves,this),first,cc.callFunc(this.countMoves,this),first);
 			break;
 		}
         this.firstPlayer.runAction(sequenceOne);
