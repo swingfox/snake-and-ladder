@@ -428,6 +428,51 @@
             },
             "Name": "btnRoll",
             "ctype": "ButtonObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "Images/pause3.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 923.462,
+              "Y": 584.1152
+            },
+            "Scale": {
+              "ScaleX": 0.0714,
+              "ScaleY": 0.0807
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.9619,
+              "Y": 0.9127
+            },
+            "PreSize": {
+              "X": 0.5333,
+              "Y": 0.8
+            },
+            "LeftMargin": 667.462,
+            "RightMargin": -219.4619,
+            "TopMargin": -200.1152,
+            "BottomMargin": 328.1152,
+            "Tag": 63,
+            "ActionTag": -2124787050,
+            "Size": {
+              "X": 512.0,
+              "Y": 512.0
+            },
+            "Name": "pauseSprite",
+            "ctype": "SpriteObjectData"
           }
         ],
         "Size": {
@@ -443,6 +488,7 @@
         "Images/button.png",
         "Images/Dice1.png",
         "Images/game_background.png",
+        "Images/pause3.png",
         "Images/Wood.png"
       ],
       "ctype": "GameFileData"

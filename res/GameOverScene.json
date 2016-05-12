@@ -180,29 +180,29 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 491.3599,
-              "Y": 143.7534
+              "X": 490.8427,
+              "Y": 146.3367
             },
             "Scale": {
-              "ScaleX": 3.9816,
-              "ScaleY": 1.6145
+              "ScaleX": 3.9576,
+              "ScaleY": 1.5399
             },
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.5118,
-              "Y": 0.2246
+              "X": 0.5113,
+              "Y": 0.2287
             },
             "PreSize": {
               "X": 0.0479,
               "Y": 0.0562
             },
-            "LeftMargin": 468.3599,
-            "RightMargin": 445.6401,
-            "TopMargin": 478.2466,
-            "BottomMargin": 125.7534,
-            "Tag": 80,
-            "ActionTag": 1002105043,
+            "LeftMargin": 467.8427,
+            "RightMargin": 446.1573,
+            "TopMargin": 475.6633,
+            "BottomMargin": 128.3367,
+            "Tag": 61,
+            "ActionTag": 1415096430,
             "Size": {
               "X": 46.0,
               "Y": 36.0
@@ -210,6 +210,60 @@
             "Alpha": 0,
             "Name": "btnMenu",
             "ctype": "ButtonObjectData"
+          },
+          {
+            "FontSize": 20,
+            "LabelText": "Player One Wins!",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "Fonts/neuropol x rg.ttf",
+              "Plist": ""
+            },
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 504.3888,
+              "Y": 383.3745
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5254,
+              "Y": 0.599
+            },
+            "PreSize": {
+              "X": 0.226,
+              "Y": 0.0375
+            },
+            "LeftMargin": 395.8888,
+            "RightMargin": 347.1112,
+            "TopMargin": 244.6255,
+            "BottomMargin": 371.3745,
+            "Tag": 89,
+            "ActionTag": 912454779,
+            "Size": {
+              "X": 217.0,
+              "Y": 24.0
+            },
+            "Name": "txtAnnouncement",
+            "ctype": "TextObjectData"
           }
         ],
         "Size": {
@@ -223,6 +277,7 @@
         "Default/Button_Disable.png",
         "Default/Button_Normal.png",
         "Default/Button_Press.png",
+        "Fonts/neuropol x rg.ttf",
         "Images/game over.png"
       ],
       "ctype": "GameFileData"

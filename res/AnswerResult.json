@@ -1,0 +1,593 @@
+{
+  "ID": "cd23b3e4-b249-465f-b6ba-37c93f21703e",
+  "Version": "3.10.0.0",
+  "Name": "AnswerResult",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 47,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "Images/home_background.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 480.2057,
+              "Y": 321.0941
+            },
+            "Scale": {
+              "ScaleX": 0.7482,
+              "ScaleY": 0.8795
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5002,
+              "Y": 0.5017
+            },
+            "PreSize": {
+              "X": 1.3333,
+              "Y": 1.125
+            },
+            "LeftMargin": -159.7943,
+            "RightMargin": -160.2057,
+            "TopMargin": -41.0941,
+            "BottomMargin": -38.9059,
+            "Tag": 48,
+            "ActionTag": -357492590,
+            "Size": {
+              "X": 1280.0,
+              "Y": 720.0
+            },
+            "Name": "backgroundSprite",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "Images/button.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 519.9464,
+              "Y": 352.5682
+            },
+            "Scale": {
+              "ScaleX": 2.8591,
+              "ScaleY": 4.845
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5416,
+              "Y": 0.5509
+            },
+            "PreSize": {
+              "X": 0.376,
+              "Y": 0.2516
+            },
+            "LeftMargin": 339.4464,
+            "RightMargin": 259.5536,
+            "TopMargin": 206.9318,
+            "BottomMargin": 272.0682,
+            "Tag": 64,
+            "ActionTag": -480410580,
+            "Size": {
+              "X": 361.0,
+              "Y": 161.0
+            },
+            "Name": "board",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FontSize": 48,
+            "ButtonText": "OK   ",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "Fonts/neuropol x rg.ttf",
+              "Plist": ""
+            },
+            "TextColor": {},
+            "DisabledFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Disable.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "Normal",
+              "Path": "Images/button.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "Normal",
+              "Path": "Images/button.png",
+              "Plist": ""
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 331,
+            "Scale9Height": 139,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 745.5717,
+              "Y": 138.5061
+            },
+            "Scale": {
+              "ScaleX": 0.906,
+              "ScaleY": 1.0659
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.7766,
+              "Y": 0.2164
+            },
+            "PreSize": {
+              "X": 0.376,
+              "Y": 0.2516
+            },
+            "LeftMargin": 565.0717,
+            "RightMargin": 33.9283,
+            "TopMargin": 420.9939,
+            "BottomMargin": 58.0061,
+            "Tag": 65,
+            "ActionTag": -985912353,
+            "Size": {
+              "X": 361.0,
+              "Y": 161.0
+            },
+            "Name": "btnOK",
+            "ctype": "ButtonObjectData"
+          },
+          {
+            "FontSize": 36,
+            "LabelText": "Answer Result:",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 247.3004,
+              "Y": 503.3232
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.2576,
+              "Y": 0.7864
+            },
+            "PreSize": {
+              "X": 0.2469,
+              "Y": 0.0641
+            },
+            "LeftMargin": 128.8004,
+            "RightMargin": 594.1996,
+            "TopMargin": 116.1768,
+            "BottomMargin": 482.8232,
+            "Tag": 66,
+            "ActionTag": 1480633050,
+            "Size": {
+              "X": 237.0,
+              "Y": 41.0
+            },
+            "Name": "Text_1",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FontSize": 20,
+            "LabelText": "Question You've Answered:",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.4678,
+              "ScaleY": 0.6414
+            },
+            "Position": {
+              "X": 258.5667,
+              "Y": 467.2867
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.2693,
+              "Y": 0.7301
+            },
+            "PreSize": {
+              "X": 0.25,
+              "Y": 0.0359
+            },
+            "LeftMargin": 146.304,
+            "RightMargin": 573.696,
+            "TopMargin": 164.4646,
+            "BottomMargin": 452.5354,
+            "Tag": 67,
+            "ActionTag": 218043433,
+            "Size": {
+              "X": 240.0,
+              "Y": 23.0
+            },
+            "Name": "Text_1_0",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FontSize": 20,
+            "LabelText": "[Question]                                                                                             ",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 490.2755,
+              "Y": 429.2515
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5107,
+              "Y": 0.6707
+            },
+            "PreSize": {
+              "X": 0.675,
+              "Y": 0.0359
+            },
+            "LeftMargin": 166.2755,
+            "RightMargin": 145.7245,
+            "TopMargin": 199.2485,
+            "BottomMargin": 417.7515,
+            "Tag": 68,
+            "ActionTag": -1768343585,
+            "Size": {
+              "X": 648.0,
+              "Y": 23.0
+            },
+            "Name": "question",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FontSize": 20,
+            "LabelText": "The Right Answer:",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 229.9904,
+              "Y": 351.6793
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.2396,
+              "Y": 0.5495
+            },
+            "PreSize": {
+              "X": 0.1677,
+              "Y": 0.0359
+            },
+            "LeftMargin": 149.4904,
+            "RightMargin": 649.5095,
+            "TopMargin": 276.8207,
+            "BottomMargin": 340.1793,
+            "Tag": 69,
+            "ActionTag": 572333363,
+            "Size": {
+              "X": 161.0,
+              "Y": 23.0
+            },
+            "Name": "Text_1_0_0_0",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FontSize": 20,
+            "LabelText": "Your Answer: ",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 210.708,
+              "Y": 307.8926
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.2195,
+              "Y": 0.4811
+            },
+            "PreSize": {
+              "X": 0.1281,
+              "Y": 0.0359
+            },
+            "LeftMargin": 149.208,
+            "RightMargin": 687.792,
+            "TopMargin": 320.6074,
+            "BottomMargin": 296.3926,
+            "Tag": 70,
+            "ActionTag": 1894016043,
+            "Size": {
+              "X": 123.0,
+              "Y": 23.0
+            },
+            "Name": "Text_1_0_0_0_0",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FontSize": 20,
+            "LabelText": "[your answer]                                         ",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 533.7864,
+              "Y": 306.8988
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.556,
+              "Y": 0.4795
+            },
+            "PreSize": {
+              "X": 0.3812,
+              "Y": 0.0359
+            },
+            "LeftMargin": 350.7864,
+            "RightMargin": 243.2136,
+            "TopMargin": 321.6012,
+            "BottomMargin": 295.3988,
+            "Tag": 71,
+            "ActionTag": -1956861398,
+            "Size": {
+              "X": 366.0,
+              "Y": 23.0
+            },
+            "Name": "yourAnswer",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FontSize": 20,
+            "LabelText": "[right answer]                                         ",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 532.5213,
+              "Y": 348.7001
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5547,
+              "Y": 0.5448
+            },
+            "PreSize": {
+              "X": 0.3812,
+              "Y": 0.0359
+            },
+            "LeftMargin": 349.5213,
+            "RightMargin": 244.4787,
+            "TopMargin": 279.7999,
+            "BottomMargin": 337.2001,
+            "Tag": 72,
+            "ActionTag": 1372629911,
+            "Size": {
+              "X": 366.0,
+              "Y": 23.0
+            },
+            "Name": "rightAnswer",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FontSize": 20,
+            "LabelText": "[Your answer description here]                                                                                 ",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 543.7782,
+              "Y": 245.0874
+            },
+            "Scale": {
+              "ScaleX": 1.084,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5664,
+              "Y": 0.3829
+            },
+            "PreSize": {
+              "X": 0.7854,
+              "Y": 0.0359
+            },
+            "LeftMargin": 166.7782,
+            "RightMargin": 39.2218,
+            "TopMargin": 383.4126,
+            "BottomMargin": 233.5874,
+            "Tag": 73,
+            "ActionTag": 152139240,
+            "Size": {
+              "X": 754.0,
+              "Y": 23.0
+            },
+            "Name": "answerDescription",
+            "ctype": "TextObjectData"
+          }
+        ],
+        "Size": {
+          "X": 960.0,
+          "Y": 640.0
+        },
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "UsedResources": [
+        "Default/Button_Disable.png",
+        "Fonts/neuropol x rg.ttf",
+        "Images/button.png",
+        "Images/home_background.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Scene"
+}

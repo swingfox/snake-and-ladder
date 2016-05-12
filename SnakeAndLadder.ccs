@@ -30,6 +30,8 @@
           <Image Name="instruction.png" />
           <Image Name="menuBackground.png" />
           <Image Name="pause.png" />
+          <Image Name="pause2.PNG" />
+          <Image Name="pause3.png" />
           <Image Name="question board.png" />
           <Image Name="radioButtonChecked.png" />
           <Image Name="radioButtonEmpty.png" />
@@ -39,14 +41,15 @@
         </Folder>
         <Folder Name="Music">
           <Audio Name="BackgroundMusic.wav" />
-          <Audio Name="Chutes long.mp3" />
-          <Audio Name="Chutes short.mp3" />
-          <Audio Name="Click radio.mp3" />
+          <Audio Name="ChutesLong.mp3" />
+          <Audio Name="ChutesShort.mp3" />
           <Audio Name="Click.mp3" />
+          <Audio Name="ClickRadio.mp3" />
           <Audio Name="move.mp3" />
           <Audio Name="Stair.mp3" />
           <Audio Name="Stairshort.mp3" />
         </Folder>
+        <Project Name="AnswerResult.csd" Type="Scene" />
         <Project Name="CongratulationsScene.csd" Type="Scene" />
         <Project Name="GameDevelopersScene.csd" Type="Scene" />
         <Project Name="GameOverScene.csd" Type="Scene" />
@@ -56,6 +59,7 @@
         <Project Name="MainScene.csd" Type="Scene" />
         <Project Name="OnePlayer.csd" Type="Scene" />
         <Project Name="OptionsScene.csd" Type="Scene" />
+        <Project Name="PauseLayer.csd" Type="Layer" />
         <Project Name="PlayScene.csd" Type="Scene" />
         <Project Name="QuestionScene.csd" Type="Scene" />
         <Project Name="TwoPlayer.csd" Type="Scene" />

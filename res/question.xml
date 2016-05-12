@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rootitemList>
+	<itemList>
+		<question>What does HTML stand for?</question>
+		<choices>Hypertext Markup Language</choices>
+		<choices>Hypertext Markup List</choices>
+		<choices>Happytext Markup Language</choices>
+		<choices>Hypertext Mark Language </choices>
+		<answer>Hypertext Markup Language</answer>
+	</itemList>
+
+	<itemList>
+		<question>How do you add a comment into HTML?</question>
+		<choices>&lt;-Comment-&gt;</choices>
+		<choices>&lt;--Comment--&gt;</choices>
+		<choices>&lt;!--Comment--&gt;</choices>
+		<choices>&lt;Comment/&gt;</choices>
+		<answer>&lt;!--Comment--&gt;</answer>
+	</itemList>
+
+	<itemList>
+		<question>What tag is used to create an unordered list?</question>
+		<choices>&lt;ul&gt;</choices>
+		<choices>&lt;ol&gt;</choices>
+		<choices>&lt;li&gt;</choices>
+		<choices>&lt;ulist&gt;</choices>
+		<answer>&lt;ul&gt;</answer>
+	</itemList>
+
+	<itemList>
+		<question>What is the correct tag for the smallest heading?</question>
+		<choices>&lt;h6&gt;</choices>
+		<choices>&lt;h7&gt;</choices>
+		<choices>&lt;small&gt;</choices>
+		<choices>&lt;h1&gt;</choices>
+		<answer>&lt;h6&gt;</answer>
+	</itemList>
+
+	<itemList>
+		<question>What property does an &lt;a&gt; tag need to link to another page?</question>
+		<choices>&lt;a color=&quot;&quot;&gt;</choices>
+		<choices>&lt;a type=&quot;&quot;&gt;</choices>
+		<choices>&lt;a href=&quot;&quot;&gt;</choices>
+		<choices>&lt;a width=&quot;&quot;&gt;</choices>
+		<answer>&lt;a href=&quot;&quot;&gt;</answer>
+	</itemList>
+
+	<itemList>
+		<question>What is the correct HTML for inserting an image?</question>
+		<choices>&lt;img display=&quot;image.gif&quot;&gt;</choices>
+		<choices>&lt;img image=&quot;image.gif&quot;&gt;</choices>
+		<choices>&lt;img src=&quot;image.gif&quot;&gt;</choices>
+		<choices>&lt;img =&quot;image.gif&quot;&gt;</choices>
+		<answer>&lt;img src=&quot;image.gif&quot;&gt;</answer>
+	</itemList>
+
+	<itemList>
+		<question>What is the correct tag for the largest heading?</question>
+		<choices>&lt;h6&gt;</choices>
+		<choices>&lt;large&gt;</choices>
+		<choices>&lt;big&gt;</choices>
+		<choices>&lt;h1&gt;</choices>
+		<answer>&lt;h1&gt;</answer>
+	</itemList>
+
+	<itemList>
+		<question>Which input type would allow a reader to select several options from a list of possibilities?</question>
+		<choices>Radio Buttons</choices>
+		<choices>Checkboxes</choices>
+		<choices>Form</choices>
+		<choices>Text Field</choices>
+		<answer>Checkboxes</answer>
+	</itemList>
+
+	<itemList>
+		<question>What does XHTML stands for?</question>
+		<choices>eXtra Hypertext Markup Language</choices>
+		<choices>eXtension Hypertext Markup Language</choices>
+		<choices>eXtensible Hypertext Markup Language</choices>
+		<choices>eXtended Hypertext Markup Language</choices>
+		<answer>eXtensible Hypertext Markup Language</answer>
+	</itemList>
+
+	<itemList>
+		<question>What character code would be used to create a &lt; symbol?</question>
+		<choices>&amp;gt;</choices>
+		<choices>&amp;lt;</choices>
+		<choices>&amp;lessthan;</choices>
+		<choices>&amp;less;</choices>
+		<answer>&amp;lt;</answer>
+	</itemList>
+
+	<itemList>
+		<question>What character code would be used to create a / symbol?</question>
+		<choices>&amp;slash;</choices>
+		<choices>&amp;#47;</choices>
+		<choices>&amp;frsl;</choices>
+		<choices>&amp;frsla;</choices>
+		<answer>&amp;#47;</answer>
+	</itemList>
+
+	<itemList>
+		<question>What tag is used to create a Definition list?</question>
+		<choices>&lt;dt&gt;</choices>
+		<choices>&lt;dd&gt;</choices>
+		<choices>&lt;dl&gt;</choices>
+		<choices>&lt;di&gt;</choices>
+		<answer>&lt;dl&gt;</answer>
+	</itemList>
+
+	<itemList>
+		<question>What tag is used to define abbreviated words?</question>
+		<choices>&lt;abbr&gt;</choices>
+		<choices>&lt;abr&gt;</choices>
+		<choices>&lt;abbreviation&gt;</choices>
+		<choices>&lt;ab&gt;</choices>
+		<answer>&lt;abbr&gt;</answer>
+	</itemList>
+
+	<itemList>
+		<question>What tag is used to create a list item?</question>
+		<choices>&lt;litem&gt;</choices>
+		<choices>&lt;item&gt;</choices>
+		<choices>&lt;li&gt;</choices>
+		<choices>&lt;list&gt;</choices>
+		<answer>&lt;li&gt;</answer>
+	</itemList>
+
+	<itemList>
+		<question>What tag is used to define a paragraph?</question>
+		<choices>&lt;para&gt;</choices>
+		<choices>&lt;p&gt;</choices>
+		<choices>&lt;pg&gt;</choices>
+		<choices>&lt;pgraph&gt;</choices>
+		<answer>&lt;p&gt;</answer>
+	</itemList>
+
+	<itemList>
+		<question>What is the &lt;q&gt; tag used for?</question>
+		<choices>For a short quotation</choices>
+		<choices>To quit the browser</choices>
+		<choices>To read a quotation out through a user&apos;s speaker</choices>
+		<choices>To quit smoking</choices>
+		<answer>For a short quotation</answer>
+	</itemList>
+
+	<itemList>
+		<question>Which of the following is the correct use of the &lt;title&gt; tag?</question>
+		<choices>&lt;title=&quot;Web Designer Help&quot;&gt;&lt;/title&gt;</choices>
+		<choices>&lt;title=Web Designer Help/&gt;</choices>
+		<choices>&lt;title=&quot;Web Designer Help&quot;&lt;/title&gt;</choices>
+		<choices>&lt;title&gt;Web Designer Help&lt;/title&gt;</choices>
+		<answer>&lt;title&gt;Web Designer Help&lt;/title&gt;</answer>
+	</itemList>
+
+	<itemList>
+		<question>onBlur, onClick, and onFocus are all ______ handlers.</question>
+		<choices>elements</choices>
+		<choices>properties</choices>
+		<choices>methods</choices>
+		<choices>events</choices>
+		<answer>events</answer>
+	</itemList>
+
+	<itemList>
+		<question>What are the four tags needed in a website?</question>
+		<choices>&lt;html&gt;,&lt;head&gt;,&lt;title&gt;,&lt;body&gt;</choices>
+		<choices>&lt;html&gt;,&lt;foot&gt;,&lt;arm&gt;,&lt;body&gt;</choices>
+		<choices>&lt;html&gt;,&lt;eyes&gt;,&lt;title&gt;,&lt;leg&gt;</choices>
+		<choices>&lt;ltmh&gt;,&lt;p&gt;,&lt;a&gt;,&lt;body&gt;</choices>
+		<answer>&lt;html&gt;,&lt;head&gt;,&lt;title&gt;,&lt;body&gt;</answer>
+	</itemList>
+
+	<itemList>
+		<question>How would you make an &lt;input /&gt; tag for a password field?</question>
+		<choices>&lt;input type=&quot;text&quot; /&gt;</choices>
+		<choices>&lt;input type=&quot;password&quot; /&gt;</choices>
+		<choices>&lt;input type=&quot;radio&quot; /&gt;</choices>
+		<choices>&lt;input type=&quot;checkbox&quot; /&gt;</choices>
+		<answer>&lt;input type=&quot;password&quot; /&gt;</answer>
+	</itemList>
+
+	<itemList>
+		<question>Which form method will put the form information into the URL string?</question>
+		<choices>Get</choices>
+		<choices>Post</choices>
+		<choices>Take</choices>
+		<choices>Return</choices>
+		<answer>Get</answer>
+	</itemList>
+
+	<itemList>
+		<question>With a checkbox, you can...</question>
+		<choices>Select only one option</choices>
+		<choices>Select multiple or no options</choices>
+		<choices>Type a message</choices>
+		<choices>input a password</choices>
+		<answer>Select multiple or no options</answer>
+	</itemList>
+
+	<itemList>
+		<question>The label tag links text to which property?</question>
+		<choices>id</choices>
+		<choices>class</choices>
+		<choices>input</choices>
+		<choices>type</choices>
+		<answer>id</answer>
+	</itemList>
+
+	<itemList>
+		<question>What is the top level folder?</question>
+		<choices>The Root folder</choices>
+		<choices>The lib folder</choices>
+		<choices>index.html</choices>
+		<choices>a CSS file</choices>
+		<answer>The Root folder</answer>
+	</itemList>
+
+	<itemList>
+		<question>Which filename is the wrong naming convention?</question>
+		<choices>exampleDemo.html</choices>
+		<choices>example_demo.html</choices>
+		<choices>example_Demo.html</choices>
+		<choices>EXAMPLEDEMO.html</choices>
+		<answer>EXAMPLEDEMO.html</answer>
+	</itemList>
+
+	<itemList>
+		<question>What is the file extension for a CSS document?</question>
+		<choices>.html</choices>
+		<choices>.jpg</choices>
+		<choices>.css</choices>
+		<choices>.js</choices>
+		<answer>.css</answer>
+	</itemList>
+
+	<itemList>
+		<question>What is the most specific element you can target in CSS?</question>
+		<choices>class</choices>
+		<choices>body</choices>
+		<choices>p</choices>
+		<choices>id</choices>
+		<answer>id</answer>
+	</itemList>
+
+	<itemList>
+		<question>Where is the content in the box model?</question>
+		<choices>The outside</choices>
+		<choices>The left</choices>
+		<choices>Center</choices>
+		<choices>Nowhere</choices>
+		<answer>Center</answer>
+	</itemList>
+
+	<itemList>
+		<question>Which fonts would most likely be on a persons computer?</question>
+		<choices>Arial, Helvetica</choices>
+		<choices>BigNoodleTitling</choices>
+		<choices>Zapfino, Apple Chancery</choices>
+		<choices>Ubuntu Titling, Droid Sans</choices>
+		<answer>Arial, Helvetica</answer>
+	</itemList>
+
+	<itemList>
+		<question>Which two measurements are used to make font-size?</question>
+		<choices>padding, border</choices>
+		<choices>outline, margin</choices>
+		<choices>px, em</choices>
+		<choices>margin-left, none</choices>
+		<answer>px, em</answer>
+	</itemList>
+
+	<itemList>
+		<question>Which set of numbers is not a hexadecimal color?</question>
+		<choices>#00FF00</choices>
+		<choices>#A0A0A0</choices>
+		<choices>#FFFFFF</choices>
+		<choices>#00G66R</choices>
+		<answer>#00G66R</answer>
+	</itemList>
+
+	<itemList>
+		<question>The default way content is positioned on the page is?</question>
+		<choices>fixed positioning</choices>
+		<choices>absolute positioning</choices>
+		<choices>static positioning</choices>
+		<choices>relative positioning</choices>
+		<answer>static positioning</answer>
+	</itemList>
+
+	<itemList>
+		<question>What do you need to do to make content stay below your floats?</question>
+		<choices>hide</choices>
+		<choices>position</choices>
+		<choices>clear</choices>
+		<choices>overflow</choices>
+		<answer>clear</answer>
+	</itemList>
+
+	<itemList>
+		<question>What are two properties an object can have in ActionScript?</question>
+		<choices>rotation, scaleX</choices>
+		<choices>visibility, transparency</choices>
+		<choices>size, cloaking</choices>
+		<choices>x, a</choices>
+		<answer>rotation, scaleX</answer>
+	</itemList>
+
+	<itemList>
+		<question>What is the value in the parentheses of an object method called?</question>
+		<choices>displays</choices>
+		<choices>instructions</choices>
+		<choices>parentheticals</choices>
+		<choices>parameters</choices>
+		<answer>parameters</answer>
+	</itemList>
+
+	<itemList>
+		<question>Which tag is used to contain all the information at the top of your page? (logo, login, etc.)</question>
+		<choices>&lt;nav&gt;</choices>
+		<choices>&lt;footer&gt;</choices>
+		<choices>&lt;header&gt;</choices>
+		<choices>&lt;hgroup&gt;</choices>
+		<answer>&lt;header&gt;</answer>
+	</itemList>
+
+	<itemList>
+		<question>Which tag is used to contain all the information at the bottom of your page? (copyright, quick links, etc.)</question>
+		<choices>&lt;nav&gt;</choices>
+		<choices>&lt;footer&gt;</choices>
+		<choices>&lt;header&gt;</choices>
+		<choices>&lt;hgroup&gt;</choices>
+		<answer>&lt;footer&gt;</answer>
+	</itemList>
+
+	<itemList>
+		<question>The &lt;figure&gt; tag allows you to put an image for a diagram or example for an article. Which tag allows you to put a caption for that image?</question>
+		<choices>&lt;hgroup&gt;</choices>
+		<choices>&lt;time&gt;</choices>
+		<choices>&lt;figure&gt;</choices>
+		<choices>&lt;figcaption&gt;</choices>
+		<answer>&lt;figcaption&gt;</answer>
+	</itemList>
+
+	<itemList>
+		<question>In regards to websites, what does SEO stand for?</question>
+		<choices>Super Engine Onload</choices>
+		<choices>Special Education for Orphans</choices>
+		<choices>Search Engine Optimization</choices>
+		<choices>Sponsers for Educational Opportunity</choices>
+		<answer>Search Engine Optimization</answer>
+	</itemList>
+
+	<itemList>
+		<question>What tag do you use to give a webpage a name that displays at the top of the browser?</question>
+		<choices>&lt;title&gt;</choices>
+		<choices>&lt;head&gt;</choices>
+		<choices>&lt;meta&gt;</choices>
+		<choices>&lt;body&gt;</choices>
+		<answer>&lt;title&gt;</answer>
+	</itemList>
+
+	<itemList>
+		<question>Which header do you use to automatically send a user to another page as soon as they try to load it?</question>
+		<choices>header(&apos;Refresh:&apos;);</choices>
+		<choices>header(&apos;Location:&apos;);</choices>
+		<choices>header(&apos;Content-Type:&apos;);</choices>
+		<choices>header(&apos;Content-Disposition:&apos;);</choices>
+		<answer>header(&apos;Location:&apos;);</answer>
+	</itemList>
+
+	<itemList>
+		<question>text/html is what type of PHP header?</question>
+		<choices>Content-Disposition</choices>
+		<choices>Content-Document</choices>
+		<choices>Cache-Control</choices>
+		<choices>Content-Type</choices>
+		<answer>Content-Type</answer>
+	</itemList>
+
+	<itemList>
+		<question> Between which set of tags does most of the content of your web page need to be placed?</question>
+		<choices>&lt;text&gt;&lt;/text&gt;</choices>
+		<choices>&lt;body&gt;&lt;/body&gt;</choices>
+		<choices>&lt;title&gt;&lt;/title&gt;</choices>
+		<choices>&lt;head&gt;&lt;/head&gt;</choices>
+		<answer>&lt;body&gt;&lt;/body&gt;</answer>
+	</itemList>
+
+	<itemList>
+		<question>When saving a file to your folder using flash, what file extension would it save as?</question>
+		<choices>wav</choices>
+		<choices>swf</choices>
+		<choices>htm</choices>
+		<choices>png</choices>
+		<answer>swf</answer>
+	</itemList>
+
+	<itemList>
+		<question>Table cells are represented by:</question>
+		<choices>&lt;td&gt;&lt;/td&gt;</choices>
+		<choices>&lt;tcell&gt;&lt;/tcell&gt;</choices>
+		<choices>&lt;tc&gt;&lt;/tc&gt;</choices>
+		<choices>&lt;cell&gt;&lt;/cell&gt;</choices>
+		<answer>&lt;td&gt;&lt;/td&gt;</answer>
+	</itemList>
+
+	<itemList>
+		<question>WAV and MIDI are file extensions that represent __________.</question>
+		<choices>background colors</choices>
+		<choices>sounds</choices>
+		<choices>color charts</choices>
+		<choices>large pictures</choices>
+		<answer>sounds</answer>
+	</itemList>
+
+	<itemList>
+		<question>OOP promotes a way of programming that allows programmers to think in terms of: </question>
+		<choices>Data</choices>
+		<choices>Procedures</choices>
+		<choices>Objects</choices>
+		<choices>Functions</choices>
+		<answer>Objects</answer>
+	</itemList>
+
+	<itemList>
+		<question>What Java keyword do you use to define a class?</question>
+		<choices>define</choices>
+		<choices>new</choices>
+		<choices>create</choices>
+		<choices>class</choices>
+		<answer>class</answer>
+	</itemList>
+	
+	<itemList>
+		<question>What language does the computer use and understand?</question>
+		<choices>High-level</choices>
+		<choices>Assembly</choices>
+		<choices>Machine</choices>
+		<choices>None of the above</choices>
+		<answer>Machine</answer>
+	</itemList>
+	
+	<itemList>
+		<question>What character is used in an OR operator?</question>
+		<choices>Ampersand</choices>
+		<choices>Bracket</choices>
+		<choices>Colon</choices>
+		<choices>Pipe</choices>
+		<answer>Pipe</answer>
+	</itemList>
+	
+	<itemList>
+		<question>What does TCP breaks data into?</question>
+		<choices>Binary</choices>
+		<choices>Bits</choices>
+		<choices>Files</choices>
+		<choices>Packets</choices>
+		<answer>Packets</answer>
+	</itemList>
+	
+	<itemList>
+		<question>What cable connects a cable modem to a wireless router?</question>
+		<choices>CAT5 cable</choices>
+		<choices>Coaxial cable</choices>
+		<choices>RJ-11 cable</choices>
+		<choices>No wire</choices>
+		<answer>CAT5 cable</answer>
+	</itemList>
+	
+	<itemList>
+		<question>What does the term MIME stand for?</question>
+		<choices>Mail Internet Mail Exchange</choices>
+		<choices>Mail Interleave Method Exchange</choices>
+		<choices>Multipurpose Internet Mail Extensions</choices>
+		<choices>Multipurpose Interleave Mail Exchange</choices>
+		<answer>Multipurpose Internet Mail Extensions</answer>
+	</itemList>
+	
+	<itemList>
+		<question>What program allows an Apple computer to run Microsoft Windows?</question>
+		<choices>Bonjour</choices>
+		<choices>Boot camp</choices>
+		<choices>iBoot</choices>
+		<choices>None of the above</choices>
+		<answer>Boot camp</answer>
+	</itemList>
+	
+	<itemList>
+		<question>Which of the following people was a co-founder of Microsoft?</question>
+		<choices>Steve Wozniak</choices>
+		<choices>Paul Allen</choices>
+		<choices>Bill Moggridge</choices>
+		<choices>Gary Starkweather</choices>
+		<answer>Paul Allen</answer>
+	</itemList>
+	
+	<itemList>
+		<question>How many blocks of numbers are in an IP address? </question>
+		<choices>1</choices>
+		<choices>2</choices>
+		<choices>3</choices>
+		<choices>4</choices>
+		<answer>4</answer>
+	</itemList>
+	
+	<itemList>
+		<question>Which of the following is not a type of hard drive?</question>
+		<choices>IDE</choices>
+		<choices>IDS</choices>
+		<choices>SATA</choices>
+		<choices>SCSI</choices>
+		<answer>IDS</answer>
+	</itemList>
+	
+	<itemList>
+		<question>How many layers are in the OSI model?</question>
+		<choices>4</choices>
+		<choices>5</choices>
+		<choices>6</choices>
+		<choices>7</choices>
+		<answer>7</answer>
+	</itemList>
+	
+	<itemList>
+		<question>Who is considered to be the first programmer?</question>
+		<choices>Ada Lovelace</choices>
+		<choices>Alan Turing</choices>
+		<choices>Bill Gates</choices>
+		<choices>Tim Berners-Lee</choices>
+		<answer>Ada Lovelace</answer>
+	</itemList>
+	
+	<itemList>
+		<question>JavaScript is ....?</question>
+		<choices>a client-side scripting language</choices>
+		<choices>a server-side scripting-language</choices>
+		<choices>a virus</choices>
+		<choices>another name for Java</choices>
+		<answer>a client-side scripting language</answer>
+	</itemList>
+	
+	<itemList>
+		<question>What is phishing?</question>
+		<choices>A computer virus</choices>
+		<choices>A corrupt website</choices>
+		<choices>A distribution of spam</choices>
+		<choices>An identity theft scheme</choices>
+		<answer>An identity theft scheme</answer>
+	</itemList>
+	
+	<itemList>
+		<question>What is a firewall?</question>
+		<choices>Antivirus program</choices>
+		<choices>Internet blocker</choices>
+		<choices>Internet filter</choices>
+		<choices>Internet logger</choices>
+		<answer>Internet filter</answer>
+	</itemList>
+	
+	<itemList>
+		<question>What is the default port number for Apache and most web servers?</question>
+		<choices>20</choices>
+		<choices>27</choices>
+		<choices>80</choices>
+		<choices>887</choices>
+		<answer>80</answer>
+	</itemList>
+	
+	<itemList>
+		<question>What company built the first processor in the Apple Macintosh?</question>
+		<choices>AMD</choices>
+		<choices>Apple</choices>
+		<choices>Intel</choices>
+		<choices>Motorola</choices>
+		<answer>Motorola</answer>
+	</itemList>
+	
+	<itemList>
+		<question>What Linux command displays the last part of a file without editing it?</question>
+		<choices>end</choices>
+		<choices>foot</choices>
+		<choices>last</choices>
+		<choices>tail</choices>
+		<answer>tail</answer>
+	</itemList>
+	
+	<itemList>
+		<question>Which of the below has the most capacity?</question>
+		<choices>100GB</choices>
+		<choices>100KB</choices>
+		<choices>100MB</choices>
+		<choices>100TB</choices>
+		<answer>100TB</answer>
+	</itemList>
+	
+	<itemList>
+		<question>When was the first e-mail sent?</question>
+		<choices>1963</choices>
+		<choices>1969</choices>
+		<choices>1971</choices>
+		<choices>1974</choices>
+		<answer>1971</answer>
+	</itemList>
+	
+	<itemList>
+		<question>Which of the below is not a type of computer battery?</question>
+		<choices>BIOS</choices>
+		<choices>CMOS</choices>
+		<choices>Li-ion</choices>
+		<choices>NiMH</choices>
+		<answer>BIOS</answer>
+	</itemList>
+	
+	<itemList>
+		<question>Which network protocol is used to send e-mail?</question>
+		<choices>FTP</choices>
+		<choices>SSH</choices>
+		<choices>POP3</choices>
+		<choices>SMTP</choices>
+		<answer>SMTP</answer>
+	</itemList>
+	
+	<itemList>
+		<question>What type of memory is volatile?</question>
+		<choices>Cache</choices>
+		<choices>Hard drive</choices>
+		<choices>RAM</choices>
+		<choices>ROM</choices>
+		<answer>RAM</answer>
+	</itemList>
+	
+	<itemList>
+		<question>Where is the BIOS stored?</question>
+		<choices>On the hard drive</choices>
+		<choices>On a diskette</choices>
+		<choices>On a USB drive</choices>
+		<choices>On a flash memory chip</choices>
+		<answer>On a flash memory chip</answer>
+	</itemList>
+	
+	<itemList>
+		<question>What is BIOS short for?</question>
+		<choices>Not short for anything</choices>
+		<choices>Basic Input/Output System</choices>
+		<choices>Binary Input/Output System</choices>
+		<choices>Bus Input/Output System</choices>
+		<answer>Basic Input/Output System</answer>
+	</itemList>
+	
+	<itemList>
+		<question>Which below IP address would be used for a local network?</question>
+		<choices>74.125.127.100</choices>
+		<choices>69.72.169.241</choices>
+		<choices>192.168.1.100</choices>
+		<choices>209.131.36.100</choices>
+		<answer>192.168.1.100</answer>
+	</itemList>
+	
+	<itemList>
+		<question>Which of the below media types hold the most information?</question>
+		<choices>Blu-ray</choices>
+		<choices>CD</choices>
+		<choices>DVD</choices>
+		<choices>Floppy diskette</choices>
+		<answer>Blu-ray</answer>
+	</itemList>
+	
+	<itemList>
+		<question>What is the minimum memory requirements for Microsoft Windows XP?</question>
+		<choices>32MB</choices>
+		<choices>64MB</choices>
+		<choices>128MB</choices>
+		<choices>256MB </choices>
+		<answer>64MB</answer>
+	</itemList>
+	
+	<itemList>
+		<question>What is the input device primarily used with a PDA?</question>
+		<choices>keyboard</choices>
+		<choices>mouse</choices>
+		<choices>scanner</choices>
+		<choices>stylus</choices>
+		<answer>stylus</answer>
+	</itemList>
+	
+	<itemList>
+		<question>What command is most likely to log you out of an FTP command line?</question>
+		<choices>bye</choices>
+		<choices>end</choices>
+		<choices>logoff</choices>
+		<choices>logout</choices>
+		<answer>bye</answer>
+	</itemList>
+	
+	<itemList>
+		<question>What is Apache?</question>
+		<choices>browser</choices>
+		<choices>computer</choices>
+		<choices>operating system</choices>
+		<choices>web server</choices>
+		<answer>web server</answer>
+	</itemList>
+	
+	<itemList>
+		<question>Which of the below is not related to the Internet and web development?</question>
+		<choices>DOS</choices>
+		<choices>HTML</choices>
+		<choices>Java</choices>
+		<choices>PHP</choices>
+		<answer>DOS</answer>
+	</itemList>
+	
+	<itemList>
+		<question>Where are the device drivers settings for Microsoft Windows stored?</question>
+		<choices>BIOS</choices>
+		<choices>CMOS</choices>
+		<choices>EEPROM</choices>
+		<choices>Registry</choices>
+		<answer>Registry</answer>
+	</itemList>
+	
+	<itemList>
+		<question>Who was one of the original founders for the Intel corporation?</question>
+		<choices>Bill Gates</choices>
+		<choices>Jerry Yang</choices>
+		<choices>Gordon E. Moore</choices>
+		<choices>Sergey Brin</choices>
+		<answer>Gordon E. Moore</answer>
+	</itemList>
+	
+	<itemList>
+		<question>Which of the below versions of Windows was the first to be released after Windows 98?</question>
+		<choices>Windows 99</choices>
+		<choices>Windows 2000</choices>
+		<choices>Windows ME</choices>
+		<choices>Windows XP</choices>
+		<answer>Windows 2000</answer>
+	</itemList>
+	
+	<itemList>
+		<question>Which of the following is not a social network site?</question>
+		<choices>Amazon</choices>
+		<choices>MySpace</choices>
+		<choices>Orkut</choices>
+		<choices>Twitter</choices>
+		<answer>Amazon</answer>
+	</itemList>
+	
+	<itemList>
+		<question>What MS-DOS command can display hidden files?</question>
+		<choices>attrib</choices>
+		<choices>cd</choices>
+		<choices>ls</choices>
+		<choices>more</choices>
+		<answer>attrib</answer>
+	</itemList>
+	
+	<itemList>
+		<question>Which of the following is not an antivirus company?</question>
+		<choices>AVG</choices>
+		<choices>Panda</choices>
+		<choices>Symantec</choices>
+		<choices>Xargon</choices>
+		<answer>Xargon</answer>
+	</itemList>
+	
+	<itemList>
+		<question>Who created the first mouse?</question>
+		<choices>Bill Gates</choices>
+		<choices>Douglas Englebart</choices>
+		<choices>John Mauchly</choices>
+		<choices>Robert Noyce</choices>
+		<answer>Douglas Englebart</answer>
+	</itemList>
+	
+	<itemList>
+		<question>Which of the below is the GUI commonly used with Linux?</question>
+		<choices>LUI</choices>
+		<choices>GNU</choices>
+		<choices>GPL</choices>
+		<choices>GNOME</choices>
+		<answer>GNOME</answer>
+	</itemList>
+	
+	<itemList>
+		<question>How much disk space does a standard CD hold?</question>
+		<choices>650MB</choices>
+		<choices>600MB</choices>
+		<choices>500MB</choices>
+		<choices>200MB</choices>
+		<answer>650MB</answer>
+	</itemList>
+	
+	<itemList>
+		<question>Which of the below is not an e-mail client?</question>
+		<choices>Eudora</choices>
+		<choices>Opera</choices>
+		<choices>Outlook</choices>
+		<choices>Thunderbird</choices>
+		<answer>Opera</answer>
+	</itemList>
+	
+	<itemList>
+		<question>Which of the below people is credited for developing the World Wide Web?</question>
+		<choices>Alan Kay</choices>
+		<choices>Tim Berners-Lee</choices>
+		<choices>Jack Kilby</choices>
+		<choices>Robert Noyce</choices>
+		<answer>Tim Berners-Lee</answer>
+	</itemList>
+	
+	<itemList>
+		<question>Which of the below is not a type of printer?</question>
+		<choices>Bubble Jet printer</choices>
+		<choices>LED printer</choices>
+		<choices>Thermal printer</choices>
+		<choices>Microwave printer</choices>
+		<answer>Microwave printer</answer>
+	</itemList>
+	
+	<itemList>
+		<question>What is another name for a motherboard?</question>
+		<choices>CPU</choices>
+		<choices>Fatherboard</choices>
+		<choices>Main system</choices>
+		<choices>System board</choices>
+		<answer>System board</answer>
+	</itemList>
+	
+	<itemList>
+		<question>Which of the below is a type of memory that cannot have information written to it?</question>
+		<choices>DRAM</choices>
+		<choices>RAM</choices>
+		<choices>ROM</choices>
+		<choices>SRAM</choices>
+		<answer>ROM</answer>
+	</itemList>
+	
+	<itemList>
+		<question>Which below file extension is not a type of compressed file?</question>
+		<choices>.bin</choices>
+		<choices>.rar</choices>
+		<choices>.tar</choices>
+		<choices>.z</choices>
+		<answer>.tar</answer>
+	</itemList>
+	
+	<itemList>
+		<question>How many keys does the standard Windows US keyboard with number pad have?</question>
+		<choices>74</choices>
+		<choices>84</choices>
+		<choices>94</choices>
+		<choices>104</choices>
+		<answer>104</answer>
+	</itemList>
+	
+	<itemList>
+		<question>Which of the below is not a text editor?</question>
+		<choices>Vim</choices>
+		<choices>Perl</choices>
+		<choices>Pico</choices>
+		<choices>Vi</choices>
+		<answer>Perl</answer>
+	</itemList>
+	
+	<itemList>
+		<question>How many bits are in a megabit?</question>
+		<choices>1000000</choices>
+		<choices>1024</choices>
+		<choices>256</choices>
+		<choices>8</choices>
+		<answer>1000000</answer>
+	</itemList>
+	
+</rootitemList>

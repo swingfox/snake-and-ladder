@@ -98,6 +98,17 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
+          <AbstractNodeData Name="pauseSprite" ActionTag="-2124787050" Tag="63" IconVisible="False" LeftMargin="667.4620" RightMargin="-219.4619" TopMargin="-200.1152" BottomMargin="328.1152" ctype="SpriteObjectData">
+            <Size X="512.0000" Y="512.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="923.4620" Y="584.1152" />
+            <Scale ScaleX="0.0714" ScaleY="0.0807" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.9619" Y="0.9127" />
+            <PreSize X="0.5333" Y="0.8000" />
+            <FileData Type="Normal" Path="Images/pause3.png" Plist="" />
+            <BlendFunc Src="1" Dst="771" />
+          </AbstractNodeData>
         </Children>
       </ObjectData>
     </Content>

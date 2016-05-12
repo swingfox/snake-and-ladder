@@ -70,8 +70,8 @@
                   "Plist": ""
                 },
                 "PressedFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Press.png",
+                  "Type": "Normal",
+                  "Path": "Images/button.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
@@ -150,8 +150,8 @@
                   "Plist": ""
                 },
                 "PressedFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Press.png",
+                  "Type": "Normal",
+                  "Path": "Images/button.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
@@ -230,8 +230,8 @@
                   "Plist": ""
                 },
                 "PressedFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Press.png",
+                  "Type": "Normal",
+                  "Path": "Images/button.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
@@ -310,8 +310,8 @@
                   "Plist": ""
                 },
                 "PressedFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Press.png",
+                  "Type": "Normal",
+                  "Path": "Images/button.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
@@ -390,8 +390,8 @@
                   "Plist": ""
                 },
                 "PressedFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Press.png",
+                  "Type": "Normal",
+                  "Path": "Images/button.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
@@ -470,7 +470,6 @@
       },
       "UsedResources": [
         "Default/Button_Disable.png",
-        "Default/Button_Press.png",
         "Fonts/neuropol x rg.ttf",
         "Images/button.png",
         "Images/menuBackground.png"

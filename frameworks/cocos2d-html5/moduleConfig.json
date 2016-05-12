@@ -135,6 +135,10 @@
             "cocos2d/effects/CCGrid.js",
             "cocos2d/effects/CCGrabber.js"
         ],
+        "fileUtils" : [
+            "core",
+            "cocos2d/fileUtils/jsb_apis.js"
+        ],
         "kazmath" : [
             "core",
 
@@ -275,7 +279,7 @@
             "core", "kazmath", "shaders", "render-texture", "motion-streak", "node-grid",
             "clipping-nodes", "effects", "shape-nodes", "actions", "actions3d",
             "progress-timer", "transitions", "labels", "compression", "particle",
-            "text-input", "menus", "tilemap", "parallax", "audio"
+            "text-input", "menus", "tilemap", "parallax", "audio", "fileUtils"
         ],
 
         "ccbreader" : [

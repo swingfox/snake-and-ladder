@@ -6,7 +6,7 @@
       <ObjectData Name="Layer" Tag="70" ctype="GameLayerObjectData">
         <Size X="960.0000" Y="640.0000" />
         <Children>
-          <AbstractNodeData Name="homeBackgroundSprite" CanEdit="False" ActionTag="-430257281" Tag="71" IconVisible="False" LeftMargin="-159.7943" RightMargin="-160.2057" TopMargin="-41.0941" BottomMargin="-38.9059" ctype="SpriteObjectData">
+          <AbstractNodeData Name="homeBackgroundSprite" ActionTag="-430257281" Tag="71" IconVisible="False" LeftMargin="-159.7943" RightMargin="-160.2057" TopMargin="-41.0941" BottomMargin="-38.9059" ctype="SpriteObjectData">
             <Size X="1280.0000" Y="720.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="480.2057" Y="321.0941" />

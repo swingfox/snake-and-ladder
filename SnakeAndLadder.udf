@@ -25,5 +25,25 @@
         <EnableHTML5Advanced Value="False" />
       </Value>
     </Item>
+    <Item Key="TabsParamsKey">
+      <Value ctype="TabsInfo">
+        <OpenedDocuments>
+          <FilePathData Path="OptionsScene.csd" />
+          <FilePathData Path="PlayScene.csd" />
+          <FilePathData Path="HallOfFame.csd" />
+          <FilePathData Path="QuestionScene.csd" />
+          <FilePathData Path="HomeBackgroundLayer.csd" />
+          <FilePathData Path="MainScene.csd" />
+          <FilePathData Path="GameDevelopersScene.csd" />
+          <FilePathData Path="GameOverScene.csd" />
+          <FilePathData Path="CongratulationsScene.csd" />
+          <FilePathData Path="OnePlayer.csd" />
+          <FilePathData Path="TwoPlayer.csd" />
+          <FilePathData Path="AnswerResult.csd" />
+          <FilePathData Path="PauseLayer.csd" />
+        </OpenedDocuments>
+        <ActiveDocument Path="AnswerResult.csd" />
+      </Value>
+    </Item>
   </Properties>
 </UserData>

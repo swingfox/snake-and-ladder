@@ -134,6 +134,678 @@
             "Alpha": 0,
             "Name": "btnBack",
             "ctype": "ButtonObjectData"
+          },
+          {
+            "FontSize": 20,
+            "LabelText": "David",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "Fonts/neuropol x rg.ttf",
+              "Plist": ""
+            },
+            "OutlineColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
+            "OutlineEnabled": true,
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 206.5569,
+              "Y": 306.5061
+            },
+            "Scale": {
+              "ScaleX": 0.8634,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.2152,
+              "Y": 0.4789
+            },
+            "PreSize": {
+              "X": 0.0812,
+              "Y": 0.0406
+            },
+            "LeftMargin": 167.5569,
+            "RightMargin": 714.4431,
+            "TopMargin": 320.4939,
+            "BottomMargin": 293.5061,
+            "Tag": 26,
+            "ActionTag": 1412644125,
+            "Size": {
+              "X": 78.0,
+              "Y": 26.0
+            },
+            "Name": "easyFirstSingle",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FontSize": 20,
+            "LabelText": "Ralph",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "Fonts/neuropol x rg.ttf",
+              "Plist": ""
+            },
+            "OutlineColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
+            "OutlineEnabled": true,
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 204.9883,
+              "Y": 280.7305
+            },
+            "Scale": {
+              "ScaleX": 0.8634,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.2135,
+              "Y": 0.4386
+            },
+            "PreSize": {
+              "X": 0.0792,
+              "Y": 0.0406
+            },
+            "LeftMargin": 166.9883,
+            "RightMargin": 717.0117,
+            "TopMargin": 346.2695,
+            "BottomMargin": 267.7305,
+            "Tag": 27,
+            "ActionTag": 1381141476,
+            "Size": {
+              "X": 76.0,
+              "Y": 26.0
+            },
+            "Name": "easySecondSingle",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FontSize": 20,
+            "LabelText": "Andrew",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "Fonts/neuropol x rg.ttf",
+              "Plist": ""
+            },
+            "OutlineColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
+            "OutlineEnabled": true,
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 212.8846,
+              "Y": 256.0067
+            },
+            "Scale": {
+              "ScaleX": 0.8634,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.2218,
+              "Y": 0.4
+            },
+            "PreSize": {
+              "X": 0.1042,
+              "Y": 0.0406
+            },
+            "LeftMargin": 162.8846,
+            "RightMargin": 697.1154,
+            "TopMargin": 370.9933,
+            "BottomMargin": 243.0067,
+            "Tag": 28,
+            "ActionTag": 1418678686,
+            "Size": {
+              "X": 100.0,
+              "Y": 26.0
+            },
+            "Name": "easyThirdSingle",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FontSize": 20,
+            "LabelText": "David",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "Fonts/neuropol x rg.ttf",
+              "Plist": ""
+            },
+            "OutlineColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
+            "OutlineEnabled": true,
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 517.4961,
+              "Y": 303.1345
+            },
+            "Scale": {
+              "ScaleX": 0.8634,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5391,
+              "Y": 0.4736
+            },
+            "PreSize": {
+              "X": 0.0812,
+              "Y": 0.0406
+            },
+            "LeftMargin": 478.4961,
+            "RightMargin": 403.5039,
+            "TopMargin": 323.8655,
+            "BottomMargin": 290.1345,
+            "Tag": 29,
+            "ActionTag": 549047203,
+            "Size": {
+              "X": 78.0,
+              "Y": 26.0
+            },
+            "Name": "easyFirstMulti",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FontSize": 20,
+            "LabelText": "Ralph",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "Fonts/neuropol x rg.ttf",
+              "Plist": ""
+            },
+            "OutlineColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
+            "OutlineEnabled": true,
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 515.9274,
+              "Y": 277.359
+            },
+            "Scale": {
+              "ScaleX": 0.8634,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5374,
+              "Y": 0.4334
+            },
+            "PreSize": {
+              "X": 0.0792,
+              "Y": 0.0406
+            },
+            "LeftMargin": 477.9274,
+            "RightMargin": 406.0726,
+            "TopMargin": 349.641,
+            "BottomMargin": 264.359,
+            "Tag": 30,
+            "ActionTag": 1857499814,
+            "Size": {
+              "X": 76.0,
+              "Y": 26.0
+            },
+            "Name": "easySecondMulti",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FontSize": 20,
+            "LabelText": "Andrew",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "Fonts/neuropol x rg.ttf",
+              "Plist": ""
+            },
+            "OutlineColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
+            "OutlineEnabled": true,
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 523.8242,
+              "Y": 252.6352
+            },
+            "Scale": {
+              "ScaleX": 0.8634,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5457,
+              "Y": 0.3947
+            },
+            "PreSize": {
+              "X": 0.1042,
+              "Y": 0.0406
+            },
+            "LeftMargin": 473.8242,
+            "RightMargin": 386.1758,
+            "TopMargin": 374.3648,
+            "BottomMargin": 239.6352,
+            "Tag": 31,
+            "ActionTag": -228320067,
+            "Size": {
+              "X": 100.0,
+              "Y": 26.0
+            },
+            "Name": "easyThirdMulti",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FontSize": 20,
+            "LabelText": "David",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "Fonts/neuropol x rg.ttf",
+              "Plist": ""
+            },
+            "OutlineColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
+            "OutlineEnabled": true,
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 207.5472,
+              "Y": 129.8275
+            },
+            "Scale": {
+              "ScaleX": 0.8634,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.2162,
+              "Y": 0.2029
+            },
+            "PreSize": {
+              "X": 0.0812,
+              "Y": 0.0406
+            },
+            "LeftMargin": 168.5472,
+            "RightMargin": 713.4528,
+            "TopMargin": 497.1725,
+            "BottomMargin": 116.8275,
+            "Tag": 32,
+            "ActionTag": -1020335712,
+            "Size": {
+              "X": 78.0,
+              "Y": 26.0
+            },
+            "Name": "hardFirstSingle",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FontSize": 20,
+            "LabelText": "Ralph",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "Fonts/neuropol x rg.ttf",
+              "Plist": ""
+            },
+            "OutlineColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
+            "OutlineEnabled": true,
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 205.9785,
+              "Y": 104.0523
+            },
+            "Scale": {
+              "ScaleX": 0.8634,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.2146,
+              "Y": 0.1626
+            },
+            "PreSize": {
+              "X": 0.0792,
+              "Y": 0.0406
+            },
+            "LeftMargin": 167.9785,
+            "RightMargin": 716.0215,
+            "TopMargin": 522.9477,
+            "BottomMargin": 91.0523,
+            "Tag": 33,
+            "ActionTag": -541676834,
+            "Size": {
+              "X": 76.0,
+              "Y": 26.0
+            },
+            "Name": "hardSecondSingle",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FontSize": 20,
+            "LabelText": "Andrew",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "Fonts/neuropol x rg.ttf",
+              "Plist": ""
+            },
+            "OutlineColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
+            "OutlineEnabled": true,
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 213.8747,
+              "Y": 79.3282
+            },
+            "Scale": {
+              "ScaleX": 0.8634,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.2228,
+              "Y": 0.124
+            },
+            "PreSize": {
+              "X": 0.1042,
+              "Y": 0.0406
+            },
+            "LeftMargin": 163.8747,
+            "RightMargin": 696.1253,
+            "TopMargin": 547.6718,
+            "BottomMargin": 66.3282,
+            "Tag": 34,
+            "ActionTag": 1164277731,
+            "Size": {
+              "X": 100.0,
+              "Y": 26.0
+            },
+            "Name": "hardThirdSingle",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FontSize": 20,
+            "LabelText": "David",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "Fonts/neuropol x rg.ttf",
+              "Plist": ""
+            },
+            "OutlineColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
+            "OutlineEnabled": true,
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 518.3828,
+              "Y": 116.9781
+            },
+            "Scale": {
+              "ScaleX": 0.8634,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.54,
+              "Y": 0.1828
+            },
+            "PreSize": {
+              "X": 0.0812,
+              "Y": 0.0406
+            },
+            "LeftMargin": 479.3828,
+            "RightMargin": 402.6172,
+            "TopMargin": 510.0219,
+            "BottomMargin": 103.9781,
+            "Tag": 35,
+            "ActionTag": 868170762,
+            "Size": {
+              "X": 78.0,
+              "Y": 26.0
+            },
+            "Name": "hardFirstMulti",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FontSize": 20,
+            "LabelText": "Ralph",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "Fonts/neuropol x rg.ttf",
+              "Plist": ""
+            },
+            "OutlineColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
+            "OutlineEnabled": true,
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 516.8143,
+              "Y": 91.2027
+            },
+            "Scale": {
+              "ScaleX": 0.8634,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5383,
+              "Y": 0.1425
+            },
+            "PreSize": {
+              "X": 0.0792,
+              "Y": 0.0406
+            },
+            "LeftMargin": 478.8143,
+            "RightMargin": 405.1857,
+            "TopMargin": 535.7973,
+            "BottomMargin": 78.2027,
+            "Tag": 36,
+            "ActionTag": 1867292938,
+            "Size": {
+              "X": 76.0,
+              "Y": 26.0
+            },
+            "Name": "hardSecondMulti",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FontSize": 20,
+            "LabelText": "Andrew",
+            "FontResource": {
+              "Type": "Normal",
+              "Path": "Fonts/neuropol x rg.ttf",
+              "Plist": ""
+            },
+            "OutlineColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
+            "OutlineEnabled": true,
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 524.7108,
+              "Y": 66.4788
+            },
+            "Scale": {
+              "ScaleX": 0.8634,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5466,
+              "Y": 0.1039
+            },
+            "PreSize": {
+              "X": 0.1042,
+              "Y": 0.0406
+            },
+            "LeftMargin": 474.7108,
+            "RightMargin": 385.2892,
+            "TopMargin": 560.5212,
+            "BottomMargin": 53.4788,
+            "Tag": 37,
+            "ActionTag": -1221744162,
+            "Size": {
+              "X": 100.0,
+              "Y": 26.0
+            },
+            "Name": "hardThirdMulti",
+            "ctype": "TextObjectData"
           }
         ],
         "Size": {
@@ -147,6 +819,7 @@
         "Default/Button_Disable.png",
         "Default/Button_Normal.png",
         "Default/Button_Press.png",
+        "Fonts/neuropol x rg.ttf",
         "Images/hall of fame.png"
       ],
       "ctype": "GameFileData"

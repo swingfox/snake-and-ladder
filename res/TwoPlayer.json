@@ -219,6 +219,7 @@
                   "X": 361.0,
                   "Y": 161.0
                 },
+                "Alpha": 0,
                 "Name": "btnBack",
                 "ctype": "ButtonObjectData"
               },
@@ -299,6 +300,7 @@
                   "X": 361.0,
                   "Y": 161.0
                 },
+                "Alpha": 0,
                 "Name": "btnNext",
                 "ctype": "ButtonObjectData"
               }

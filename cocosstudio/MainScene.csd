@@ -20,7 +20,7 @@
                 <FontResource Type="Normal" Path="Fonts/neuropol x rg.ttf" Plist="" />
                 <TextColor A="255" R="230" G="230" B="250" />
                 <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-                <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
+                <PressedFileData Type="Normal" Path="Images/button.png" Plist="" />
                 <NormalFileData Type="Normal" Path="Images/button.png" Plist="" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
@@ -36,7 +36,7 @@
                 <FontResource Type="Normal" Path="Fonts/neuropol x rg.ttf" Plist="" />
                 <TextColor A="255" R="230" G="230" B="250" />
                 <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-                <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
+                <PressedFileData Type="Normal" Path="Images/button.png" Plist="" />
                 <NormalFileData Type="Normal" Path="Images/button.png" Plist="" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
@@ -52,7 +52,7 @@
                 <FontResource Type="Normal" Path="Fonts/neuropol x rg.ttf" Plist="" />
                 <TextColor A="255" R="230" G="230" B="250" />
                 <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-                <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
+                <PressedFileData Type="Normal" Path="Images/button.png" Plist="" />
                 <NormalFileData Type="Normal" Path="Images/button.png" Plist="" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
@@ -68,7 +68,7 @@
                 <FontResource Type="Normal" Path="Fonts/neuropol x rg.ttf" Plist="" />
                 <TextColor A="255" R="230" G="230" B="250" />
                 <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-                <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
+                <PressedFileData Type="Normal" Path="Images/button.png" Plist="" />
                 <NormalFileData Type="Normal" Path="Images/button.png" Plist="" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
@@ -84,7 +84,7 @@
                 <FontResource Type="Normal" Path="Fonts/neuropol x rg.ttf" Plist="" />
                 <TextColor A="255" R="230" G="230" B="250" />
                 <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-                <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
+                <PressedFileData Type="Normal" Path="Images/button.png" Plist="" />
                 <NormalFileData Type="Normal" Path="Images/button.png" Plist="" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />

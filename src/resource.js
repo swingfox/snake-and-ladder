@@ -26,8 +26,12 @@ var res = {
     ChutesLongPlay : "res/Music/ChutesLong.mp3",
     ChutesShortPlay : "res/Music/ChutesShort.mp3",
     StairPlay : "res/Music/Stair.mp3",
-    StairShort : "res/Music/StairShort.mp3",
-    font : "res/Fonts/neuropol x rg.ttf"
+    StairShort : "res/Music/Stairshort.mp3",
+    font : "res/Fonts/neuropol x rg.ttf",
+    questionXML : "res/question.xml",
+    congratulationsScene : "res/CongratulationsScene.json",
+    answerResultScene : "res/AnswerResult.json",
+    pauseLayer : "res/PauseLayer.json"
 };
 
 var g_resources = [];

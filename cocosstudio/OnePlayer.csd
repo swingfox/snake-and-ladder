@@ -9,7 +9,7 @@
           <AbstractNodeData Name="playerOneSprite" CanEdit="False" ActionTag="-1232712230" Tag="92" IconVisible="False" LeftMargin="-161.3087" RightMargin="-158.6913" TopMargin="-41.6576" BottomMargin="-38.3424" ctype="SpriteObjectData">
             <Size X="1280.0000" Y="720.0000" />
             <Children>
-              <AbstractNodeData Name="btnBack" CanEdit="False" ActionTag="1025272023" Tag="14" IconVisible="False" LeftMargin="355.4215" RightMargin="563.5785" TopMargin="435.5425" BottomMargin="123.4575" TouchEnable="True" FontSize="48" ButtonText=" Back   " Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="331" Scale9Height="139" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+              <AbstractNodeData Name="btnBack" CanEdit="False" ActionTag="1025272023" Alpha="0" Tag="14" IconVisible="False" LeftMargin="355.4215" RightMargin="563.5785" TopMargin="435.5425" BottomMargin="123.4575" TouchEnable="True" FontSize="48" ButtonText=" Back   " Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="331" Scale9Height="139" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="361.0000" Y="161.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="535.9215" Y="203.9575" />
@@ -25,7 +25,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="btnNext" CanEdit="False" ActionTag="-1228554775" Tag="16" IconVisible="False" LeftMargin="590.6335" RightMargin="328.3665" TopMargin="432.0814" BottomMargin="126.9186" TouchEnable="True" FontSize="48" ButtonText="Next   " Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="331" Scale9Height="139" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+              <AbstractNodeData Name="btnNext" CanEdit="False" ActionTag="-1228554775" Alpha="0" Tag="16" IconVisible="False" LeftMargin="590.6335" RightMargin="328.3665" TopMargin="432.0814" BottomMargin="126.9186" TouchEnable="True" FontSize="48" ButtonText="Next   " Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="331" Scale9Height="139" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="361.0000" Y="161.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="771.1335" Y="207.4186" />

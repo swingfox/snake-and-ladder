@@ -1,28 +1,14 @@
-
 var SnakeAndLadderLayer = cc.Layer.extend({
-    sprite:null,
-    btnSingle:null,
-    btnMultiplayer:null,
-    btnOptions:null,
-    btnInstructions:null,
-    btnHallofFame:null,
-    homeSprite:null,
-    menu:null,
-    isMusicStopped:false,
-    ctor:function (isMusicStopped) {
+    ctor:function () {
         this._super();
         this.init();
-        var size = cc.winSize;
-
-        this.isMusicStopped = isMusicStopped;
-
         return true;
     },
     init:function(){
          homeSprite = ccs.load(res.MainScene).node;
          menu = homeSprite.getChildByName("homeBackground");
          this.initializeButtons();
-         
+         this.storage = cc.sys.localStorage;
          this.addChild(homeSprite);
        /*  if(!cc.audioEngine.isMusicPlaying())
             this.playSong();*/
@@ -43,40 +29,48 @@ var SnakeAndLadderLayer = cc.Layer.extend({
         this.initializeListeners();
     },
     initializeListeners:function(){
-        btnSingle.addTouchEventListener(this.singlePlayerScene,this);
-        btnMultiplayer.addTouchEventListener(this.multiPlayerScene,this);
-        btnOptions.addTouchEventListener(this.optionsScene,this);
-        btnInstructions.addTouchEventListener(this.instructionsScene,this);
-        btnHallofFame.addTouchEventListener(this.creditsScene,this);
+       btnSingle.addTouchEventListener(this.singlePlayerScene,this);
+       btnMultiplayer.addTouchEventListener(this.multiPlayerScene,this);
+       btnOptions.addTouchEventListener(this.optionsScene,this);
+       btnInstructions.addTouchEventListener(this.instructionsScene,this);
+       btnHallofFame.addTouchEventListener(this.creditsScene,this);
     },
     singlePlayerScene:function(){
-        cc.director.pushScene(new SinglePlayerScene());
+        if(this.storage.getItem("sounds")=="on")
+            cc.audioEngine.playEffect(res.ClickPlay);
+        cc.director.pushScene(new cc.TransitionFade(0.5,new SinglePlayerScene()));
     },
     multiPlayerScene:function(){
-        cc.director.pushScene(new QuestionScene());
+        if(this.storage.getItem("sounds")=="on")
+            cc.audioEngine.playEffect(res.ClickPlay);
+        cc.director.pushScene(new cc.TransitionFade(0.5,new TwoPlayerScene()));
     },
     optionsScene:function(){
-        cc.director.pushScene(new GameOptionScene());
+        if(this.storage.getItem("sounds")=="on")
+            cc.audioEngine.playEffect(res.ClickPlay);
+        cc.director.pushScene(new cc.TransitionFade(0.5,new GameOptionScene()));
     },
     instructionsScene:function(){
-        cc.director.pushScene(new InstructionScene());
+        if(this.storage.getItem("sounds")=="on")
+            cc.audioEngine.playEffect(res.ClickPlay);
+        cc.director.pushScene(new cc.TransitionFade(0.5,new InstructionScene()));
     },
     creditsScene:function(){
-        cc.director.pushScene(new HallOfFameScene());
+        if(this.storage.getItem("sounds")=="on")
+            cc.audioEngine.playEffect(res.ClickPlay);
+        cc.director.pushScene(new cc.TransitionFade(0.5,new HallOfFameScene()));
     }
 });
 
 var SnakeAndLadderScene = cc.Scene.extend({
-    ctor:function(isMusicStopped){
+    ctor:function(){
         this._super();
-        var layer = new SnakeAndLadderLayer(isMusicStopped);
-        this.addChild(layer);
+        this.addChild(new SnakeAndLadderLayer());
         return true;
     },
-    onEnter:function (isMusicStopped) {
+    onEnter:function(){
         this._super();
-        var layer = new SnakeAndLadderLayer(isMusicStopped);
-        this.addChild(layer);
+        this.addChild(new SnakeAndLadderLayer());
     }
 });
 

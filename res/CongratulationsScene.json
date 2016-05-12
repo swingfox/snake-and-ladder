@@ -58,6 +58,421 @@
             },
             "Name": "congratsSprite",
             "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "Images/game_over.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 504.669,
+              "Y": 445.1544
+            },
+            "Scale": {
+              "ScaleX": 0.5446,
+              "ScaleY": 0.6438
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5257,
+              "Y": 0.6956
+            },
+            "PreSize": {
+              "X": 0.9448,
+              "Y": 0.7281
+            },
+            "LeftMargin": 51.169,
+            "RightMargin": 1.831,
+            "TopMargin": -38.1544,
+            "BottomMargin": 212.1544,
+            "Tag": 52,
+            "Children": [
+              {
+                "FontSize": 20,
+                "LabelText": "Congratulations!",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Fonts/neuropol x rg.ttf",
+                  "Plist": ""
+                },
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 466.599,
+                  "Y": 399.6114
+                },
+                "Scale": {
+                  "ScaleX": 2.6375,
+                  "ScaleY": 2.7931
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5144,
+                  "Y": 0.8575
+                },
+                "PreSize": {
+                  "X": 0.2238,
+                  "Y": 0.0515
+                },
+                "LeftMargin": 365.099,
+                "RightMargin": 338.901,
+                "TopMargin": 54.3886,
+                "BottomMargin": 387.6114,
+                "Tag": 56,
+                "ActionTag": 1803858456,
+                "Size": {
+                  "X": 203.0,
+                  "Y": 24.0
+                },
+                "Name": "Text_1",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 20,
+                "LabelText": "You are a hall of famer!",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Fonts/neuropol x rg.ttf",
+                  "Plist": ""
+                },
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 471.3949,
+                  "Y": 218.4189
+                },
+                "Scale": {
+                  "ScaleX": 1.7124,
+                  "ScaleY": 1.8368
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5197,
+                  "Y": 0.4687
+                },
+                "PreSize": {
+                  "X": 0.3186,
+                  "Y": 0.0515
+                },
+                "LeftMargin": 326.8949,
+                "RightMargin": 291.1051,
+                "TopMargin": 235.5811,
+                "BottomMargin": 206.4189,
+                "Tag": 57,
+                "ActionTag": 565772448,
+                "Size": {
+                  "X": 289.0,
+                  "Y": 24.0
+                },
+                "Name": "Text_1_0",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 20,
+                "LabelText": "You time is, 00 mins and 00 sec.       ",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Fonts/neuropol x rg.ttf",
+                  "Plist": ""
+                },
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 469.4066,
+                  "Y": 143.1309
+                },
+                "Scale": {
+                  "ScaleX": 1.7619,
+                  "ScaleY": 1.5977
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5175,
+                  "Y": 0.3071
+                },
+                "PreSize": {
+                  "X": 0.5028,
+                  "Y": 0.0515
+                },
+                "LeftMargin": 241.4066,
+                "RightMargin": 209.5934,
+                "TopMargin": 310.8691,
+                "BottomMargin": 131.1309,
+                "Tag": 58,
+                "ActionTag": -696094981,
+                "Size": {
+                  "X": 456.0,
+                  "Y": 24.0
+                },
+                "Name": "txtElapsed",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 24,
+                "LabelText": "[Player]",
+                "FontResource": {
+                  "Type": "Normal",
+                  "Path": "Fonts/neuropol x rg.ttf",
+                  "Plist": ""
+                },
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 472.7098,
+                  "Y": 311.3597
+                },
+                "Scale": {
+                  "ScaleX": 1.7124,
+                  "ScaleY": 1.8368
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5212,
+                  "Y": 0.6682
+                },
+                "PreSize": {
+                  "X": 0.1246,
+                  "Y": 0.0622
+                },
+                "LeftMargin": 416.2098,
+                "RightMargin": 377.7902,
+                "TopMargin": 140.1403,
+                "BottomMargin": 296.8597,
+                "Tag": 90,
+                "ActionTag": -2029134034,
+                "Size": {
+                  "X": 113.0,
+                  "Y": 29.0
+                },
+                "Name": "txtPlayer",
+                "ctype": "TextObjectData"
+              }
+            ],
+            "ActionTag": 1891583697,
+            "Size": {
+              "X": 907.0,
+              "Y": 466.0
+            },
+            "Name": "congratsBoard",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Disable.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "Normal",
+              "Path": "Images/button.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "Normal",
+              "Path": "Images/button.png",
+              "Plist": ""
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 331,
+            "Scale9Height": 139,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 493.2103,
+              "Y": 243.7987
+            },
+            "Scale": {
+              "ScaleX": 0.5085,
+              "ScaleY": 0.3486
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5138,
+              "Y": 0.3809
+            },
+            "PreSize": {
+              "X": 0.376,
+              "Y": 0.2516
+            },
+            "LeftMargin": 312.7103,
+            "RightMargin": 286.2897,
+            "TopMargin": 315.7013,
+            "BottomMargin": 163.2987,
+            "Tag": 59,
+            "ActionTag": -1185702146,
+            "Size": {
+              "X": 361.0,
+              "Y": 161.0
+            },
+            "Alpha": 0,
+            "Name": "btnPlayAgain",
+            "ctype": "ButtonObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Disable.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "Normal",
+              "Path": "Images/button.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "Normal",
+              "Path": "Images/button.png",
+              "Plist": ""
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 331,
+            "Scale9Height": 139,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 490.8435,
+              "Y": 146.3367
+            },
+            "Scale": {
+              "ScaleX": 0.5025,
+              "ScaleY": 0.3546
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5113,
+              "Y": 0.2287
+            },
+            "PreSize": {
+              "X": 0.376,
+              "Y": 0.2516
+            },
+            "LeftMargin": 310.3435,
+            "RightMargin": 288.6565,
+            "TopMargin": 413.1633,
+            "BottomMargin": 65.8367,
+            "Tag": 60,
+            "ActionTag": -367472896,
+            "Size": {
+              "X": 361.0,
+              "Y": 161.0
+            },
+            "Alpha": 0,
+            "Name": "btnMenu",
+            "ctype": "ButtonObjectData"
           }
         ],
         "Size": {
@@ -68,7 +483,11 @@
         "ctype": "SingleNodeObjectData"
       },
       "UsedResources": [
-        "Images/congrats.png"
+        "Default/Button_Disable.png",
+        "Fonts/neuropol x rg.ttf",
+        "Images/button.png",
+        "Images/congrats.png",
+        "Images/game_over.png"
       ],
       "ctype": "GameFileData"
     }

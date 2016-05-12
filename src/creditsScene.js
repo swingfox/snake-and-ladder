@@ -1,7 +1,4 @@
 var CreditsLayer = cc.Layer.extend({
-	scene:null,
-	credits:null,
-	btnOK:null,
 	ctor:function(){
 		this._super();
 		this.init();
@@ -20,6 +17,9 @@ var CreditsLayer = cc.Layer.extend({
 		btnOK.addTouchEventListener(this.goBack,this);
 	},
 	goBack:function(){
+		if(this.storage.getItem("sounds")=="on")
+			cc.audioEngine.playEffect(res.ClickPlay);
+		
 		cc.director.popScene();
 	}
 });

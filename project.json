@@ -6,7 +6,7 @@
     "frameRate" : 60,
     "noCache" : false,
     "id" : "gameCanvas",
-    "renderMode" : 1,
+    "renderMode" : 0,
     "engineDir":"frameworks/cocos2d-html5",
 
     "modules" : ["cocos2d", "cocostudio"],
@@ -22,6 +22,9 @@
         "src/gameOverScene.js",
         "src/gameOptionScene.js",
         "src/hallOfFame.js",
-        "src/questionScene.js"
+        "src/questionScene.js",
+        "src/congratulationsScene.js",
+        "src/pauseLayer.js",
+        "src/answerResult.js"
     ]
 }
