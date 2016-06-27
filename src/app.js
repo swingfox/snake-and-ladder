@@ -9,6 +9,7 @@ var SnakeAndLadderLayer = cc.Layer.extend({
          menu = homeSprite.getChildByName("homeBackground");
          this.initializeButtons();
          this.storage = cc.sys.localStorage;
+         this.initializeStorageOptions();
          this.addChild(homeSprite);
        /*  if(!cc.audioEngine.isMusicPlaying())
             this.playSong();*/
@@ -34,6 +35,22 @@ var SnakeAndLadderLayer = cc.Layer.extend({
        btnOptions.addTouchEventListener(this.optionsScene,this);
        btnInstructions.addTouchEventListener(this.instructionsScene,this);
        btnHallofFame.addTouchEventListener(this.creditsScene,this);
+    },
+    initializeStorageOptions:function(){
+        var music = this.storage.getItem("music");
+        if(music == undefined || music == null){
+            this.storage.setItem("music","on");
+        }
+
+        var sounds = this.storage.getItem("sounds");
+        if(sounds == undefined || sounds == null){
+            this.storage.setItem("sounds","on");
+        }
+
+        var difficulty = this.storage.getItem("difficulties");
+        if(difficulty==undefined || difficulty==null){
+            this.storage.setItem("difficulties","easy");
+        }
     },
     singlePlayerScene:function(){
         if(this.storage.getItem("sounds")=="on")

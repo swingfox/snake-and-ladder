@@ -35,6 +35,7 @@ var PlayLayer = cc.Layer.extend({
 		this.schedule(this.resetMoves,0.3);
 
 		this.schedule(this.finishingSquareCheck,0.5);
+		this.schedule(this.checkLifeOver,0.1);
 	
 		this.pausePopUp = false;
 
@@ -44,8 +45,8 @@ var PlayLayer = cc.Layer.extend({
 		var playerOneBounding;
     	var playerTwoBounding;
     	var playerName = "computer";
-    	var minute;
-    	var seconds;
+    	var minute = "00";
+    	var seconds = "00";
 
     	if(turnText != null)
     		playerName = turnText.getString();
@@ -69,6 +70,7 @@ var PlayLayer = cc.Layer.extend({
 				cc.audioEngine.end();
 				
 				this.stopPlayerActions();
+				cc.log("TOTAL TIME: "+ minute +" mins " + seconds + " secs");
 				cc.director.pushScene(new cc.TransitionFade(0,new CongratulationsScene(playerName,minute,seconds,this._typeOfGame)));
 			}
 
@@ -76,15 +78,42 @@ var PlayLayer = cc.Layer.extend({
 				cc.audioEngine.end();
 				cc.log("SINGLE + WHITE");
 				this.stopPlayerActions();
+				cc.log("TOTAL TIME: "+ minute +" mins " + seconds + " secs");
+
 				cc.director.pushScene(new cc.TransitionFade(0,new GameOverScene(playerName,this._typeOfGame)));
 			}
 			else if(this._typeOfGame=="TWO_PLAYER" && cc.rectIntersectsRect(playerTwoBounding,this.cornerRect[9].getBoundingBox())){
 				cc.audioEngine.end();
 				cc.log("TWO + WHITE");
 				this.stopPlayerActions();
+				cc.log("TOTAL TIME: "+ minute +" mins " + seconds + " secs");
+				
 				cc.director.pushScene(new cc.TransitionFade(0,new CongratulationsScene(playerName,minute,seconds,this._typeOfGame)));
 			}
 		
+	},
+	checkLifeOver:function(){
+		var c = cc.sys.localStorage;
+		var l;
+		var l2;
+		if(c.getItem("life") != undefined || c.getItem("life") != null){
+			l = parseInt(c.getItem("life"));
+		}
+		if(c.getItem("life2") != undefined || c.getItem("life2") != null){
+			l2 = parseInt(c.getItem("life2"));
+		}
+
+		if(turnText != null)
+    		playerName = turnText.getString();
+
+		if(l == 0){
+			cc.director.pushScene(new cc.TransitionFade(0,new GameOverScene(this._playerOneName,this._typeOfGame)));
+		}
+
+		if(l2 == 0 && this._typeOfGame=="TWO_PLAYER"){
+			cc.director.pushScene(new cc.TransitionFade(0,new GameOverScene(this._playerTwoName,this._typeOfGame)));
+		}
+
 	},
 	stopPlayerActions:function(){
 		this.firstPlayer.stopAction(this.blackDiceAction);
@@ -92,8 +121,6 @@ var PlayLayer = cc.Layer.extend({
 	},
 	onEnter:function(){
 		this._super();
-		this.removeListeners();
-		this.resumeListeners();
 	},
 	playerCheck:function(){
 		if(this.blackCheck() && this.btnRollClicked == true && this._typeOfGame == "SINGLE_PLAYER" && this.storage.getItem("player")=="playerOne"){ // RUN THIS AFTER BLACK FINISHES
@@ -137,6 +164,7 @@ var PlayLayer = cc.Layer.extend({
         cc.audioEngine.stopMusic();
 	},
 	computer:function(){
+	    cc.eventManager.removeListener(this.touchListener);
 		this.rollTheDice();
 		cc.log("COMPUTER PLAYING");
 	},
@@ -168,9 +196,7 @@ var PlayLayer = cc.Layer.extend({
 
 		this.btnRoll = scene.getChildByName("btnRoll");
 
-
 		lifeText = woodSprite.getChildByName("lifeText");
-    	
 
         this.stage = 1;
         this.stageWhite = 1;
@@ -198,6 +224,9 @@ var PlayLayer = cc.Layer.extend({
 		cc.log("PAUSE SPRITE" + this.pauseSprite);
 
 
+	},
+	reinitializeListener:function(){
+	    cc.eventManager.addListener(this.touchListener, this.btnRoll);
 	},
 	initializeListeners:function(){
 		var main = this;
@@ -234,18 +263,52 @@ var PlayLayer = cc.Layer.extend({
         		if(objectName=="btnRoll"){
 				    main.rollTheDice();
 				    main.btnRollClicked = true;
-				}
-				else if(objectName=="pauseSprite"){
-					main.pausePopUp = true;
+	    			cc.eventManager.removeListener(main.touchListener);
 				}
 			}
 
 	    }
 	});
-	
-	    cc.eventManager.addListener(this.touchListener.clone(), this.btnRoll);
-	    cc.eventManager.addListener(this.touchListener.clone(), this.pauseSprite);
 
+		this.pauseListener = cc.EventListener.create({
+	    event: cc.EventListener.TOUCH_ONE_BY_ONE,
+	    swallowTouches: true,
+	    onTouchBegan: function (touch, event) {	
+		    var target = event.getCurrentTarget();	
+		    var locationInNode = target.convertToNodeSpace(touch.getLocation());	
+		    var s = target.getContentSize();
+		    var rect = cc.rect(0, 0, s.width, s.height);
+		    var objectName = target.getName();
+
+		    if (cc.rectContainsPoint(rect, locationInNode)) {	
+			    target.opacity = 180;
+	
+			    return true;
+		    }
+		    return false;
+	    },
+	    onTouchEnded: function (touch, event) {			
+		    var target = event.getCurrentTarget();
+		    var locationInNode = target.convertToNodeSpace(touch.getLocation());	
+		    var s = target.getContentSize();
+		    var rect = cc.rect(0, 0, s.width, s.height);
+		    var objectName = target.getName();
+
+		    if (cc.rectContainsPoint(rect, locationInNode)) {	
+			    target.opacity = 255;
+        		
+        		if(main.storage.getItem("sounds")=="on")
+        			cc.audioEngine.playEffect(res.ClickPlay);
+
+ 					if(objectName=="pauseSprite"){
+						main.pausePopUp = true;
+					}
+			}
+
+	    }
+	});
+	    cc.eventManager.addListener(this.touchListener, this.btnRoll);
+	    cc.eventManager.addListener(this.pauseListener.clone(), this.pauseSprite);
 	},
 	blackDiceAction:null,
 	ladderRect:[],
@@ -277,6 +340,7 @@ var PlayLayer = cc.Layer.extend({
 				this.storage.setItem("questionAnswer","null");
 				if(this.storage.getItem("sounds")=="on")
 					cc.audioEngine.playEffect(res.ChutesShortPlay);
+				this.scheduleOnce(this.reinitializeListener,1.8);
 
 			}
 			else if(this.blackDiceAction != null && this.blackDiceAction.isDone()==true){
@@ -285,6 +349,8 @@ var PlayLayer = cc.Layer.extend({
 					this.scheduleOnce(this.newScene,0);
     			else if(this._typeOfGame=="TWO_PLAYER")
 					this.scheduleOnce(this.newScene,0.5);
+				this.scheduleOnce(this.reinitializeListener,0.7);
+
 			}
 				this.storage.setItem("questionAnswer","null");
 				cc.log("ON SLIDER 0");
@@ -302,6 +368,8 @@ var PlayLayer = cc.Layer.extend({
 				if(this.storage.getItem("sounds")=="on")
 					cc.audioEngine.playEffect(res.ChutesLongPlay);
 
+				this.scheduleOnce(this.reinitializeListener,1.3);
+
 			}
 			else if(this.blackDiceAction != null && this.blackDiceAction.isDone()==true){
     			this.firstPlayer.stopAction(this.blackDiceAction);	
@@ -309,6 +377,8 @@ var PlayLayer = cc.Layer.extend({
 					this.scheduleOnce(this.newScene,0);
     			else if(this._typeOfGame=="TWO_PLAYER")
 					this.scheduleOnce(this.newScene,0.5);
+
+				this.scheduleOnce(this.reinitializeListener,0.7);
 			}
 				this.storage.setItem("questionAnswer","null");
 		cc.log("ON SLIDER 1");
@@ -324,6 +394,8 @@ var PlayLayer = cc.Layer.extend({
 				this.stage-=7;
 				this.storage.setItem("questionAnswer","null");
 
+				this.scheduleOnce(this.reinitializeListener,2.3);
+
 				cc.audioEngine.playEffect(res.ChutesLongPlay);
 			}
 			else if(this.blackDiceAction != null && this.blackDiceAction.isDone()==true){
@@ -332,6 +404,8 @@ var PlayLayer = cc.Layer.extend({
 					this.scheduleOnce(this.newScene,0);
     			else if(this._typeOfGame=="TWO_PLAYER")
 					this.scheduleOnce(this.newScene,0.5);
+				this.scheduleOnce(this.reinitializeListener,0.7);
+
 			}
 				this.storage.setItem("questionAnswer","null");
 		cc.log("ON SLIDER 2");
@@ -347,6 +421,9 @@ var PlayLayer = cc.Layer.extend({
 				this.stage-=4;
 				this.storage.setItem("questionAnswer","null");
 
+				this.scheduleOnce(this.reinitializeListener,2.8);
+
+
 				cc.audioEngine.playEffect(res.ChutesLongPlay);
 			}
 			else if(this.blackDiceAction != null && this.blackDiceAction.isDone()==true){
@@ -355,6 +432,9 @@ var PlayLayer = cc.Layer.extend({
 					this.scheduleOnce(this.newScene,0);
     			else if(this._typeOfGame=="TWO_PLAYER")
 					this.scheduleOnce(this.newScene,0.5);
+
+				this.scheduleOnce(this.reinitializeListener,0.7);
+
 			}
 				this.storage.setItem("questionAnswer","null");
 		cc.log("ON SLIDER 3");
@@ -371,6 +451,9 @@ var PlayLayer = cc.Layer.extend({
 				this.storage.setItem("questionAnswer","null");
 				if(this.storage.getItem("sounds")=="on")
 					cc.audioEngine.playEffect(res.ChutesLongPlay);
+
+				this.scheduleOnce(this.reinitializeListener,1.8);
+
 			}
 			else if(this.blackDiceAction != null && this.blackDiceAction.isDone()==true){
     			this.firstPlayer.stopAction(this.blackDiceAction);	
@@ -378,6 +461,9 @@ var PlayLayer = cc.Layer.extend({
 					this.scheduleOnce(this.newScene,0);
     			else if(this._typeOfGame=="TWO_PLAYER")
 					this.scheduleOnce(this.newScene,0.5);
+
+				this.scheduleOnce(this.reinitializeListener,0.7);
+
 			}
 				this.storage.setItem("questionAnswer","null");
 		cc.log("ON SLIDER 4");
@@ -689,6 +775,9 @@ var PlayLayer = cc.Layer.extend({
     	this.storage.setItem("seconds",(player == "playerTwo") ? this.sec:this.sec2);
     	this.storage.setItem("playerName",playerName);
 
+
+		this.reinitializeListener();
+
     	cc.director.pushScene(new cc.TransitionFade(0.1,new QuestionScene()));
     	this.blackDiceAction = null;
     	this.whiteDiceAction = null;
@@ -726,8 +815,8 @@ var PlayLayer = cc.Layer.extend({
 		this.firstPlayer = cc.Sprite.create();
 		this.firstPlayer.setColor(cc.color(0,0,0));
 		this.firstPlayer.setPosition(20, 45);
-		this.firstPlayer.setPosition(340, 595);
-		this.stage = 8;
+	//	this.firstPlayer.setPosition(340, 595);
+	//	this.stage = 8; 	
 
 		this.firstPlayer.setTextureRect(cc.rect(0, 0, 15, 15));
 		this.firstPlayer.setOpacity(255);
@@ -760,8 +849,8 @@ var PlayLayer = cc.Layer.extend({
 
 		this.secondPlayer = cc.Sprite.create();
 		this.secondPlayer.setColor(cc.color(255,255,255));
-	//	this.secondPlayer.setPosition(340, 595);
-		//this.stageWhite=10;
+	/*	this.secondPlayer.setPosition(340, 595);
+		this.stageWhite=10;*/
 		this.secondPlayer.setPosition(20, 20);
 		this.secondPlayer.setTextureRect(cc.rect(0, 0, 15, 15));
 		this.secondPlayer.setOpacity(255);
@@ -954,11 +1043,13 @@ var PlayLayer = cc.Layer.extend({
 		var playerOneBounding = this.firstPlayer.getBoundingBox();
 		this.blackDiceAction = this.firstPlayer.runAction(first);
 		
-		cc.audioEngine.playEffect(res.MovePlay);
+        if(this.storage.getItem("sounds")=="on")
+			cc.audioEngine.playEffect(res.MovePlay);
 
     	if(cc.rectIntersectsRect(playerOneBounding,this.cornerRect[0].getBoundingBox())){
 	    	this.firstPlayer.stopAction(this.blackDiceAction);
 			this.scheduleOnce(this.goUp,0.1);
+
 		}
 		else if(cc.rectIntersectsRect(playerOneBounding,this.cornerRect[1].getBoundingBox())){
 	    	this.firstPlayer.stopAction(this.blackDiceAction);
@@ -987,7 +1078,8 @@ var PlayLayer = cc.Layer.extend({
 		var playerOneBounding = this.firstPlayer.getBoundingBox();
 		this.blackDiceAction = this.firstPlayer.runAction(first);
 
-		cc.audioEngine.playEffect(res.MovePlay);
+        if(this.storage.getItem("sounds")=="on")
+			cc.audioEngine.playEffect(res.MovePlay);
 		if(cc.rectIntersectsRect(playerOneBounding,this.cornerRect[5].getBoundingBox())){
 	    	this.firstPlayer.stopAction(this.blackDiceAction);
 	    	cc.log("COLLIDE RECT " + 5 + "!");
@@ -1025,7 +1117,8 @@ var PlayLayer = cc.Layer.extend({
 		var playerOneBounding = this.secondPlayer.getBoundingBox();
 		var ladderOneBounding = this.ladderRect[0].getBoundingBox();
 		this.whiteDiceAction = this.secondPlayer.runAction(first);
-		cc.audioEngine.playEffect(res.MovePlay);
+        if(this.storage.getItem("sounds")=="on")
+			cc.audioEngine.playEffect(res.MovePlay);
     	if(cc.rectIntersectsRect(playerOneBounding,this.cornerRect[0].getBoundingBox())){
 	    	this.secondPlayer.stopAction(this.whiteDiceAction);
 	    	cc.log("WHITE COLLIDE RECT " + 0 + "!");
@@ -1062,8 +1155,8 @@ var PlayLayer = cc.Layer.extend({
 		var first = cc.moveBy(0.5,cc.p(-65,0));
 		var playerOneBounding = this.secondPlayer.getBoundingBox();
 		this.whiteDiceAction = this.secondPlayer.runAction(first);
-
-		cc.audioEngine.playEffect(res.MovePlay);
+        if(this.storage.getItem("sounds")=="on")
+			cc.audioEngine.playEffect(res.MovePlay);
 		if(cc.rectIntersectsRect(playerOneBounding,this.cornerRect[5].getBoundingBox())){
 	    	this.secondPlayer.stopAction(this.whiteDiceAction);
 	    	cc.log("WHITE COLLIDE RECT " + 5 + "!");
@@ -1101,42 +1194,42 @@ var PlayLayer = cc.Layer.extend({
 			switch(this.totalMoves){
 				case 1:
 				this.runBlackSpriteReverse();
-				this.removeListeners();
+				this.scheduleOnce(this.reinitializeListener,0.8+0.5);
 				if(this._typeOfGame=="SINGLE_PLAYER"){
 					this.scheduleOnce(this.resumeListeners,1);
-					this.scheduleOnce(this.playerCheck,1+0.5);
+					this.scheduleOnce(this.playerCheck,1+1.0);
 				}
 				break;
 				case 2:
 				this.schedule(this.runBlackSpriteReverse,0.5,1);
-				this.removeListeners();
+				this.scheduleOnce(this.reinitializeListener,1.3+0.5);
 				if(this._typeOfGame=="SINGLE_PLAYER"){
 					this.scheduleOnce(this.resumeListeners,1.5);
-					this.scheduleOnce(this.playerCheck,1.5+1.0);
+					this.scheduleOnce(this.playerCheck,1.5+1.5);
 				}
 				break;
 				case 3: 
 				this.schedule(this.runBlackSpriteReverse,0.5,2);
-				this.removeListeners();
+				this.scheduleOnce(this.reinitializeListener,1.8+0.5);
 				if(this._typeOfGame=="SINGLE_PLAYER"){
 					this.scheduleOnce(this.resumeListeners,2);
-					this.scheduleOnce(this.playerCheck,2+1.0);
+					this.scheduleOnce(this.playerCheck,2+1.5);
 				}
 				break;
 				case 4:
 				this.schedule(this.runBlackSpriteReverse,0.5,3);
-				this.removeListeners();
+				this.scheduleOnce(this.reinitializeListener,2.3+0.5);
 				if(this._typeOfGame=="SINGLE_PLAYER"){
 					this.scheduleOnce(this.resumeListeners,2.5);
-					this.scheduleOnce(this.playerCheck,2.5+1.0);
+					this.scheduleOnce(this.playerCheck,2.5+1.5);
 				}
 				break;
 				case 5:
 				this.schedule(this.runBlackSpriteReverse,0.5,4);
-				this.removeListeners();
+				this.scheduleOnce(this.reinitializeListener,2.8+0.5);
 				if(this._typeOfGame=="SINGLE_PLAYER"){
 					this.scheduleOnce(this.resumeListeners,3);
-					this.scheduleOnce(this.playerCheck,3+1.0);
+					this.scheduleOnce(this.playerCheck,3+1.5);
 				}
 				break;
 			}
@@ -1145,47 +1238,47 @@ var PlayLayer = cc.Layer.extend({
 			switch(this.totalMoves){
 				case 1:
 				this.runBlackSprite();
-				this.removeListeners();
+				this.scheduleOnce(this.reinitializeListener,0.8+0.5);
 				if(this._typeOfGame=="SINGLE_PLAYER"){
 					this.scheduleOnce(this.resumeListeners,1);
-					this.scheduleOnce(this.playerCheck,1+.5);
+					this.scheduleOnce(this.playerCheck,1+.5+0.5);
 				}
 				this._secondsForWhite = 1;
 
 				break;
 				case 2:
 				this.schedule(this.runBlackSprite,0.5,1);
-				this.removeListeners();
+				this.scheduleOnce(this.reinitializeListener,1.3+0.5);
 				if(this._typeOfGame=="SINGLE_PLAYER"){
 					this.scheduleOnce(this.resumeListeners,1.5);
-					this.scheduleOnce(this.playerCheck,1.5+1.0);
+					this.scheduleOnce(this.playerCheck,1.5+1.0+0.5);
 				}
 				this._secondsForWhite = 1.5;
 				break;
 				case 3:
 				this.schedule(this.runBlackSprite,0.5,2);
-				this.removeListeners();
+				this.scheduleOnce(this.reinitializeListener,1.8+0.5);
 				if(this._typeOfGame=="SINGLE_PLAYER"){
 					this.scheduleOnce(this.resumeListeners,2);
-					this.scheduleOnce(this.playerCheck,2+1.0);
+					this.scheduleOnce(this.playerCheck,2+1.0+0.5);
 				}
 				this._secondsForWhite = 2;
 				break;
 				case 4:
 				this.schedule(this.runBlackSprite,0.5,3);
-				this.removeListeners();
+				this.scheduleOnce(this.reinitializeListener,2.3+0.5);
 				if(this._typeOfGame=="SINGLE_PLAYER"){
 					this.scheduleOnce(this.resumeListeners,2.5);
-					this.scheduleOnce(this.playerCheck,2.5+1.0);
+					this.scheduleOnce(this.playerCheck,2.5+1.0+0.5);
 				}
 				this._secondsForWhite = 2.5;
 				break;
 				case 5:
 				this.schedule(this.runBlackSprite,0.5,4);
-				this.removeListeners();
+				this.scheduleOnce(this.reinitializeListener,2.8+0.5);
 				if(this._typeOfGame=="SINGLE_PLAYER"){
 					this.scheduleOnce(this.resumeListeners,3);
-					this.scheduleOnce(this.playerCheck,3+1.0);
+					this.scheduleOnce(this.playerCheck,3+1.0+0.5);
 				}
 				this._secondsForWhite = 3;
 				break;
@@ -1200,28 +1293,23 @@ var PlayLayer = cc.Layer.extend({
 			switch(this.totalMovesWhite){
 				case 1:
 				this.runWhiteSpriteReverse();
-				this.removeListeners();
-				this.scheduleOnce(this.resumeListeners,1);
+				this.scheduleOnce(this.reinitializeListener,1.0);
 				break;
 				case 2:
 				this.schedule(this.runWhiteSpriteReverse,0.5,1);
-				this.removeListeners();
-				this.scheduleOnce(this.resumeListeners,1.5);
+				this.scheduleOnce(this.reinitializeListener,1.5+0.5);
 				break;
 				case 3:
 				this.schedule(this.runWhiteSpriteReverse,0.5,2);
-				this.removeListeners();
-				this.scheduleOnce(this.resumeListeners,2);
+				this.scheduleOnce(this.reinitializeListener,2.5+0.5);
 				break;
 				case 4:
 				this.schedule(this.runWhiteSpriteReverse,0.5,3);
-				this.removeListeners();
-				this.scheduleOnce(this.resumeListeners,2.5);
+				this.scheduleOnce(this.reinitializeListener,3.0+0.5);
 				break;
 				case 5:
 				this.schedule(this.runWhiteSpriteReverse,0.5,4);
-				this.removeListeners();
-				this.scheduleOnce(this.resumeListeners,3);
+				this.scheduleOnce(this.reinitializeListener,3.5+0.5);
 				break;
 			}
 		}
@@ -1229,27 +1317,27 @@ var PlayLayer = cc.Layer.extend({
 			switch(this.totalMovesWhite){
 				case 1:
 				this.runWhiteSprite();
-				this.removeListeners();
+				this.scheduleOnce(this.reinitializeListener,1.0+0.5);
 				this.scheduleOnce(this.resumeListeners,1);
 				break;
 				case 2:
 				this.schedule(this.runWhiteSprite,0.5,1);
-				this.removeListeners();
+				this.scheduleOnce(this.reinitializeListener,1.5+0.5);
 				this.scheduleOnce(this.resumeListeners,1.5);
 				break;
 				case 3:
 				this.schedule(this.runWhiteSprite,0.5,2);
-				this.removeListeners();
-				this.scheduleOnce(this.resumeListeners,2);
+				this.scheduleOnce(this.reinitializeListener,2.5+0.5);
+				this.scheduleOnce(this.resumeListeners,2.5);
 				break;
 				case 4:
 				this.schedule(this.runWhiteSprite,0.5,3);
-				this.removeListeners();
+				this.scheduleOnce(this.reinitializeListener,3.0+0.5);
 				this.scheduleOnce(this.resumeListeners,2.5);
 				break;
 				case 5:
 				this.schedule(this.runWhiteSprite,0.5,4);
-				this.removeListeners();
+				this.scheduleOnce(this.reinitializeListener,3.5+0.5);
 				this.scheduleOnce(this.resumeListeners,3);
 				break;
 			}
@@ -1271,6 +1359,8 @@ var PlayScene = cc.Scene.extend({
     	this._super();
     	this.layer = new PlayLayer(typeOfGame,playerOneName,playerTwoName,this);
         this.addChild(this.layer);
+		this.scheduleUpdate();
+
 		
     },
 	onEnter:function () {
@@ -1300,8 +1390,8 @@ var PlayScene = cc.Scene.extend({
     		cc.log("pause timer player two");
 
     		}
-
-    		this.layer.btnRoll.setEnabled(true);
+    	
+    		//this.layer.btnRoll.setEnabled(true);
     	}
     }
 });

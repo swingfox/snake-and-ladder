@@ -137,7 +137,7 @@
           },
           {
             "FontSize": 20,
-            "LabelText": "David",
+            "LabelText": "David     ",
             "FontResource": {
               "Type": "Normal",
               "Path": "Fonts/neuropol x rg.ttf",
@@ -175,17 +175,17 @@
               "Y": 0.4789
             },
             "PreSize": {
-              "X": 0.0812,
+              "X": 0.1104,
               "Y": 0.0406
             },
-            "LeftMargin": 167.5569,
-            "RightMargin": 714.4431,
+            "LeftMargin": 153.5569,
+            "RightMargin": 700.4431,
             "TopMargin": 320.4939,
             "BottomMargin": 293.5061,
             "Tag": 26,
             "ActionTag": 1412644125,
             "Size": {
-              "X": 78.0,
+              "X": 106.0,
               "Y": 26.0
             },
             "Name": "easyFirstSingle",
@@ -193,7 +193,7 @@
           },
           {
             "FontSize": 20,
-            "LabelText": "Ralph",
+            "LabelText": "Ralph     ",
             "FontResource": {
               "Type": "Normal",
               "Path": "Fonts/neuropol x rg.ttf",
@@ -217,7 +217,7 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 204.9883,
+              "X": 204.3785,
               "Y": 280.7305
             },
             "Scale": {
@@ -227,21 +227,21 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.2135,
+              "X": 0.2129,
               "Y": 0.4386
             },
             "PreSize": {
-              "X": 0.0792,
+              "X": 0.1094,
               "Y": 0.0406
             },
-            "LeftMargin": 166.9883,
-            "RightMargin": 717.0117,
+            "LeftMargin": 151.8785,
+            "RightMargin": 703.1215,
             "TopMargin": 346.2695,
             "BottomMargin": 267.7305,
             "Tag": 27,
             "ActionTag": 1381141476,
             "Size": {
-              "X": 76.0,
+              "X": 105.0,
               "Y": 26.0
             },
             "Name": "easySecondSingle",
@@ -249,7 +249,7 @@
           },
           {
             "FontSize": 20,
-            "LabelText": "Andrew",
+            "LabelText": "Andrew     ",
             "FontResource": {
               "Type": "Normal",
               "Path": "Fonts/neuropol x rg.ttf",
@@ -287,17 +287,17 @@
               "Y": 0.4
             },
             "PreSize": {
-              "X": 0.1042,
+              "X": 0.1333,
               "Y": 0.0406
             },
-            "LeftMargin": 162.8846,
-            "RightMargin": 697.1154,
+            "LeftMargin": 148.8846,
+            "RightMargin": 683.1154,
             "TopMargin": 370.9933,
             "BottomMargin": 243.0067,
             "Tag": 28,
             "ActionTag": 1418678686,
             "Size": {
-              "X": 100.0,
+              "X": 128.0,
               "Y": 26.0
             },
             "Name": "easyThirdSingle",
@@ -305,7 +305,7 @@
           },
           {
             "FontSize": 20,
-            "LabelText": "David",
+            "LabelText": "David     ",
             "FontResource": {
               "Type": "Normal",
               "Path": "Fonts/neuropol x rg.ttf",
@@ -343,17 +343,17 @@
               "Y": 0.4736
             },
             "PreSize": {
-              "X": 0.0812,
+              "X": 0.1104,
               "Y": 0.0406
             },
-            "LeftMargin": 478.4961,
-            "RightMargin": 403.5039,
+            "LeftMargin": 464.4961,
+            "RightMargin": 389.5039,
             "TopMargin": 323.8655,
             "BottomMargin": 290.1345,
             "Tag": 29,
             "ActionTag": 549047203,
             "Size": {
-              "X": 78.0,
+              "X": 106.0,
               "Y": 26.0
             },
             "Name": "easyFirstMulti",
@@ -361,7 +361,7 @@
           },
           {
             "FontSize": 20,
-            "LabelText": "Ralph",
+            "LabelText": "Ralph     ",
             "FontResource": {
               "Type": "Normal",
               "Path": "Fonts/neuropol x rg.ttf",
@@ -399,17 +399,17 @@
               "Y": 0.4334
             },
             "PreSize": {
-              "X": 0.0792,
+              "X": 0.1094,
               "Y": 0.0406
             },
-            "LeftMargin": 477.9274,
-            "RightMargin": 406.0726,
+            "LeftMargin": 463.4274,
+            "RightMargin": 391.5726,
             "TopMargin": 349.641,
             "BottomMargin": 264.359,
             "Tag": 30,
             "ActionTag": 1857499814,
             "Size": {
-              "X": 76.0,
+              "X": 105.0,
               "Y": 26.0
             },
             "Name": "easySecondMulti",
@@ -417,7 +417,7 @@
           },
           {
             "FontSize": 20,
-            "LabelText": "Andrew",
+            "LabelText": "Andrew     ",
             "FontResource": {
               "Type": "Normal",
               "Path": "Fonts/neuropol x rg.ttf",
@@ -455,17 +455,17 @@
               "Y": 0.3947
             },
             "PreSize": {
-              "X": 0.1042,
+              "X": 0.1333,
               "Y": 0.0406
             },
-            "LeftMargin": 473.8242,
-            "RightMargin": 386.1758,
+            "LeftMargin": 459.8242,
+            "RightMargin": 372.1758,
             "TopMargin": 374.3648,
             "BottomMargin": 239.6352,
             "Tag": 31,
             "ActionTag": -228320067,
             "Size": {
-              "X": 100.0,
+              "X": 128.0,
               "Y": 26.0
             },
             "Name": "easyThirdMulti",
@@ -473,7 +473,7 @@
           },
           {
             "FontSize": 20,
-            "LabelText": "David",
+            "LabelText": "David     ",
             "FontResource": {
               "Type": "Normal",
               "Path": "Fonts/neuropol x rg.ttf",
@@ -511,17 +511,17 @@
               "Y": 0.2029
             },
             "PreSize": {
-              "X": 0.0812,
+              "X": 0.1104,
               "Y": 0.0406
             },
-            "LeftMargin": 168.5472,
-            "RightMargin": 713.4528,
+            "LeftMargin": 154.5472,
+            "RightMargin": 699.4528,
             "TopMargin": 497.1725,
             "BottomMargin": 116.8275,
             "Tag": 32,
             "ActionTag": -1020335712,
             "Size": {
-              "X": 78.0,
+              "X": 106.0,
               "Y": 26.0
             },
             "Name": "hardFirstSingle",
@@ -529,7 +529,7 @@
           },
           {
             "FontSize": 20,
-            "LabelText": "Ralph",
+            "LabelText": "Ralph     ",
             "FontResource": {
               "Type": "Normal",
               "Path": "Fonts/neuropol x rg.ttf",
@@ -567,17 +567,17 @@
               "Y": 0.1626
             },
             "PreSize": {
-              "X": 0.0792,
+              "X": 0.1094,
               "Y": 0.0406
             },
-            "LeftMargin": 167.9785,
-            "RightMargin": 716.0215,
+            "LeftMargin": 153.4785,
+            "RightMargin": 701.5215,
             "TopMargin": 522.9477,
             "BottomMargin": 91.0523,
             "Tag": 33,
             "ActionTag": -541676834,
             "Size": {
-              "X": 76.0,
+              "X": 105.0,
               "Y": 26.0
             },
             "Name": "hardSecondSingle",
@@ -585,7 +585,7 @@
           },
           {
             "FontSize": 20,
-            "LabelText": "Andrew",
+            "LabelText": "Andrew     ",
             "FontResource": {
               "Type": "Normal",
               "Path": "Fonts/neuropol x rg.ttf",
@@ -623,17 +623,17 @@
               "Y": 0.124
             },
             "PreSize": {
-              "X": 0.1042,
+              "X": 0.1333,
               "Y": 0.0406
             },
-            "LeftMargin": 163.8747,
-            "RightMargin": 696.1253,
+            "LeftMargin": 149.8747,
+            "RightMargin": 682.1253,
             "TopMargin": 547.6718,
             "BottomMargin": 66.3282,
             "Tag": 34,
             "ActionTag": 1164277731,
             "Size": {
-              "X": 100.0,
+              "X": 128.0,
               "Y": 26.0
             },
             "Name": "hardThirdSingle",
@@ -641,7 +641,7 @@
           },
           {
             "FontSize": 20,
-            "LabelText": "David",
+            "LabelText": "David     ",
             "FontResource": {
               "Type": "Normal",
               "Path": "Fonts/neuropol x rg.ttf",
@@ -679,17 +679,17 @@
               "Y": 0.1828
             },
             "PreSize": {
-              "X": 0.0812,
+              "X": 0.1104,
               "Y": 0.0406
             },
-            "LeftMargin": 479.3828,
-            "RightMargin": 402.6172,
+            "LeftMargin": 465.3828,
+            "RightMargin": 388.6172,
             "TopMargin": 510.0219,
             "BottomMargin": 103.9781,
             "Tag": 35,
             "ActionTag": 868170762,
             "Size": {
-              "X": 78.0,
+              "X": 106.0,
               "Y": 26.0
             },
             "Name": "hardFirstMulti",
@@ -697,7 +697,7 @@
           },
           {
             "FontSize": 20,
-            "LabelText": "Ralph",
+            "LabelText": "Ralph     ",
             "FontResource": {
               "Type": "Normal",
               "Path": "Fonts/neuropol x rg.ttf",
@@ -735,17 +735,17 @@
               "Y": 0.1425
             },
             "PreSize": {
-              "X": 0.0792,
+              "X": 0.1094,
               "Y": 0.0406
             },
-            "LeftMargin": 478.8143,
-            "RightMargin": 405.1857,
+            "LeftMargin": 464.3143,
+            "RightMargin": 390.6857,
             "TopMargin": 535.7973,
             "BottomMargin": 78.2027,
             "Tag": 36,
             "ActionTag": 1867292938,
             "Size": {
-              "X": 76.0,
+              "X": 105.0,
               "Y": 26.0
             },
             "Name": "hardSecondMulti",
@@ -753,7 +753,7 @@
           },
           {
             "FontSize": 20,
-            "LabelText": "Andrew",
+            "LabelText": "Andrew     ",
             "FontResource": {
               "Type": "Normal",
               "Path": "Fonts/neuropol x rg.ttf",
@@ -791,17 +791,17 @@
               "Y": 0.1039
             },
             "PreSize": {
-              "X": 0.1042,
+              "X": 0.1333,
               "Y": 0.0406
             },
-            "LeftMargin": 474.7108,
-            "RightMargin": 385.2892,
+            "LeftMargin": 460.7108,
+            "RightMargin": 371.2892,
             "TopMargin": 560.5212,
             "BottomMargin": 53.4788,
             "Tag": 37,
             "ActionTag": -1221744162,
             "Size": {
-              "X": 100.0,
+              "X": 128.0,
               "Y": 26.0
             },
             "Name": "hardThirdMulti",

@@ -21,15 +21,30 @@ var QuestionLayer = cc.Layer.extend({
 
 		return true;
 	},
+	getMin:function(){
+		return this._min;
+	},
+	getSec:function(){
+		return this._sec;
+	},
+	setMin:function(min){
+		this._min = min;
+	},
+	setSec:function(sec){
+		this._sec = sec;
+	},
 	init:function(){
 		scene = ccs.load(res.QuestionScene).node;
 		this._player = cc.sys.localStorage.getItem("player");
 		cc.log(this._player + " TYPE OF PLAYER");
+
 		this.storage = cc.sys.localStorage;
 
 		this._playerName = this.storage.getItem("playerName");
-		this._min = this.storage.getItem("minutes");
-		this._sec = this.storage.getItem("seconds");
+	//	this._min = this.storage.getItem("minutes");
+	//	this._sec = this.storage.getItem("seconds");
+		this._min = 0;
+		this._sec = 0;
 		this.initTextViews();
 		this.initializeButtons();
 		this.initializeSprites();
@@ -62,10 +77,16 @@ var QuestionLayer = cc.Layer.extend({
 
  		var strMin = "";
     	var strSec = "";
+    	if(this._sec == undefined)
+	    	this._sec = 0;
+	    if(this._min == undefined)
+	    	this._min = 0;
+
     	if(this._sec==59){
 	    	this._sec = 0;
 	    	this._min++;
 	    }
+
     	if(this._min<10)
     		strMin = "0";
     	if(this._sec<10)
@@ -73,14 +94,14 @@ var QuestionLayer = cc.Layer.extend({
     	cc.log(this._sec + " SECONDS");
     	cc.log(this._min + " MINUTES");
 
-	    txtTimeElapsed.setString(strMin+this._min+":"+strSec+this._sec++);
+	//    txtTimeElapsed.setString(strMin+this._min+":"+strSec+this._sec++);
 	},
 	initTextViews:function(){
 		txtPlayer = this.addTextView(this._playerName + "'s Question","txtPlayer",cc.p(490,540),20);
-		txtTime = this.addTextView("Time: ","txtTimeElapsed",cc.p(1040,380),20,cc.color(0,0,0,50));
+	//	txtTime = this.addTextView("Time: ","txtTimeElapsed",cc.p(1040,380),20,cc.color(0,0,0,50));
 		var minutes = (this._min < 10) ? "0"+this._min:this._min;
 		var seconds = (this._sec < 10) ? "0"+this._sec:this._sec;
-		txtTimeElapsed = this.addTextView("[" + minutes + ":" + seconds +"]","txtTimeElapsed",cc.p(1120,380),20,cc.color(0,0,0,50));
+	//	txtTimeElapsed = this.addTextView("[" + minutes + ":" + seconds +"]","txtTimeElapsed",cc.p(1120,380),20,cc.color(0,0,0,50));
 		txtQuestion = this.addTextView("question","txtQuestion",cc.p(490,510));
 
 	    txtAnswer1 = this.addTextView("a","txtAnswer1",cc.p(520,320)); 
@@ -89,8 +110,8 @@ var QuestionLayer = cc.Layer.extend({
 	    txtAnswer4 = this.addTextView("d","txtAnswer4",cc.p(520,110));
 
 	    this.addChild(txtPlayer);
-	    this.addChild(txtTime);
-	    this.addChild(txtTimeElapsed);
+//	    this.addChild(txtTime);
+//	    this.addChild(txtTimeElapsed);
 	    this.addChild(txtQuestion);
 	    this.addChild(txtAnswer1);
 	    this.addChild(txtAnswer2);
@@ -147,7 +168,7 @@ var QuestionLayer = cc.Layer.extend({
 	    this.storage.setItem("answer",answerXML);
 
 	    for(var i = 0; i < 4; i++){
-	    	if(choices[i]==answerXML){
+	    	if(choices[r[i]]==answerXML){
 	    		this.answerLetter = String.fromCharCode(97 + i);
 	    	}
 	    }
@@ -266,7 +287,7 @@ var QuestionLayer = cc.Layer.extend({
 				    main.yourAnswer = main.storage.getItem("a");
 				    main.storage.setItem("yourAnswer",main.yourAnswer);
 				    if(main.storage.getItem("sounds")=="on")
-				    cc.audioEngine.playEffect(res.ClickRadioPlay);
+				    	cc.audioEngine.playEffect(res.ClickRadioPlay);
 			    }
 			    else if(objectName == "radioBtnCheckedB"){
 			    	main.radioBtnCheckedA.visible = false;
@@ -276,7 +297,7 @@ var QuestionLayer = cc.Layer.extend({
 				    main.yourAnswer = main.storage.getItem("b");
 				    main.storage.setItem("yourAnswer",main.yourAnswer);
 				    if(main.storage.getItem("sounds")=="on")
-				    cc.audioEngine.playEffect(res.ClickRadioPlay);
+				    	cc.audioEngine.playEffect(res.ClickRadioPlay);
 			    }
 			    else if(objectName == "radioBtnCheckedC"){
 			    	main.radioBtnCheckedA.visible = false;
@@ -286,7 +307,7 @@ var QuestionLayer = cc.Layer.extend({
 				    main.yourAnswer = main.storage.getItem("c");
 				    main.storage.setItem("yourAnswer",main.yourAnswer);
 				    if(main.storage.getItem("sounds")=="on")
-				    cc.audioEngine.playEffect(res.ClickRadioPlay);
+				    	cc.audioEngine.playEffect(res.ClickRadioPlay);
 			    }
 			    else if(objectName == "radioBtnCheckedD"){
 			    	main.radioBtnCheckedA.visible = false;
@@ -296,33 +317,37 @@ var QuestionLayer = cc.Layer.extend({
 				    main.yourAnswer = main.storage.getItem("d");
 				    main.storage.setItem("yourAnswer",main.yourAnswer);
 				    if(main.storage.getItem("sounds")=="on")
-				    cc.audioEngine.playEffect(res.ClickRadioPlay);
+				    	cc.audioEngine.playEffect(res.ClickRadioPlay);
 			    }
 
 			    else if(objectName == "btnCQ"){
 			    	main.changeQuestion();
 					main.disableButtons();
-				    cc.audioEngine.playEffect(res.ClickPlay);
+					if(cc.sys.localStorage.getItem("sounds")=="on")
+				       cc.audioEngine.playEffect(res.ClickPlay);
 			    }
 
 			    else if(objectName == "btnFifty"){
 			    	cc.log("BUTTON FIFTY");
 			    	main.fiftyPercent();
 					main.disableButtons();
-				    cc.audioEngine.playEffect(res.ClickPlay);
+					if(cc.sys.localStorage.getItem("sounds")=="on")
+					   cc.audioEngine.playEffect(res.ClickPlay);
 			    }
 
 			    else if(objectName == "btnPass"){
 			    	main.passQuestion();
 					main.disableButtons();
-				    cc.audioEngine.playEffect(res.ClickPlay);
+					if(cc.sys.localStorage.getItem("sounds")=="on")
+				  	   cc.audioEngine.playEffect(res.ClickPlay);
 			    }
 
 			    else if(objectName == "btnOK"){
 			    	cc.log("BUTTON Pass");
 			    	if(main.yourAnswer!=null)
 			    		main.goBack();
-				    cc.audioEngine.playEffect(res.ClickPlay);
+					if(cc.sys.localStorage.getItem("sounds")=="on")
+				    	cc.audioEngine.playEffect(res.ClickPlay);
 			    }
 
 	    }
@@ -456,11 +481,13 @@ var QuestionLayer = cc.Layer.extend({
 			if(this._player=="playerOne"){
 				this.storage.setItem("switch","0");
 				this.storage.setItem("questionAnswer","correct");
+				cc.log("CORRECT ANSWER");
 			}
 
 			if(this._player=="playerTwo"){
 				this.storage.setItem("switch","1");
 				this.storage.setItem("questionAnswer2","correct");
+				cc.log("WRONG ANSWER");
 			}
 			if(this.storage.getItem("questionAnswer")=="correct" && this.storage.getItem("switch")=="1")
 			cc.log("GOT IT " + this._player);
@@ -504,7 +531,15 @@ var QuestionLayer = cc.Layer.extend({
 var QuestionScene = cc.Scene.extend({
     onEnter:function() {
         this._super();
-        this.addChild(new QuestionLayer());
+        this.layer = new QuestionLayer();
+        this.addChild(this.layer);
+        if(cc.sys.localStorage.getItem("resultSwitch")!= undefined && cc.sys.localStorage.getItem("resultSwitch")=="true"){
+        	cc.sys.localStorage.setItem("resultSwitch","false");
+        	cc.director.popScene();
+        }
+     	this.layer.setMin(cc.sys.localStorage.getItem("minutes"));
+     	this.layer.setSec(cc.sys.localStorage.getItem("seconds"));
+        this.schedule(this.layer.tick,1);
     }
 });
 

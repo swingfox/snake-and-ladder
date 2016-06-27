@@ -149,20 +149,20 @@
               "Plist": ""
             },
             "PressedFileData": {
-              "Type": "Default",
-              "Path": "Default/Button_Press.png",
+              "Type": "Normal",
+              "Path": "Images/button.png",
               "Plist": ""
             },
             "NormalFileData": {
-              "Type": "Default",
-              "Path": "Default/Button_Normal.png",
+              "Type": "Normal",
+              "Path": "Images/button.png",
               "Plist": ""
             },
             "Scale9Enable": true,
             "Scale9OriginX": 15,
             "Scale9OriginY": 11,
-            "Scale9Width": 16,
-            "Scale9Height": 14,
+            "Scale9Width": 331,
+            "Scale9Height": 139,
             "OutlineColor": {
               "G": 0,
               "B": 0
@@ -180,32 +180,32 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 820.5593,
-              "Y": 243.5558
+              "X": 827.4428,
+              "Y": 241.9908
             },
             "Scale": {
-              "ScaleX": 3.9735,
-              "ScaleY": 1.6252
+              "ScaleX": 0.7035,
+              "ScaleY": 0.8056
             },
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.8547,
-              "Y": 0.3806
+              "X": 0.8619,
+              "Y": 0.3781
             },
             "PreSize": {
-              "X": 0.0479,
-              "Y": 0.0562
+              "X": 0.376,
+              "Y": 0.2516
             },
-            "LeftMargin": 797.5593,
-            "RightMargin": 116.4407,
-            "TopMargin": 378.4442,
-            "BottomMargin": 225.5558,
+            "LeftMargin": 646.9428,
+            "RightMargin": -47.9428,
+            "TopMargin": 317.5092,
+            "BottomMargin": 161.4908,
             "Tag": 21,
             "ActionTag": 955037760,
             "Size": {
-              "X": 46.0,
-              "Y": 36.0
+              "X": 361.0,
+              "Y": 161.0
             },
             "Alpha": 0,
             "Name": "btnBack",
@@ -727,6 +727,7 @@
         "Default/Button_Disable.png",
         "Default/Button_Normal.png",
         "Default/Button_Press.png",
+        "Images/button.png",
         "Images/game option.png",
         "Images/radioButtonChecked.png",
         "Images/radioButtonEmpty.png"

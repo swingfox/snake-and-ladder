@@ -8,6 +8,7 @@ var AnswerResultLayer = cc.Layer.extend({
 		this.rightAnswer = scene.getChildByName("rightAnswer");
 		this.yourAnswer = scene.getChildByName("yourAnswer");
 		this.answerDescription = scene.getChildByName("answerDescription");
+		this.answerDescription2 = scene.getChildByName("answerDescription2");
 		this.btnOK = scene.getChildByName("btnOK");
 		this.initializeListeners();
 
@@ -15,15 +16,21 @@ var AnswerResultLayer = cc.Layer.extend({
 		this.rightAnswer.setString(answerCheck);
 		this.yourAnswer.setString(yourAnswer);
 		this.rightAnswer.setString(rightAnswer);
-		wrongMsg = "Oops! " + player + " you got the wrong answer. 5 points deduction to your life, you only have " + lifePoints + " lifepoints left.";
+		wrongMsg = "Oops! " + player + " you got the wrong answer. 5 points deduction to your life, ";
+		wrongMsg2 = "you only have " + lifePoints + " lifepoints left."
 		correctMsg = "Congrats! you got the right answer.";
 
 		if(yourAnswer==rightAnswer){
 			this.answerDescription.setString(correctMsg);
+			this.answerDescription2.setString("");
 		}
-		else
+		else{
 			this.answerDescription.setString(wrongMsg);
+			this.answerDescription2.setString(wrongMsg2);
+		}
 
+		this.storage = cc.sys.localStorage;
+		this.storage.setItem("resultSwitch","true");
 		
 		this.addChild(scene);
 	},
@@ -66,7 +73,7 @@ var AnswerResultLayer = cc.Layer.extend({
 	goBack:function(){
 		if(cc.sys.localStorage.getItem("sounds")=="on")
         	cc.audioEngine.playEffect(res.ClickPlay);
-		cc.director.popToSceneStackLevel(3);
+		cc.director.popScene();
 	}
 });
 

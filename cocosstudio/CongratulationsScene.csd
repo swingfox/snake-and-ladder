@@ -32,7 +32,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Text_1_0" ActionTag="565772448" Tag="57" IconVisible="False" LeftMargin="326.8949" RightMargin="291.1051" TopMargin="235.5811" BottomMargin="206.4189" FontSize="20" LabelText="You are a hall of famer!" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+              <AbstractNodeData Name="txtHallOfFame" ActionTag="565772448" Tag="57" IconVisible="False" LeftMargin="326.8949" RightMargin="291.1051" TopMargin="235.5811" BottomMargin="206.4189" FontSize="20" LabelText="You are a hall of famer!" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="289.0000" Y="24.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="471.3949" Y="218.4189" />

@@ -23,8 +23,8 @@ var CongratulationsLayer = cc.Layer.extend({
         this._sec = sec;
         this._typeOfGame = typeOfGame;
 
-    	var minute;
-    	var second;
+    	var minute = this._min;
+    	var second = this._sec;
     	if(this._min < 10)
     		minute = "0" + this._min;
     	if(this._sec < 10)
@@ -117,9 +117,9 @@ var CongratulationsLayer = cc.Layer.extend({
 		if(this._typeOfGame=="TWO_PLAYER" && this.storage.getItem("difficulties")=="hard"){
 			if(this.storage.getItem("hardFirstMulti")==null)
 				this.storage.setItem("hardFirstMulti",this._player);
-			if(this.storage.getItem("hardSecondMulti")==null)
+			else if(this.storage.getItem("hardSecondMulti")==null)
 				this.storage.setItem("hardSecondMulti",this._player);
-			if(this.storage.getItem("hardThirdMulti")==null)
+			else if(this.storage.getItem("hardThirdMulti")==null)
 				this.storage.setItem("hardThirdMulti",this._player);
 		}
     }

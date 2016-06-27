@@ -30,12 +30,6 @@ var PauseLayer = cc.LayerColor.extend({
                 var objectName = target.getName();
                 if (cc.rectContainsPoint(rect, locationInNode)) {
                     cc.log("sprite began... x = " + locationInNode.x + ", y = " + locationInNode.y);
-                //  target.opacity = 180;
-                //  cc.log(target.getName());
-                    //if(objectName == "[citadel]")
-                    //  target.getParent().getParent().removeFromParent(true);
-                         
-                     
                     return true;
                 }
                      
@@ -43,16 +37,10 @@ var PauseLayer = cc.LayerColor.extend({
             },
             //function drag layer
             onTouchMoved: function (touch, event) {
-            var target = event.getCurrentTarget();
                 var delta = touch.getDelta();
-            //  target.x += delta.x;
-            //  target.y += delta.y;
-                cc.log("dsdsadsx: "+target.x+"\ny: "+target.y);
             },
             onTouchEnded: function (touch, event) {
-//              var target = event.getCurrentTarget();
-                cc.log("sprite onTouchesEnded.. ");
-//              target.opacity = 255;
+
             }
         });
  
@@ -101,6 +89,7 @@ var PauseLayer = cc.LayerColor.extend({
                 if(cc.sys.localStorage.getItem("sounds")=="on")
                     cc.audioEngine.playEffect(res.ClickPlay);
                 sender.getParent().getParent().removeFromParent(true);
+                cc.log("PAUSED GAME!");
                 cc.director.getActionManager().resumeTargets(this._pausedTargets);
                 var a= this._layer.getPlayer();
                 if(a=="playerOne"){

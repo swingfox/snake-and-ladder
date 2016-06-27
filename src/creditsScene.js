@@ -17,7 +17,7 @@ var CreditsLayer = cc.Layer.extend({
 		btnOK.addTouchEventListener(this.goBack,this);
 	},
 	goBack:function(){
-		if(this.storage.getItem("sounds")=="on")
+		if(cc.sys.localStorage.getItem("sounds")=="on")
 			cc.audioEngine.playEffect(res.ClickPlay);
 		
 		cc.director.popScene();

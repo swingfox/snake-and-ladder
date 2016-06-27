@@ -265,10 +265,10 @@
               "X": 0.25,
               "Y": 0.0359
             },
-            "LeftMargin": 146.304,
-            "RightMargin": 573.696,
-            "TopMargin": 164.4646,
-            "BottomMargin": 452.5354,
+            "LeftMargin": 146.2947,
+            "RightMargin": 573.7053,
+            "TopMargin": 164.4655,
+            "BottomMargin": 452.5345,
             "Tag": 67,
             "ActionTag": 218043433,
             "Size": {
@@ -364,7 +364,7 @@
               "Y": 0.0359
             },
             "LeftMargin": 149.4904,
-            "RightMargin": 649.5095,
+            "RightMargin": 649.5096,
             "TopMargin": 276.8207,
             "BottomMargin": 340.1793,
             "Tag": 69,
@@ -570,6 +570,55 @@
               "Y": 23.0
             },
             "Name": "answerDescription",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FontSize": 20,
+            "LabelText": "[Your answer description here]                                    \n",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 397.1809,
+              "Y": 203.1883
+            },
+            "Scale": {
+              "ScaleX": 1.084,
+              "ScaleY": 0.937
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4137,
+              "Y": 0.3175
+            },
+            "PreSize": {
+              "X": 0.5042,
+              "Y": 0.0719
+            },
+            "LeftMargin": 155.1809,
+            "RightMargin": 320.8191,
+            "TopMargin": 413.8117,
+            "BottomMargin": 180.1883,
+            "Tag": 45,
+            "ActionTag": -1303099851,
+            "Size": {
+              "X": 484.0,
+              "Y": 46.0
+            },
+            "Name": "answerDescription2",
             "ctype": "TextObjectData"
           }
         ],

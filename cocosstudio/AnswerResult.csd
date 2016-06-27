@@ -55,7 +55,7 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Text_1_0" ActionTag="218043433" Tag="67" IconVisible="False" LeftMargin="146.3040" RightMargin="573.6960" TopMargin="164.4646" BottomMargin="452.5354" FontSize="20" LabelText="Question You've Answered:" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="Text_1_0" ActionTag="218043433" Tag="67" IconVisible="False" LeftMargin="146.2947" RightMargin="573.7053" TopMargin="164.4655" BottomMargin="452.5345" FontSize="20" LabelText="Question You've Answered:" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="240.0000" Y="23.0000" />
             <AnchorPoint ScaleX="0.4678" ScaleY="0.6414" />
             <Position X="258.5667" Y="467.2867" />
@@ -77,7 +77,7 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Text_1_0_0_0" ActionTag="572333363" Tag="69" IconVisible="False" LeftMargin="149.4904" RightMargin="649.5095" TopMargin="276.8207" BottomMargin="340.1793" FontSize="20" LabelText="The Right Answer:" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="Text_1_0_0_0" ActionTag="572333363" Tag="69" IconVisible="False" LeftMargin="149.4904" RightMargin="649.5096" TopMargin="276.8207" BottomMargin="340.1793" FontSize="20" LabelText="The Right Answer:" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="161.0000" Y="23.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="229.9904" Y="351.6793" />
@@ -129,6 +129,17 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.5664" Y="0.3829" />
             <PreSize X="0.7854" Y="0.0359" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="answerDescription2" ActionTag="-1303099851" Tag="45" IconVisible="False" LeftMargin="155.1809" RightMargin="320.8191" TopMargin="413.8117" BottomMargin="180.1883" FontSize="20" LabelText="[Your answer description here]                                    &#xA;" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="484.0000" Y="46.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="397.1809" Y="203.1883" />
+            <Scale ScaleX="1.0840" ScaleY="0.9370" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.4137" Y="0.3175" />
+            <PreSize X="0.5042" Y="0.0719" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>

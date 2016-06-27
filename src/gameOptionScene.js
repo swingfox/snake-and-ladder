@@ -19,15 +19,15 @@ var GameOptionLayer = cc.Layer.extend({
 		scene = ccs.load(res.GameOptionScene).node;
 		twoPlayer = scene.getChildByName("optionsSprite");
 		
+		this.storage = cc.sys.localStorage;
 		this.initializeButtons();
 		this.initializeSprites();
 		this.restoreCurrentSettings();
 		this.addChild(scene);
 	},
 	restoreCurrentSettings:function(){
-		var storage = cc.sys.localStorage;
-		var music = storage.getItem("music");
-		if(music != undefined){
+		var music = this.storage.getItem("music");
+		if(music != undefined || music != null){
 			if(music=="on"){
 				onMusic.setOpacity(0);
 				offMusic.setOpacity(0);
@@ -41,11 +41,11 @@ var GameOptionLayer = cc.Layer.extend({
 		else{
 			onMusic.setOpacity(0);
 			offMusic.setOpacity(0);
-			storage.setItem("music","on");
+			this.storage.setItem("music","on");
 		}
 
-		var sounds = cc.sys.localStorage.getItem("sounds");
-		if(music != undefined){
+		var sounds = this.storage.getItem("sounds");
+		if(sounds != undefined || sounds != null){
 			if(sounds=="on"){
 				onSounds.setOpacity(0);
 				offSounds.setOpacity(0);
@@ -58,11 +58,11 @@ var GameOptionLayer = cc.Layer.extend({
 		else{
 			onSounds.setOpacity(0);
 			offSounds.setOpacity(0);
-			storage.setItem("sounds","on");
+			this.storage.setItem("sounds","on");
 		}
 
-		var difficulty = storage.getItem("difficulties");
-		if(difficulty!=undefined){
+		var difficulty = this.storage.getItem("difficulties");
+		if(difficulty!=undefined || difficulty!=null){
 			if(difficulty=="hard"){
 				onEasy.setOpacity(0);
 				onHard.setOpacity(0);
@@ -75,7 +75,7 @@ var GameOptionLayer = cc.Layer.extend({
 		else{
 			onEasy.setOpacity(255);
 			onHard.setOpacity(255);
-			storage.setItem("difficulties","easy");
+			this.storage.setItem("difficulties","easy");
 		}
 	},
 	initializeButtons:function(){
@@ -190,7 +190,7 @@ var GameOptionLayer = cc.Layer.extend({
 		cc.director.pushScene(new cc.TransitionFade(0.1,new CreditsScene()));
 	},
 	setMusic:function(){
-		var music = cc.sys.localStorage.getItem("music");
+		var music = this.storage.getItem("music");
 
 		if(music=="on"){
 			cc.audioEngine.pauseMusic();
@@ -210,17 +210,17 @@ var GameOptionLayer = cc.Layer.extend({
 			cc.audioEngine.playEffect(res.ClickPlay);
 	},
 	setSounds:function(){
-		var sounds = cc.sys.localStorage.getItem("sounds");
+		var sounds = this.storage.getItem("sounds");
 		if(sounds=="on"){
 			onSounds.setOpacity(255);
 			offSounds.setOpacity(255);
-			cc.sys.localStorage.setItem("sounds","off");
+			this.storage.setItem("sounds","off");
 		}
 		else{
 			onSounds.setOpacity(0);
 			offSounds.setOpacity(0);
 			this.sounds=false;
-			cc.sys.localStorage.setItem("sounds","on");
+			this.storage.setItem("sounds","on");
 		}
 
 		if(this.storage.getItem("sounds")=="on")
@@ -231,12 +231,12 @@ var GameOptionLayer = cc.Layer.extend({
 		if(difficulty=="hard"){
 			onEasy.setOpacity(255);
 			onHard.setOpacity(255);
-			cc.sys.localStorage.setItem("difficulties","easy");
+			this.storage.setItem("difficulties","easy");
 		}
 		else{
 			onEasy.setOpacity(0);
 			onHard.setOpacity(0);
-			cc.sys.localStorage.setItem("difficulties","hard");
+			this.storage.setItem("difficulties","hard");
 		}
 
 		if(this.storage.getItem("sounds")=="on")
